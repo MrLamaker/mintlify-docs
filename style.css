@@ -152,18 +152,18 @@ img.nav-logo {
 #content-area .prose,
 #content-area .prose p,
 #content-area .prose li {
-  font-size: 1.375rem;
-  line-height: 2rem;
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
 }
 
 #content-area .prose h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 #content-area .prose h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 #content-area .prose h3 {
-  font-size: 1.875rem;
+  font-size: 1.625rem;
 }
