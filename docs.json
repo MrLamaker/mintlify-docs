@@ -40,7 +40,7 @@
     },
     "tabs": [
       {
-        "tab": "Guide",
+        "tab": "Get Started",
         "groups": [
           {
             "group": "Get Started",
@@ -49,7 +49,12 @@
               "getting-started/create-account",
               "getting-started/plans"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
           {
             "group": "Study Tools",
             "pages": [
@@ -74,7 +79,12 @@
               "collaboration/study-groups",
               "collaboration/sharing"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Account",
+        "groups": [
           {
             "group": "Account & Settings",
             "pages": [
@@ -84,7 +94,12 @@
               "account/data-export",
               "account/billing"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Help",
+        "groups": [
           {
             "group": "Help",
             "pages": [
