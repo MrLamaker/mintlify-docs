@@ -147,3 +147,23 @@ img.nav-logo {
   max-width: 220px;
   height: auto;
 }
+
+/* Increase article body text size */
+#content-area .prose,
+#content-area .prose p,
+#content-area .prose li {
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+
+#content-area .prose h1 {
+  font-size: 3rem;
+}
+
+#content-area .prose h2 {
+  font-size: 2.25rem;
+}
+
+#content-area .prose h3 {
+  font-size: 1.875rem;
+}
