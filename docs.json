@@ -1,0 +1,110 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Clamly",
+  "description": "Documentation for Clamly — the all-in-one study platform with AI quizzes, flashcards, notes, and more.",
+  "colors": {
+    "primary": "#f46d55",
+    "light": "#fcb4a4",
+    "dark": "#f46d55"
+  },
+  "favicon": "https://media.brand.dev/4c982d40-85e6-401d-84e8-0af20000860e.png",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "/"
+        },
+        {
+          "anchor": "Status",
+          "icon": "activity",
+          "href": "https://clamly.app/status"
+        },
+        {
+          "anchor": "Support",
+          "icon": "life-buoy",
+          "href": "mailto:support@clamly.app"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started/create-account",
+              "getting-started/plans"
+            ]
+          },
+          {
+            "group": "Study Tools",
+            "pages": [
+              "study-tools/quizzes",
+              "study-tools/flashcards",
+              "study-tools/notes",
+              "study-tools/focus-timer",
+              "study-tools/todos",
+              "study-tools/exams"
+            ]
+          },
+          {
+            "group": "AI Features",
+            "pages": [
+              "ai/clamly-ai",
+              "ai/clamly-chat"
+            ]
+          },
+          {
+            "group": "Collaboration",
+            "pages": [
+              "collaboration/study-groups",
+              "collaboration/sharing"
+            ]
+          },
+          {
+            "group": "Account & Settings",
+            "pages": [
+              "account/profile",
+              "account/google-calendar",
+              "account/notifications",
+              "account/data-export",
+              "account/billing"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/status"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Open Clamly",
+      "href": "https://clamly.app"
+    }
+  },
+  "footer": {
+    "socials": {}
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "projectType": "saas",
+  "projectName": "Clamly",
+  "projectDescription": "Clamly is an all-in-one study platform for students that combines AI-powered quizzes, spaced-repetition flashcards, an AI chat assistant, notes, a focus timer, study groups, and exam scheduling in a single web app.",
+  "theme": "almond",
+  "primaryColor": "#f46d55",
+  "lightColor": "#fcb4a4",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started/create-account",
+              "getting-started/plans"
+            ]
+          },
+          {
+            "group": "Study Tools",
+            "pages": [
+              "study-tools/quizzes",
+              "study-tools/flashcards",
+              "study-tools/notes",
+              "study-tools/focus-timer",
+              "study-tools/todos",
+              "study-tools/exams"
+            ]
+          },
+          {
+            "group": "AI Features",
+            "pages": [
+              "ai/clamly-ai",
+              "ai/clamly-chat"
+            ]
+          },
+          {
+            "group": "Collaboration",
+            "pages": [
+              "collaboration/study-groups",
+              "collaboration/sharing"
+            ]
+          },
+          {
+            "group": "Account & Settings",
+            "pages": [
+              "account/profile",
+              "account/google-calendar",
+              "account/notifications",
+              "account/data-export",
+              "account/billing"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/status"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI quiz generation from PDFs and documents",
+    "Clamly Chat — AI study assistant with Adaptive, Tutor, Buddy, and Professor modes",
+    "Spaced repetition flashcards using the SM-2 algorithm",
+    "Markdown notes with full-screen editor, pinning, and color-coding",
+    "Global Pomodoro focus timer that persists across pages",
+    "Task management with priorities, due dates, and drag-and-drop",
+    "Exam calendar with two-way Google Calendar sync",
+    "Study groups with invite codes, shared quizzes, and role management",
+    "Achievement system with streaks, scores, and progress stats",
+    "Free tier with Starter ($4.99/mo) and Pro ($9.99/mo) paid plans"
+  ],
+  "publicApiSurface": [
+    "Web App (clamly.app)",
+    "API",
+    "Google Calendar OAuth integration",
+    "Google Sign-In OAuth",
+    "Stripe subscription management",
+    "File upload (PDF, Word, plain text) for AI processing"
+  ]
+}

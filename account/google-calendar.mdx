@@ -1,0 +1,89 @@
+---
+title: "Sync Clamly Exams with Google Calendar Integration"
+sidebarTitle: "Google Calendar"
+description: "Connect Google Calendar for a two-way exam sync — your Clamly exams appear in Google Calendar and stay up to date automatically."
+---
+
+The Google Calendar integration lets you see all your Clamly exam entries alongside the rest of your schedule. Once connected, any exam you add, edit, or remove in Clamly is automatically reflected in your Google Calendar — and you never have to copy dates manually again.
+
+## Why Connect Google Calendar?
+
+<CardGroup cols={2}>
+  <Card title="Two-Way Sync" icon="arrows-rotate">
+    Exams you create in Clamly appear in Google Calendar automatically, keeping your schedule in one place.
+  </Card>
+  <Card title="Always Up to Date" icon="calendar-check">
+    Edit an exam date in Clamly and it updates in Google Calendar instantly — no duplicate entry needed.
+  </Card>
+  <Card title="Optional Integration" icon="toggle-on">
+    Google Calendar sync is entirely optional. Clamly works fully without it.
+  </Card>
+  <Card title="Privacy First" icon="lock">
+    Clamly only accesses calendar event data — no other Google services, files, or account information.
+  </Card>
+</CardGroup>
+
+## How to Connect Google Calendar
+
+<Steps>
+  <Step title="Go to the Exams Page">
+    Open the **Exams** section from the main navigation sidebar.
+  </Step>
+  <Step title="Click Connect Google Calendar">
+    Find the **Google Calendar** banner or button at the top of the Exams page and click **Connect**.
+  </Step>
+  <Step title="Authorise Access">
+    A Google sign-in window will open. Choose the Google account whose calendar you want to sync, then review and accept the permissions Clamly requests.
+  </Step>
+  <Step title="Sync Complete">
+    Once authorised, your existing Clamly exams will appear in Google Calendar within a few seconds. New exams you add will sync automatically going forward.
+  </Step>
+</Steps>
+
+<Note>
+  You need an active Google account to use this integration. If you manage multiple Google accounts, make sure you select the correct one during the authorisation step.
+</Note>
+
+## What Access Does Clamly Request?
+
+During authorisation, Clamly requests **read and write access to your Google Calendar events**. This access is used exclusively to:
+
+- **Create** calendar events for exams you add in Clamly
+- **Update** those events when you edit an exam date, title, or subject
+- **Delete** those events when you remove an exam from Clamly
+
+<Warning>
+  Clamly does not access any other Google services — not Google Drive, Gmail, Contacts, or any other product. Only calendar event data is ever read or written.
+</Warning>
+
+## What Syncs Between the Two Platforms?
+
+<Accordion title="Clamly → Google Calendar">
+  Every exam entry you create in Clamly (including subject name, date, and any notes) is pushed to your connected Google Calendar as a calendar event. Updates and deletions in Clamly are mirrored to Google Calendar automatically.
+</Accordion>
+
+<Accordion title="Google Calendar → Clamly">
+  Changes made directly to a Clamly-created event inside Google Calendar (such as date edits) are reflected back in your Clamly exam schedule, keeping both sides in sync.
+</Accordion>
+
+## How to Disconnect Google Calendar
+
+You can revoke Clamly's access to your Google Calendar at any time.
+
+<Steps>
+  <Step title="Go to the Exams Page">
+    Open the **Exams** section from the main navigation sidebar.
+  </Step>
+  <Step title="Click Disconnect">
+    Find the Google Calendar connection status and click **Disconnect**.
+  </Step>
+  <Step title="Confirm">
+    Confirm the disconnection in the dialogue. Clamly will immediately revoke its access token and delete any stored authorisation credentials.
+  </Step>
+</Steps>
+
+<Tip>
+  Disconnecting removes Clamly's access but does not delete the calendar events already created in Google Calendar. You can delete those manually from within Google Calendar if you wish.
+</Tip>
+
+After disconnecting, your exams remain in Clamly as normal — they simply won't sync to Google Calendar until you reconnect.
