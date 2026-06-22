@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "maple",
   "name": "Clamly",
-  "description": "Documentation for Clamly — the all-in-one study platform with AI quizzes, flashcards, notes, and more.",
+  "description": "Documentation for Clamly, the all-in-one study platform with AI quizzes, flashcards, notes, and more.",
   "colors": {
     "primary": "#f46d55",
     "light": "#fcb4a4",
@@ -17,6 +17,9 @@
   },
   "contextual": {
     "options": ["copy", "view", "assistant"]
+  },
+  "search": {
+    "prompt": "Search Clamly docs..."
   },
   "navigation": {
     "global": {
@@ -40,12 +43,17 @@
     },
     "tabs": [
       {
-        "tab": "Get Started",
+        "tab": "Get started",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Overview",
             "pages": [
-              "introduction",
+              "introduction"
+            ]
+          },
+          {
+            "group": "Setup",
+            "pages": [
               "getting-started/create-account",
               "getting-started/plans"
             ]
@@ -56,7 +64,7 @@
         "tab": "Features",
         "groups": [
           {
-            "group": "Study Tools",
+            "group": "Study tools",
             "pages": [
               "study-tools/quizzes",
               "study-tools/flashcards",
@@ -67,7 +75,7 @@
             ]
           },
           {
-            "group": "AI Features",
+            "group": "AI",
             "pages": [
               "ai/clamly-ai",
               "ai/clamly-chat"
@@ -86,13 +94,13 @@
         "tab": "Account",
         "groups": [
           {
-            "group": "Account & Settings",
+            "group": "Settings",
             "pages": [
               "account/profile",
-              "account/google-calendar",
+              "account/billing",
               "account/notifications",
-              "account/data-export",
-              "account/billing"
+              "account/google-calendar",
+              "account/data-export"
             ]
           }
         ]
