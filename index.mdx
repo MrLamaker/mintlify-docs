@@ -4,21 +4,38 @@ description: Browse Clamly's help center to set up your account, learn the featu
 mode: frame
 ---
 
-<div data-product-guide-index className="flex w-full flex-col gap-10 max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
+<div data-product-guide-index className="flex w-full flex-col gap-16 max-w-4xl mx-auto px-4 md:px-8 py-16 md:py-24">
 
-  <div className="flex flex-col gap-3 text-center max-w-lg mx-auto">
-    <h1 className="text-3xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 leading-tight">
-      Clamly documentation
+  {/* Hero */}
+  <div className="flex flex-col gap-7 text-center items-center">
+    <h1 className="text-5xl md:text-6xl font-medium leading-[1.08] tracking-tight text-gray-900 dark:text-gray-50">
+      Clamly<br />
+      <span className="italic" style={{ color: 'rgb(var(--primary))' }}>documentation</span>
     </h1>
-    <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-      Guides and feature references for Clamly's study platform. Find setup help, learn how each tool works, and manage your account.
+    <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs">
+      Guides and references for the Clamly study platform.
     </p>
+    <div className="flex flex-row gap-3 items-center">
+      <a
+        href="/introduction"
+        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-gray-900 text-white dark:bg-gray-50 dark:text-gray-900 hover:opacity-90 transition-opacity"
+      >
+        Get started
+      </a>
+      <a
+        href="https://clamly.app"
+        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+      >
+        Open Clamly
+      </a>
+    </div>
   </div>
 
+  {/* 3 main categories */}
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
     <a
       href="/introduction"
-      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-primary dark:hover:border-primary shadow-sm"
+      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-950/60 hover:border-primary dark:hover:border-primary"
     >
       <Icon icon="rocket" color="rgb(var(--primary))" size={20} className="shrink-0" />
       <div className="flex flex-col gap-1">
@@ -29,7 +46,7 @@ mode: frame
 
     <a
       href="/study-tools/quizzes"
-      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-primary dark:hover:border-primary shadow-sm"
+      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-950/60 hover:border-primary dark:hover:border-primary"
     >
       <Icon icon="book-open" color="rgb(var(--primary))" size={20} className="shrink-0" />
       <div className="flex flex-col gap-1">
@@ -40,7 +57,7 @@ mode: frame
 
     <a
       href="/ai/clamly-ai"
-      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-primary dark:hover:border-primary shadow-sm"
+      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-950/60 hover:border-primary dark:hover:border-primary"
     >
       <Icon icon="sparkles" color="rgb(var(--primary))" size={20} className="shrink-0" />
       <div className="flex flex-col gap-1">
@@ -50,11 +67,14 @@ mode: frame
     </a>
   </div>
 
-  <div className="flex flex-col gap-4">
-    <span className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest">All features</span>
+  <hr className="border-0 border-t border-gray-200 dark:border-gray-800" />
+
+  {/* All features */}
+  <div className="flex flex-col gap-5">
+    <span className="text-xs font-semibold tracking-widest uppercase text-gray-400 dark:text-gray-500">All features</span>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
-      <a href="/study-tools/quizzes" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/study-tools/quizzes" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="circle-help" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Quizzes</span>
@@ -62,7 +82,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/study-tools/flashcards" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/study-tools/flashcards" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="layers" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Flashcards</span>
@@ -70,7 +90,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/study-tools/notes" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/study-tools/notes" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="file-text" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Notes</span>
@@ -78,7 +98,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/study-tools/focus-timer" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/study-tools/focus-timer" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="timer" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Focus Timer</span>
@@ -86,7 +106,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/study-tools/todos" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/study-tools/todos" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="check-square" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Todos</span>
@@ -94,7 +114,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/study-tools/exams" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/study-tools/exams" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="calendar" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Exams</span>
@@ -102,7 +122,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/ai/clamly-ai" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/ai/clamly-ai" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="sparkles" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Clamly AI</span>
@@ -110,7 +130,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/ai/clamly-chat" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/ai/clamly-chat" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="message-circle" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Clamly Chat</span>
@@ -118,7 +138,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/collaboration/study-groups" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/collaboration/study-groups" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="users" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Study groups</span>
@@ -126,7 +146,7 @@ mode: frame
         </div>
       </a>
 
-      <a href="/collaboration/sharing" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary">
+      <a href="/collaboration/sharing" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
         <Icon icon="share-2" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
         <div className="flex flex-col gap-0.5">
           <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Sharing</span>

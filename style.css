@@ -1,12 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap');
+
+/* ── Color tokens ─────────────────────────────────────── */
 :root {
-  --default-border-color: var(--gray-200);
+  --default-border-color: rgba(42, 33, 18, 0.1);
+  --warm-bg: #eae5dc;
+  --warm-card: #f2ede4;
+  --warm-text: #231c12;
 }
 
 .dark {
-  --default-border-color: var(--gray-800);
+  --default-border-color: rgba(240, 236, 228, 0.08);
+  --warm-bg: #1c1712;
+  --warm-card: #241e16;
+  --warm-text: #f0ece4;
 }
 
-/* Sidebar section labels */
+/* ── Page background ──────────────────────────────────── */
+html,
+body {
+  background-color: var(--warm-bg);
+}
+
+/* ── Serif headings ───────────────────────────────────── */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+article h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+article h3 {
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+/* ── Sidebar section labels ───────────────────────────── */
 #sidebar .nav-anchor span {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 11px;
@@ -20,18 +54,7 @@ img.nav-logo {
   height: auto;
 }
 
-/* Heading refinements */
-article h2 {
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-
-article h3 {
-  font-weight: 600;
-  letter-spacing: -0.015em;
-}
-
-/* Tables */
+/* ── Tables ───────────────────────────────────────────── */
 article table {
   font-size: 0.875rem;
   width: 100%;
@@ -49,13 +72,13 @@ article th {
   padding: 0.625rem 0.875rem;
 }
 
-/* Inline code */
+/* ── Inline code ──────────────────────────────────────── */
 article code:not(pre code) {
   font-size: 0.8125em;
   font-weight: 500;
 }
 
-/* Smooth card hover */
+/* ── Card hover ───────────────────────────────────────── */
 a[class*="rounded-xl"],
 a[class*="rounded-2xl"],
 a[class*="rounded-lg"] {
