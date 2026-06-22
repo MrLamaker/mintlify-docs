@@ -10,7 +10,7 @@
   },
   "favicon": "https://media.brand.dev/4c982d40-85e6-401d-84e8-0af20000860e.png",
   "icons": {
-    "library": "lucide"
+    "library": "tabler"
   },
   "styling": {
     "eyebrows": "breadcrumbs"
@@ -26,7 +26,7 @@
       "anchors": [
         {
           "anchor": "Home",
-          "icon": "house",
+          "icon": "home",
           "href": "/"
         },
         {
@@ -36,7 +36,7 @@
         },
         {
           "anchor": "Support",
-          "icon": "life-buoy",
+          "icon": "lifebuoy",
           "href": "mailto:support@clamly.app"
         }
       ]

@@ -3,14 +3,14 @@
 /* ── Color tokens ─────────────────────────────────────── */
 :root {
   --default-border-color: rgba(42, 33, 18, 0.1);
-  --warm-bg: #eae5dc;
+  --warm-bg: #F1F0E3;
   --warm-card: #f2ede4;
   --warm-text: #231c12;
 }
 
 .dark {
   --default-border-color: rgba(240, 236, 228, 0.08);
-  --warm-bg: #1c1712;
+  --warm-bg: #202020;
   --warm-card: #241e16;
   --warm-text: #f0ece4;
 }

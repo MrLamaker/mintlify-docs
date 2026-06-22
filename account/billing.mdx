@@ -4,7 +4,7 @@ sidebarTitle: "Billing"
 description: "Compare Free, Starter, and Pro plans, upgrade via Stripe, manage or cancel your subscription, and understand how Clamly keeps your payment data secure."
 ---
 
-Clamly offers three plans so you can choose the level of access that suits your study goals. Payments are processed securely through Stripe — Clamly never sees or stores your card details. You can upgrade, downgrade, or cancel at any time from the Billing page.
+Clamly offers three plans so you can choose the level of access that suits your study goals. Payments go through Stripe. Clamly never sees or stores your card details. You can upgrade, downgrade, or cancel at any time from the Billing page.
 
 ## Plans and pricing
 
@@ -49,13 +49,11 @@ Clamly offers three plans so you can choose the level of access that suits your 
 
 ## Managing your subscription
 
-Once you have an active paid plan, you can manage every aspect of your subscription from the Clamly Billing page or the Stripe customer portal.
-
 <CardGroup cols={2}>
   <Card title="Clamly Billing Page" icon="credit-card">
     View your current plan, next billing date, and payment history. Access the Stripe customer portal from here for deeper controls.
   </Card>
-  <Card title="Stripe Customer Portal" icon="building-columns">
+  <Card title="Stripe Customer Portal" icon="building">
     Update your payment method, download invoices, switch between monthly and annual billing, or cancel your subscription.
   </Card>
 </CardGroup>
@@ -92,14 +90,14 @@ Once you have an active paid plan, you can manage every aspect of your subscript
 
 ## Payment security
 
-Clamly uses **Stripe** to handle all payment processing. Stripe is a PCI-DSS Level 1 certified payment provider — the highest level of certification available.
+Clamly uses **Stripe** to handle all payment processing. Stripe is PCI-DSS Level 1 certified.
 
 <Accordion title="Does Clamly store my card details?">
   No. Your card number, CVV, and other payment credentials are entered directly into Stripe's secure, encrypted checkout page. Clamly never sees, receives, or stores your card details at any point.
 </Accordion>
 
 <Accordion title="What does Clamly store about my payments?">
-  Clamly stores only your Stripe customer ID and subscription status — the information needed to know which plan you're on. No card data of any kind is held on Clamly's servers.
+  Clamly stores only your Stripe customer ID and subscription status. No card data of any kind is held on Clamly's servers.
 </Accordion>
 
 <Accordion title="What is Clamly's refund policy?">

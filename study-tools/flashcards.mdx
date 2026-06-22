@@ -4,19 +4,19 @@ sidebarTitle: "Flashcards"
 description: "Create flashcard decks, study with the SM-2 spaced repetition algorithm, and track retention rates until you fully master your material."
 ---
 
-Flashcards in Clamly are built around the SM-2 spaced repetition algorithm — the same science that powers the most effective memorization systems in the world. Instead of reviewing every card every day, you spend time on the cards that need it most, and Clamly handles the scheduling automatically.
+Clamly flashcards use the SM-2 spaced repetition algorithm. It schedules each card individually based on your past performance, so you review the ones that need work and skip the ones you've already locked in.
 
 ## Creating a deck
 
 <Steps>
   <Step title="Open Flashcards">
-    Navigate to **Flashcards** in the sidebar and click **New Deck**. Give the deck a name (for example, "Biology Chapter 4") and an optional description.
+    Navigate to **Flashcards** in the sidebar and click **New Deck**. Give the deck a name and an optional description.
   </Step>
   <Step title="Add Cards">
     Click **Add Card**. Fill in the **Front** (the prompt or question) and the **Back** (the answer or definition). Repeat for every card you want to include.
   </Step>
   <Step title="Save Your Deck">
-    Click **Save Deck** when you've finished adding cards. Your deck is now ready to study.
+    Click **Save Deck** when you've finished adding cards.
   </Step>
 </Steps>
 
@@ -34,10 +34,10 @@ Flashcards in Clamly are built around the SM-2 spaced repetition algorithm — t
     You'll see the front of a card first. Think of the answer, then click **Reveal** to flip it and check yourself.
   </Step>
   <Step title="Rate Your Recall">
-    After seeing the answer, rate how well you remembered it — typically on a scale from "Didn't know it" to "Perfect recall." Your rating tells the algorithm when to show you that card again.
+    After seeing the answer, rate how well you remembered it, from "Didn't know it" to "Perfect recall." Your rating tells the algorithm when to show you that card again.
   </Step>
   <Step title="Finish the Session">
-    Work through all due cards. Clamly shows a session summary when you're done, including how many cards you reviewed and your overall performance.
+    Work through all due cards. Clamly shows a session summary when you're done.
   </Step>
 </Steps>
 
@@ -46,34 +46,32 @@ Flashcards in Clamly are built around the SM-2 spaced repetition algorithm — t
 Clamly uses the **SM-2 (SuperMemo 2)** algorithm to schedule every card individually based on your personal performance history.
 
 <CardGroup cols={2}>
-  <Card title="Cards You Know Well" icon="arrow-up-right-dots">
-    When you consistently rate a card with high confidence, SM-2 increases the interval before showing it again — from days, to weeks, to months. You won't waste time on things you already know.
+  <Card title="Cards You Know Well" icon="trending-up">
+    When you consistently rate a card with high confidence, SM-2 extends the interval, from days to weeks to months. You won't waste time on things you already know.
   </Card>
-  <Card title="Cards You Struggle With" icon="rotate-left">
-    A low confidence rating resets or shortens the interval, bringing the card back much sooner. Difficult material gets more repetition until it sticks.
+  <Card title="Cards You Struggle With" icon="rotate">
+    A low confidence rating resets or shortens the interval, bringing the card back sooner. Difficult material gets more repetition until it sticks.
   </Card>
-  <Card title="Ease Factor" icon="sliders">
-    Each card carries a hidden "ease factor" that adjusts over time. Repeated difficulty lowers the ease factor; repeated success raises it, making future scheduling smarter.
+  <Card title="Ease Factor" icon="adjustments">
+    Each card carries a hidden ease factor that adjusts over time. Repeated difficulty lowers it; repeated success raises it, making future scheduling smarter.
   </Card>
   <Card title="Due Cards" icon="calendar-check">
-    Clamly shows you exactly how many cards are due in each deck at any time. Staying on top of your due count is the key habit for spaced repetition to work.
+    Clamly shows you exactly how many cards are due in each deck. Staying on top of your due count is the key habit for spaced repetition to work.
   </Card>
 </CardGroup>
 
 <Note>
-  You only need to study the cards that are due — reviewing ahead of schedule doesn't improve retention and can confuse the algorithm. Trust the schedule.
+  You only need to study the cards that are due. Reviewing ahead of schedule doesn't improve retention and can confuse the algorithm. Trust the schedule.
 </Note>
 
 ## Tracking your progress
-
-Clamly surfaces several metrics inside each deck so you always know where you stand:
 
 <Accordion title="Due Cards">
   The number of cards scheduled for review today. This is your daily study target. Keeping this count at zero each day is the most reliable path to long-term retention.
 </Accordion>
 
 <Accordion title="Retention Rate">
-  The percentage of reviews where you rated your recall as correct. A healthy retention rate sits around 85–90%. If yours is lower, consider simplifying your cards or breaking complex ones into smaller pieces.
+  The percentage of reviews where you rated your recall as correct. A healthy retention rate sits around 85-90%. If yours is lower, consider simplifying your cards or breaking complex ones into smaller pieces.
 </Accordion>
 
 <Accordion title="Mastered Cards">
@@ -82,15 +80,15 @@ Clamly surfaces several metrics inside each deck so you always know where you st
 
 ## Mastering a deck
 
-A deck is considered mastered when all of its cards reach the Mastered status. Clamly displays a visual indicator on the deck when you hit this milestone. Even after mastering a deck, continue reviewing occasionally. The algorithm will remind you with low-frequency check-ins so your hard-won knowledge doesn't fade.
+A deck is considered mastered when all of its cards reach the Mastered status. Clamly displays a visual indicator on the deck when you hit this milestone. Even after mastering a deck, continue reviewing occasionally. The algorithm will remind you with low-frequency check-ins.
 
 ## What's next
 
 <CardGroup cols={2}>
-  <Card title="Quizzes" icon="circle-help" href="/study-tools/quizzes">
+  <Card title="Quizzes" icon="help-circle" href="/study-tools/quizzes">
     Test your recall with manual or AI-generated quiz questions.
   </Card>
-  <Card title="Focus Timer" icon="timer" href="/study-tools/focus-timer">
+  <Card title="Focus Timer" icon="clock" href="/study-tools/focus-timer">
     Run a Pomodoro session while you work through your flashcard decks.
   </Card>
 </CardGroup>
