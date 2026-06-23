@@ -1,0 +1,98 @@
+---
+title: "Sincronizează examenele Clamly cu integrarea Google Calendar"
+sidebarTitle: "Google Calendar"
+description: "Conectează Google Calendar la Clamly pentru sincronizare bidirecțională a examenelor, astfel încât examenele tale să apară în Google Calendar și să rămână mereu actualizate."
+---
+
+Integrarea cu Google Calendar îți permite să vezi toate examenele tale din Clamly alături de restul programului. Odată conectat, orice examen pe care îl adaugi, editezi sau elimini în Clamly se reflectă automat în Google Calendar.
+
+## De ce să conectezi Google Calendar?
+
+<CardGroup cols={2}>
+  <Card title="Sincronizare bidirecțională" icon="arrows-exchange">
+    Examenele pe care le creezi în Clamly apar automat în Google Calendar, păstrându-ți programul într-un singur loc.
+  </Card>
+  <Card title="Mereu actualizat" icon="calendar-check">
+    Editezi un examen în Clamly și se actualizează automat în Google Calendar.
+  </Card>
+  <Card title="Integrare opțională" icon="toggle-right">
+    Sincronizarea Google Calendar este complet opțională. Clamly funcționează integral fără ea.
+  </Card>
+  <Card title="Confidențialitate înainte de toate" icon="lock">
+    Clamly accesează doar evenimentele din calendar, nimic altceva.
+  </Card>
+</CardGroup>
+
+## Cum conectezi Google Calendar
+
+<Steps>
+  <Step title="Mergi la pagina Examene">
+    Deschide secțiunea **Examene** din bara laterală principală.
+  </Step>
+  <Step title="Apasă Conectează Google Calendar">
+    Găsește bannerul sau butonul **Google Calendar** din partea de sus a paginii Examene și apasă **Connect**.
+  </Step>
+  <Step title="Autorizează accesul">
+    Se va deschide o fereastră de autentificare Google. Alege contul Google al cărui calendar vrei să-l sincronizezi, apoi verifică și acceptă permisiunile solicitate de Clamly.
+  </Step>
+  <Step title="Sincronizare finalizată">
+    Odată autorizat, examenele existente din Clamly vor apărea în Google Calendar în câteva secunde. Examenele noi pe care le adaugi se vor sincroniza automat de aici încolo.
+  </Step>
+</Steps>
+
+<Note>
+  Ai nevoie de un cont Google activ pentru a folosi această integrare. Dacă gestionezi mai multe conturi Google, asigură-te că alegi unul corect la pasul de autorizare.
+</Note>
+
+## Ce acces solicită Clamly?
+
+În timpul autorizării, Clamly solicită **acces de citire și scriere la evenimentele din Google Calendar**. Acest acces este folosit exclusiv pentru a:
+
+- **Crea** evenimente în calendar pentru examenele adăugate în Clamly
+- **Actualiza** aceste evenimente atunci când editezi data, titlul sau materia unui examen
+- **Șterge** aceste evenimente atunci când elimini un examen din Clamly
+
+<Warning>
+  Clamly nu accesează Google Drive, Gmail, Contacte sau orice alt serviciu Google. Doar datele evenimentelor din calendar sunt citite sau scrise.
+</Warning>
+
+## Ce se sincronizează între cele două platforme?
+
+<Accordion title="De la Clamly către Google Calendar">
+  Fiecare examen pe care îl creezi în Clamly (inclusiv numele materiei, data și eventualele notițe) este trimis în Google Calendar-ul conectat sub forma unui eveniment. Actualizările și ștergerile din Clamly sunt reflectate automat în Google Calendar.
+</Accordion>
+
+<Accordion title="De la Google Calendar către Clamly">
+  Modificările făcute direct într-un eveniment creat de Clamly în Google Calendar (de exemplu, editarea datei) sunt reflectate înapoi în programul de examene Clamly, ținând ambele părți sincronizate.
+</Accordion>
+
+## Cum deconectezi Google Calendar
+
+<Steps>
+  <Step title="Mergi la pagina Examene">
+    Deschide secțiunea **Examene** din bara laterală principală.
+  </Step>
+  <Step title="Apasă Deconectează">
+    Găsește statusul conexiunii Google Calendar și apasă **Disconnect**.
+  </Step>
+  <Step title="Confirmă">
+    Confirmă deconectarea în dialogul afișat. Clamly va revoca imediat token-ul de acces și va șterge orice credențiale de autorizare stocate.
+  </Step>
+</Steps>
+
+<Tip>
+  Deconectarea elimină accesul Clamly, dar nu șterge evenimentele deja create în Google Calendar. Le poți șterge manual din Google Calendar dacă dorești.
+</Tip>
+
+După deconectare, examenele tale rămân în Clamly ca de obicei. Pur și simplu nu se vor sincroniza cu Google Calendar până nu te reconectezi.
+
+## Ce urmează
+
+<CardGroup cols={2}>
+  <Card title="Examene" icon="calendar" href="/study-tools/exams">
+    Adaugă și gestionează examenele viitoare în Clamly.
+  </Card>
+  <Card title="Notificări" icon="bell" href="/account/notifications">
+    Configurează alerte pentru a fi mereu la curent cu examenele care urmează.
+  </Card>
+</CardGroup>

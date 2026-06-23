@@ -1,0 +1,178 @@
+---
+title: Clamly-Dokumentation
+description: Durchstöbere das Clamly-Hilfecenter, um dein Konto einzurichten, die Funktionen kennenzulernen und das Beste aus deinen Lernsessions herauszuholen.
+mode: frame
+---
+
+<div data-product-guide-index className="flex w-full flex-col gap-16 max-w-4xl mx-auto px-4 md:px-8 py-16 md:py-24">
+
+  {/* Hero */}
+  <div className="flex flex-col gap-7 text-center items-center">
+    <h1 className="text-5xl md:text-6xl font-medium leading-[1.08] tracking-tight text-gray-900 dark:text-gray-50">
+      Clamly<br />
+      <span className="italic" style={{ color: 'rgb(var(--primary))' }}>Dokumentation</span>
+    </h1>
+    <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs">
+      Anleitungen und Referenzen für die Lernplattform Clamly.
+    </p>
+    <div className="flex flex-row gap-3 items-center">
+      <a
+        href="/introduction"
+        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-gray-900 text-white dark:bg-gray-50 dark:text-gray-900 hover:opacity-90 transition-opacity"
+      >
+        Loslegen
+      </a>
+      <a
+        href="https://clamly.app"
+        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+      >
+        Clamly öffnen
+      </a>
+    </div>
+  </div>
+
+  {/* 3 main categories */}
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <a
+      href="/introduction"
+      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-950/60 hover:border-primary dark:hover:border-primary"
+    >
+      <Icon icon="rocket" color="rgb(var(--primary))" size={20} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="text-sm font-semibold text-gray-900 dark:text-gray-50">Loslegen</span>
+        <span className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Erstelle dein Konto und lerne die Grundlagen.</span>
+      </div>
+    </a>
+
+    <a
+      href="/study-tools/quizzes"
+      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-950/60 hover:border-primary dark:hover:border-primary"
+    >
+      <Icon icon="book-open" color="rgb(var(--primary))" size={20} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="text-sm font-semibold text-gray-900 dark:text-gray-50">Lerntools</span>
+        <span className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Quizzes, Karteikarten, Notizen, Timer, Todos und Prüfungen.</span>
+      </div>
+    </a>
+
+    <a
+      href="/ai/clamly-ai"
+      className="flex flex-col gap-4 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-950/60 hover:border-primary dark:hover:border-primary"
+    >
+      <Icon icon="sparkles" color="rgb(var(--primary))" size={20} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="text-sm font-semibold text-gray-900 dark:text-gray-50">KI-Funktionen</span>
+        <span className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Erstelle Quizzes aus Dokumenten und chatte mit einem KI-Lernassistenten.</span>
+      </div>
+    </a>
+  </div>
+
+  <hr className="border-0 border-t border-gray-200 dark:border-gray-800" />
+
+  {/* All features */}
+  <div className="flex flex-col gap-5">
+    <span className="text-xs font-semibold tracking-widest uppercase text-gray-400 dark:text-gray-500">Alle Funktionen</span>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+      <a href="/study-tools/quizzes" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="help-circle" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Quizzes</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Manuell und KI-generiert. Drei Schwierigkeitsmodi.</span>
+        </div>
+      </a>
+
+      <a href="/study-tools/flashcards" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="layers" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Karteikarten</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Stapel mit SM-2 Spaced Repetition.</span>
+        </div>
+      </a>
+
+      <a href="/study-tools/notes" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="file-text" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Notizen</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Vollbild-Markdown-Editor mit Anpinnen und Farblabels.</span>
+        </div>
+      </a>
+
+      <a href="/study-tools/focus-timer" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="clock" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Focus Timer</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Globaler Pomodoro, der dich über jede Seite begleitet.</span>
+        </div>
+      </a>
+
+      <a href="/study-tools/todos" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="checkbox" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Todos</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Prioritäten, Fälligkeitsdaten und Drag-and-Drop-Reihenfolge.</span>
+        </div>
+      </a>
+
+      <a href="/study-tools/exams" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="calendar" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Prüfungen</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Visueller Prüfungskalender mit Google-Kalender-Sync.</span>
+        </div>
+      </a>
+
+      <a href="/ai/clamly-ai" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="sparkles" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Clamly AI</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Erstelle Quizzes und Zusammenfassungen aus deinen Dokumenten.</span>
+        </div>
+      </a>
+
+      <a href="/ai/clamly-chat" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="message-circle" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Clamly Chat</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">KI-Lernassistent mit vier Gesprächsmodi.</span>
+        </div>
+      </a>
+
+      <a href="/collaboration/study-groups" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="users" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Lerngruppen</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Lade Klassenkamerad:innen ein, teile Quizzes und lernt gemeinsam.</span>
+        </div>
+      </a>
+
+      <a href="/collaboration/sharing" className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary bg-white/40 dark:bg-transparent">
+        <Icon icon="share" color="rgb(var(--primary))" size={16} className="mt-0.5 shrink-0" />
+        <div className="flex flex-col gap-0.5">
+          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Teilen</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">Teile Quizzes mit Gruppen und exportiere Notizen.</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <hr className="border-0 border-t border-gray-200 dark:border-gray-800" />
+
+  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div className="flex flex-col gap-1">
+      <span className="text-sm font-medium text-gray-900 dark:text-gray-50">Hilfe nötig?</span>
+      <span className="text-sm text-gray-500 dark:text-gray-400">
+        Schau in die <a href="/help/faq" className="text-primary hover:underline">FAQ</a> oder schreibe an <a href="mailto:support@clamly.app" className="text-primary hover:underline">support@clamly.app</a>.
+      </span>
+    </div>
+    <a
+      href="/help/status"
+      className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+    >
+      <Icon icon="activity" size={14} />
+      Systemstatus
+    </a>
+  </div>
+
+</div>

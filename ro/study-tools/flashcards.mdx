@@ -1,0 +1,94 @@
+---
+title: "Studiază mai inteligent cu pachete de flashcard-uri cu repetiție spațiată"
+sidebarTitle: "Flashcard-uri"
+description: "Creează pachete de flashcard-uri, studiază cu algoritmul de repetiție spațiată SM-2 și urmărește rata de retenție până când stăpânești complet materialul."
+---
+
+Flashcard-urile Clamly folosesc algoritmul de repetiție spațiată SM-2. Programează fiecare card individual pe baza performanței tale anterioare, ca să revii la cele care au nevoie de muncă și să le sari pe cele pe care le ai deja stăpânite.
+
+## Crearea unui pachet
+
+<Steps>
+  <Step title="Deschide Flashcard-uri">
+    Navighează la **Flashcard-uri** din bara laterală și apasă **New Deck**. Dă-i pachetului un nume și o descriere opțională.
+  </Step>
+  <Step title="Adaugă carduri">
+    Apasă **Add Card**. Completează **Față** (întrebarea sau prompt-ul) și **Spate** (răspunsul sau definiția). Repetă pentru fiecare card pe care vrei să-l incluzi.
+  </Step>
+  <Step title="Salvează pachetul">
+    Apasă **Save Deck** când ai terminat de adăugat carduri.
+  </Step>
+</Steps>
+
+<Tip>
+  Păstrează fiecare card focusat pe un singur fapt sau concept. Cardurile care încearcă să acopere prea multe sunt mai greu de evaluat onest, ceea ce încurcă programul de repetiție spațiată.
+</Tip>
+
+## Studierea unui pachet
+
+<Steps>
+  <Step title="Pornește o sesiune de revizuire">
+    Deschide un pachet și apasă **Study Now**. Clamly încarcă cardurile care sunt scadente pentru revizuire azi pe baza evaluărilor anterioare.
+  </Step>
+  <Step title="Revizuiește fiecare card">
+    Vei vedea mai întâi fața unui card. Gândește-te la răspuns, apoi apasă **Reveal** pentru a-l întoarce și a te verifica.
+  </Step>
+  <Step title="Evaluează cât de bine ai reținut">
+    După ce vezi răspunsul, evaluează cât de bine ți-l amintești, de la „Nu am știut" la „Recall perfect". Evaluarea ta spune algoritmului când să-ți arate cardul din nou.
+  </Step>
+  <Step title="Finalizează sesiunea">
+    Parcurge toate cardurile scadente. Clamly afișează un rezumat al sesiunii când termini.
+  </Step>
+</Steps>
+
+## Cum funcționează SM-2
+
+Clamly folosește algoritmul **SM-2 (SuperMemo 2)** pentru a programa fiecare card individual, pe baza istoricului tău personal de performanță.
+
+<CardGroup cols={2}>
+  <Card title="Cardurile pe care le știi bine" icon="trending-up">
+    Când evaluezi constant un card cu încredere mare, SM-2 extinde intervalul, de la zile la săptămâni, la luni. Nu pierzi timp cu lucruri pe care le știi deja.
+  </Card>
+  <Card title="Cardurile cu care te lupți" icon="rotate">
+    O evaluare cu încredere mică resetează sau scurtează intervalul, aducând cardul înapoi mai devreme. Materialul dificil primește mai multă repetiție până se fixează.
+  </Card>
+  <Card title="Factor de ușurință" icon="adjustments">
+    Fiecare card poartă un factor ascuns de ușurință care se ajustează în timp. Dificultatea repetată îl scade; succesul repetat îl crește, făcând programarea viitoare mai inteligentă.
+  </Card>
+  <Card title="Carduri scadente" icon="calendar-check">
+    Clamly îți arată exact câte carduri sunt scadente în fiecare pachet. Menținerea numărului de scadente este obiceiul-cheie pentru ca repetiția spațiată să funcționeze.
+  </Card>
+</CardGroup>
+
+<Note>
+  Trebuie să studiezi doar cardurile care sunt scadente. Revizuirea înainte de timp nu îmbunătățește retenția și poate confunda algoritmul. Ai încredere în program.
+</Note>
+
+## Urmărirea progresului
+
+<Accordion title="Carduri scadente">
+  Numărul de carduri programate pentru revizuire azi. Acesta este obiectivul tău zilnic de studiu. Menținerea acestui număr la zero în fiecare zi este cea mai sigură cale spre retenția pe termen lung.
+</Accordion>
+
+<Accordion title="Rata de retenție">
+  Procentul de revizuiri în care ai evaluat că ți-ai amintit corect. O rată sănătoasă de retenție este în jur de 85-90%. Dacă a ta este mai mică, ia în considerare simplificarea cardurilor sau împărțirea celor complexe în bucăți mai mici.
+</Accordion>
+
+<Accordion title="Carduri stăpânite">
+  Cardurile cu un interval lung de revizuire și un factor de ușurință mare sunt marcate ca **Mastered**. Un card stăpânit va apărea ocazional pentru a păstra memoria proaspătă, dar mult mai rar decât cardurile noi sau dificile.
+</Accordion>
+
+## Stăpânirea unui pachet
+
+Un pachet este considerat stăpânit când toate cardurile sale ating statusul Mastered. Clamly afișează un indicator vizual pe pachet când atingi această etapă. Chiar și după stăpânirea unui pachet, continuă să revizuiești ocazional. Algoritmul îți va aminti prin verificări cu frecvență joasă.
+
+## Ce urmează
+
+<CardGroup cols={2}>
+  <Card title="Quiz-uri" icon="help-circle" href="/study-tools/quizzes">
+    Testează-ți memoria cu întrebări de quiz manuale sau generate de AI.
+  </Card>
+  <Card title="Focus Timer" icon="clock" href="/study-tools/focus-timer">
+    Rulează o sesiune Pomodoro în timp ce parcurgi pachetele de flashcard-uri.
+  </Card>
+</CardGroup>
