@@ -1,0 +1,109 @@
+---
+title: "Suivez vos prochains examens avec un Google Calendar synchronisé"
+sidebarTitle: "Examens"
+description: "Ajoutez des examens à votre calendrier Clamly, voyez toutes les échéances à venir d'un coup d'œil et utilisez la synchronisation bidirectionnelle avec Google Calendar."
+---
+
+La page Examens est un calendrier pour vos prochains contrôles et évaluations. Ajoutez un examen une fois et il apparaît dans tout Clamly, avec une synchronisation Google Calendar optionnelle.
+
+## Ajouter un examen
+
+<Steps>
+  <Step title="Ouvrez la page Examens">
+    Cliquez sur **Examens** dans la barre latérale. La vue calendrier s'ouvre, affichant le mois en cours avec les examens existants marqués.
+  </Step>
+  <Step title="Créez un nouvel examen">
+    Cliquez sur le bouton **+ Ajouter un examen** ou cliquez directement sur une date dans le calendrier.
+  </Step>
+  <Step title="Remplissez les détails">
+    Saisissez les informations suivantes :
+    - **Nom de l'examen :** par exemple, « Partiel de chimie organique »
+    - **Matière :** vous aide à filtrer et à coder par couleur les examens par cours
+    - **Date et heure :** la date exacte et l'heure de début de l'examen
+  </Step>
+  <Step title="Enregistrez l'examen">
+    Cliquez sur **Enregistrer**. L'examen apparaît dans le calendrier et dans la liste des examens à venir. Si vous avez activé la synchronisation Google Calendar, il apparaîtra aussi automatiquement là-bas.
+  </Step>
+</Steps>
+
+## Voir les examens à venir
+
+<CardGroup cols={2}>
+  <Card title="Vue calendrier" icon="calendar">
+    Visualisez tous vos examens placés sur un calendrier mensuel. Repérez immédiatement les semaines chargées.
+  </Card>
+  <Card title="Vue liste" icon="checklist">
+    Voyez tous vos examens à venir triés chronologiquement. Chaque entrée affiche le nom de l'examen, la matière et le nombre de jours restants.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Ajoutez vos examens dès le début de chaque semestre, dès réception de votre syllabus. Voir le tableau complet tôt vous aide à planifier à rebours et à éviter le bachotage de dernière minute.
+</Tip>
+
+## Synchronisation Google Calendar
+
+Clamly prend en charge une **synchronisation bidirectionnelle** avec Google Calendar : les changements dans l'une ou l'autre application restent synchronisés automatiquement.
+
+### Ce que signifie la synchronisation bidirectionnelle
+
+<CardGroup cols={2}>
+  <Card title="De Clamly vers Google Calendar" icon="arrow-right">
+    Les examens que vous ajoutez dans Clamly apparaissent automatiquement dans votre Google Calendar. Vous les verrez aux côtés de vos autres événements sans export manuel.
+  </Card>
+  <Card title="De Google Calendar vers Clamly" icon="arrow-left">
+    Les événements de votre Google Calendar peuvent se synchroniser dans la page Examens de Clamly, afin que les événements académiques déjà saisis dans Google y soient également visibles.
+  </Card>
+</CardGroup>
+
+### Connecter Google Calendar
+
+La synchronisation Google Calendar se configure depuis la **page Examens**, et non depuis les paramètres du compte.
+
+<Steps>
+  <Step title="Ouvrez la page Examens">
+    Naviguez vers **Examens** dans la barre latérale si vous n'y êtes pas déjà.
+  </Step>
+  <Step title="Ouvrez les paramètres de synchronisation">
+    Cherchez le bouton **Connecter Google Calendar** ou l'icône des paramètres de synchronisation près du haut de la page.
+  </Step>
+  <Step title="Autorisez Clamly">
+    Vous serez redirigé vers l'écran d'autorisation OAuth de Google. Connectez-vous au compte Google que vous souhaitez synchroniser et accordez à Clamly les permissions de calendrier demandées.
+  </Step>
+  <Step title="Confirmez que la synchro est active">
+    Après autorisation, vous reviendrez à la page Examens avec une confirmation que Google Calendar est connecté. Vos examens commenceront à se synchroniser immédiatement.
+  </Step>
+</Steps>
+
+<Note>
+  Pour des instructions complètes étape par étape et le dépannage, consultez la page [Intégration Google Calendar](/account/google-calendar).
+</Note>
+
+### Déconnecter Google Calendar
+
+<Steps>
+  <Step title="Allez sur la page Examens">
+    Naviguez vers **Examens** dans la barre latérale.
+  </Step>
+  <Step title="Ouvrez les paramètres de synchronisation">
+    Cliquez sur l'icône des paramètres de synchronisation ou l'option **Gérer la synchro** près de l'indicateur d'état Google Calendar.
+  </Step>
+  <Step title="Déconnectez">
+    Cliquez sur **Déconnecter Google Calendar** et confirmez. Les examens existants dans Clamly ne sont pas supprimés, mais ils ne se synchroniseront plus avec Google Calendar.
+  </Step>
+</Steps>
+
+<Note>
+  La déconnexion ne supprime pas les événements de votre Google Calendar qui ont été précédemment synchronisés. Vous devrez les supprimer manuellement depuis Google Calendar si vous ne souhaitez plus les y voir.
+</Note>
+
+## Et après
+
+<CardGroup cols={2}>
+  <Card title="Google Calendar" icon="calendar-event" href="/account/google-calendar">
+    Configurez la synchronisation bidirectionnelle pour regrouper votre planning d'examens.
+  </Card>
+  <Card title="Tâches" icon="checkbox" href="/study-tools/todos">
+    Créez des tâches de révision menant à chaque examen.
+  </Card>
+</CardGroup>

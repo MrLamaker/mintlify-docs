@@ -1,0 +1,97 @@
+---
+title: "Configurează notificările push pentru memento-uri și examene"
+sidebarTitle: "Notificări"
+description: "Activează memento-uri de studiu, alerte de examen și actualizări de realizări, apoi gestionează sau dezactivează notificările push din Profil sau din setările browserului."
+---
+
+Clamly folosește notificări push pentru a-ți menține sesiunile de studiu pe drumul cel bun. Activează doar pe cele dorite. Toate notificările sunt opționale.
+
+## Tipuri de notificări
+
+<CardGroup cols={3}>
+  <Card title="Memento-uri de studiu" icon="clock">
+    Primești un imbold când vine momentul să începi o sesiune de studiu programată, ca să nu pierzi nicio sesiune.
+  </Card>
+  <Card title="Alerte de examen" icon="bell-ringing">
+    Primești alerte pe măsură ce examenele se apropie, având timp să revizuiești și să te pregătești.
+  </Card>
+  <Card title="Actualizări de realizări" icon="trophy">
+    Află în momentul în care deblochezi o realizare nouă sau atingi o etapă importantă de studiu.
+  </Card>
+</CardGroup>
+
+## Activarea notificărilor push
+
+Notificările push necesită acordarea unei permisiuni unice în browser.
+
+<Steps>
+  <Step title="Deschide pagina Profil">
+    Apasă pe avatarul sau inițialele tale din colțul din dreapta sus, apoi selectează **Profil** din meniul derulant.
+  </Step>
+  <Step title="Mergi la setările de notificări">
+    Derulează la secțiunea **Notificări** din pagina Profil.
+  </Step>
+  <Step title="Activează notificările">
+    Activează tipurile de notificări pe care vrei să le primești. Dacă browserul nu a acordat încă permisiunea, va apărea un prompt al browserului care te roagă să **Permiți** notificările de la Clamly.
+  </Step>
+  <Step title="Apasă Permite în browser">
+    În prompt-ul browserului, apasă **Allow**. Clamly va confirma că notificările sunt acum active.
+  </Step>
+</Steps>
+
+<Note>
+  Notificările push sunt livrate prin browserul tău. Funcționează cât timp Clamly este deschis într-o filă, iar în majoritatea browserelor moderne pot apărea și atunci când Clamly rulează în fundal.
+</Note>
+
+## Gestionarea notificărilor din profil
+
+<Steps>
+  <Step title="Mergi la Profil → Notificări">
+    Deschide secțiunea **Notificări** din pagina Profil.
+  </Step>
+  <Step title="Activează/dezactivează tipuri individuale">
+    Folosește comutatoarele individuale pentru a activa sau dezactiva **Memento-urile de studiu**, **Alertele de examen** și **Actualizările de realizări** independent.
+  </Step>
+  <Step title="Salvează">
+    Modificările se salvează automat pe măsură ce comuti fiecare setare.
+  </Step>
+</Steps>
+
+<Tip>
+  Dacă vrei doar alerte de examen în sesiunea de examene, dezactivează memento-urile de studiu și actualizările de realizări.
+</Tip>
+
+## Dezactivarea notificărilor din setările browserului
+
+Dacă vrei să oprești toate notificările Clamly la nivel de browser, poți revoca permisiunea direct din setările browserului.
+
+<Accordion title="Google Chrome">
+  Mergi la **Setări → Confidențialitate și securitate → Setări site → Notificări**. Găsește `clamly.app` în listă și setează-l pe **Block**.
+</Accordion>
+
+<Accordion title="Mozilla Firefox">
+  Mergi la **Setări → Confidențialitate și securitate → Permisiuni → Notificări → Setări**. Găsește `clamly.app` și schimbă statusul la **Block**.
+</Accordion>
+
+<Accordion title="Safari (macOS)">
+  Mergi la **Safari → Setări → Site-uri web → Notificări**. Găsește `clamly.app` și setează-l pe **Deny**.
+</Accordion>
+
+<Accordion title="Microsoft Edge">
+  Mergi la **Setări → Cookie-uri și permisiuni site → Notificări**. Găsește `clamly.app` în lista Permise și elimină-l sau adaugă-l în lista Blocate.
+</Accordion>
+
+<Warning>
+  Revocarea permisiunii la nivel de browser dezactivează toate notificările push Clamly, indiferent de setările tale din aplicație. Pentru a le reactiva mai târziu, va trebui să acorzi din nou permisiunea din pagina Profil.
+</Warning>
+
+## Ce urmează
+
+<CardGroup cols={2}>
+  <Card title="Profil" icon="user" href="/account/profile">
+    Gestionează toate preferințele contului dintr-un singur loc.
+  </Card>
+  <Card title="Examene" icon="calendar" href="/study-tools/exams">
+    Adaugă examene pentru ca Clamly să te alerteze pe măsură ce se apropie.
+  </Card>
+</CardGroup>

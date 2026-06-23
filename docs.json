@@ -41,78 +41,324 @@
         }
       ]
     },
-    "tabs": [
+    "languages": [
       {
-        "tab": "Get started",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "tabs": [
           {
-            "group": "Overview",
-            "pages": [
-              "introduction"
+            "tab": "Get started",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "introduction"
+                ]
+              },
+              {
+                "group": "Setup",
+                "pages": [
+                  "getting-started/create-account",
+                  "getting-started/plans"
+                ]
+              }
             ]
           },
           {
-            "group": "Setup",
-            "pages": [
-              "getting-started/create-account",
-              "getting-started/plans"
+            "tab": "Features",
+            "groups": [
+              {
+                "group": "Study tools",
+                "pages": [
+                  "study-tools/quizzes",
+                  "study-tools/flashcards",
+                  "study-tools/notes",
+                  "study-tools/focus-timer",
+                  "study-tools/todos",
+                  "study-tools/exams"
+                ]
+              },
+              {
+                "group": "AI",
+                "pages": [
+                  "ai/clamly-ai",
+                  "ai/clamly-chat"
+                ]
+              },
+              {
+                "group": "Collaboration",
+                "pages": [
+                  "collaboration/study-groups",
+                  "collaboration/sharing"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Account",
+            "groups": [
+              {
+                "group": "Settings",
+                "pages": [
+                  "account/profile",
+                  "account/billing",
+                  "account/notifications",
+                  "account/google-calendar",
+                  "account/data-export"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Help",
+            "groups": [
+              {
+                "group": "Help",
+                "pages": [
+                  "help/faq",
+                  "help/status"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Features",
-        "groups": [
+        "language": "ro",
+        "tabs": [
           {
-            "group": "Study tools",
-            "pages": [
-              "study-tools/quizzes",
-              "study-tools/flashcards",
-              "study-tools/notes",
-              "study-tools/focus-timer",
-              "study-tools/todos",
-              "study-tools/exams"
+            "tab": "Începe aici",
+            "groups": [
+              {
+                "group": "Prezentare generală",
+                "pages": [
+                  "ro/introduction"
+                ]
+              },
+              {
+                "group": "Configurare",
+                "pages": [
+                  "ro/getting-started/create-account",
+                  "ro/getting-started/plans"
+                ]
+              }
             ]
           },
           {
-            "group": "AI",
-            "pages": [
-              "ai/clamly-ai",
-              "ai/clamly-chat"
+            "tab": "Funcționalități",
+            "groups": [
+              {
+                "group": "Instrumente de studiu",
+                "pages": [
+                  "ro/study-tools/quizzes",
+                  "ro/study-tools/flashcards",
+                  "ro/study-tools/notes",
+                  "ro/study-tools/focus-timer",
+                  "ro/study-tools/todos",
+                  "ro/study-tools/exams"
+                ]
+              },
+              {
+                "group": "AI",
+                "pages": [
+                  "ro/ai/clamly-ai",
+                  "ro/ai/clamly-chat"
+                ]
+              },
+              {
+                "group": "Colaborare",
+                "pages": [
+                  "ro/collaboration/study-groups",
+                  "ro/collaboration/sharing"
+                ]
+              }
             ]
           },
           {
-            "group": "Collaboration",
-            "pages": [
-              "collaboration/study-groups",
-              "collaboration/sharing"
+            "tab": "Cont",
+            "groups": [
+              {
+                "group": "Setări",
+                "pages": [
+                  "ro/account/profile",
+                  "ro/account/billing",
+                  "ro/account/notifications",
+                  "ro/account/google-calendar",
+                  "ro/account/data-export"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Ajutor",
+            "groups": [
+              {
+                "group": "Ajutor",
+                "pages": [
+                  "ro/help/faq",
+                  "ro/help/status"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Account",
-        "groups": [
+        "language": "de",
+        "tabs": [
           {
-            "group": "Settings",
-            "pages": [
-              "account/profile",
-              "account/billing",
-              "account/notifications",
-              "account/google-calendar",
-              "account/data-export"
+            "tab": "Erste Schritte",
+            "groups": [
+              {
+                "group": "Übersicht",
+                "pages": [
+                  "de/introduction"
+                ]
+              },
+              {
+                "group": "Einrichtung",
+                "pages": [
+                  "de/getting-started/create-account",
+                  "de/getting-started/plans"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Funktionen",
+            "groups": [
+              {
+                "group": "Lern-Tools",
+                "pages": [
+                  "de/study-tools/quizzes",
+                  "de/study-tools/flashcards",
+                  "de/study-tools/notes",
+                  "de/study-tools/focus-timer",
+                  "de/study-tools/todos",
+                  "de/study-tools/exams"
+                ]
+              },
+              {
+                "group": "KI",
+                "pages": [
+                  "de/ai/clamly-ai",
+                  "de/ai/clamly-chat"
+                ]
+              },
+              {
+                "group": "Zusammenarbeit",
+                "pages": [
+                  "de/collaboration/study-groups",
+                  "de/collaboration/sharing"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Konto",
+            "groups": [
+              {
+                "group": "Einstellungen",
+                "pages": [
+                  "de/account/profile",
+                  "de/account/billing",
+                  "de/account/notifications",
+                  "de/account/google-calendar",
+                  "de/account/data-export"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Hilfe",
+            "groups": [
+              {
+                "group": "Hilfe",
+                "pages": [
+                  "de/help/faq",
+                  "de/help/status"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Help",
-        "groups": [
+        "language": "fr",
+        "tabs": [
           {
-            "group": "Help",
-            "pages": [
-              "help/faq",
-              "help/status"
+            "tab": "Commencer",
+            "groups": [
+              {
+                "group": "Aperçu",
+                "pages": [
+                  "fr/introduction"
+                ]
+              },
+              {
+                "group": "Configuration",
+                "pages": [
+                  "fr/getting-started/create-account",
+                  "fr/getting-started/plans"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Fonctionnalités",
+            "groups": [
+              {
+                "group": "Outils d'étude",
+                "pages": [
+                  "fr/study-tools/quizzes",
+                  "fr/study-tools/flashcards",
+                  "fr/study-tools/notes",
+                  "fr/study-tools/focus-timer",
+                  "fr/study-tools/todos",
+                  "fr/study-tools/exams"
+                ]
+              },
+              {
+                "group": "IA",
+                "pages": [
+                  "fr/ai/clamly-ai",
+                  "fr/ai/clamly-chat"
+                ]
+              },
+              {
+                "group": "Collaboration",
+                "pages": [
+                  "fr/collaboration/study-groups",
+                  "fr/collaboration/sharing"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Compte",
+            "groups": [
+              {
+                "group": "Paramètres",
+                "pages": [
+                  "fr/account/profile",
+                  "fr/account/billing",
+                  "fr/account/notifications",
+                  "fr/account/google-calendar",
+                  "fr/account/data-export"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Aide",
+            "groups": [
+              {
+                "group": "Aide",
+                "pages": [
+                  "fr/help/faq",
+                  "fr/help/status"
+                ]
+              }
             ]
           }
         ]

@@ -1,0 +1,98 @@
+---
+title: "Clamly-Prüfungen mit Google-Kalender-Integration synchronisieren"
+sidebarTitle: "Google Kalender"
+description: "Verbinde Google Kalender mit Clamly für eine bidirektionale Prüfungssynchronisation, damit deine Prüfungen im Google Kalender erscheinen und beim Bearbeiten automatisch aktuell bleiben."
+---
+
+Mit der Google-Kalender-Integration siehst du alle deine Clamly-Prüfungseinträge neben deinem restlichen Terminplan. Sobald die Verbindung steht, wird jede Prüfung, die du in Clamly hinzufügst, bearbeitest oder entfernst, automatisch in deinem Google Kalender abgebildet.
+
+## Warum Google Kalender verbinden?
+
+<CardGroup cols={2}>
+  <Card title="Bidirektionale Synchronisation" icon="arrows-exchange">
+    Prüfungen, die du in Clamly erstellst, erscheinen automatisch im Google Kalender, sodass dein Terminplan an einem Ort bleibt.
+  </Card>
+  <Card title="Immer aktuell" icon="calendar-check">
+    Bearbeite eine Prüfung in Clamly und sie wird automatisch im Google Kalender aktualisiert.
+  </Card>
+  <Card title="Optionale Integration" icon="toggle-right">
+    Die Google-Kalender-Synchronisation ist komplett optional. Clamly funktioniert auch ohne sie vollständig.
+  </Card>
+  <Card title="Datenschutz zuerst" icon="lock">
+    Clamly greift nur auf Kalenderereignisse zu, auf nichts anderes.
+  </Card>
+</CardGroup>
+
+## So verbindest du Google Kalender
+
+<Steps>
+  <Step title="Zur Prüfungsseite gehen">
+    Öffne den Bereich **Prüfungen** über die Hauptnavigation in der Seitenleiste.
+  </Step>
+  <Step title="Auf 'Google Kalender verbinden' klicken">
+    Suche das **Google Kalender**-Banner oder die Schaltfläche oben auf der Prüfungsseite und klicke auf **Verbinden**.
+  </Step>
+  <Step title="Zugriff autorisieren">
+    Es öffnet sich ein Google-Anmeldefenster. Wähle das Google-Konto aus, dessen Kalender du synchronisieren möchtest, und akzeptiere die von Clamly angeforderten Berechtigungen.
+  </Step>
+  <Step title="Synchronisation abgeschlossen">
+    Nach der Autorisierung erscheinen deine bestehenden Clamly-Prüfungen innerhalb weniger Sekunden im Google Kalender. Neue Prüfungen werden ab sofort automatisch synchronisiert.
+  </Step>
+</Steps>
+
+<Note>
+  Für diese Integration benötigst du ein aktives Google-Konto. Wenn du mehrere Google-Konten nutzt, achte darauf, im Autorisierungsschritt das richtige auszuwählen.
+</Note>
+
+## Welchen Zugriff fordert Clamly an?
+
+Während der Autorisierung fordert Clamly **Lese- und Schreibzugriff auf deine Google-Kalenderereignisse** an. Dieser Zugriff wird ausschließlich verwendet, um:
+
+- **Kalenderereignisse zu erstellen** für Prüfungen, die du in Clamly hinzufügst
+- **Diese Ereignisse zu aktualisieren**, wenn du Prüfungsdatum, Titel oder Fach bearbeitest
+- **Diese Ereignisse zu löschen**, wenn du eine Prüfung aus Clamly entfernst
+
+<Warning>
+  Clamly greift nicht auf Google Drive, Gmail, Kontakte oder andere Google-Dienste zu. Es werden ausschließlich Kalenderdaten gelesen oder geschrieben.
+</Warning>
+
+## Was wird zwischen den beiden Plattformen synchronisiert?
+
+<Accordion title="Clamly zu Google Kalender">
+  Jeder Prüfungseintrag, den du in Clamly erstellst (einschließlich Fachname, Datum und Notizen), wird als Kalenderereignis in deinen verbundenen Google Kalender übertragen. Aktualisierungen und Löschungen in Clamly werden automatisch im Google Kalender gespiegelt.
+</Accordion>
+
+<Accordion title="Google Kalender zu Clamly">
+  Änderungen, die direkt an einem von Clamly erstellten Ereignis im Google Kalender vorgenommen werden (etwa Datumsänderungen), werden zurück in deinen Clamly-Prüfungsplan übernommen, damit beide Seiten synchron bleiben.
+</Accordion>
+
+## So trennst du Google Kalender
+
+<Steps>
+  <Step title="Zur Prüfungsseite gehen">
+    Öffne den Bereich **Prüfungen** über die Hauptnavigation in der Seitenleiste.
+  </Step>
+  <Step title="Auf 'Trennen' klicken">
+    Suche den Verbindungsstatus von Google Kalender und klicke auf **Trennen**.
+  </Step>
+  <Step title="Bestätigen">
+    Bestätige die Trennung im Dialog. Clamly widerruft sofort sein Zugriffstoken und löscht alle gespeicherten Autorisierungsdaten.
+  </Step>
+</Steps>
+
+<Tip>
+  Das Trennen entzieht Clamly den Zugriff, löscht jedoch nicht die bereits im Google Kalender erstellten Kalenderereignisse. Diese kannst du bei Bedarf manuell aus dem Google Kalender entfernen.
+</Tip>
+
+Nach dem Trennen bleiben deine Prüfungen wie gewohnt in Clamly. Sie werden lediglich nicht mehr mit dem Google Kalender synchronisiert, bis du die Verbindung erneut herstellst.
+
+## Wie geht's weiter
+
+<CardGroup cols={2}>
+  <Card title="Prüfungen" icon="calendar" href="/study-tools/exams">
+    Füge deine anstehenden Prüfungen in Clamly hinzu und verwalte sie.
+  </Card>
+  <Card title="Benachrichtigungen" icon="bell" href="/account/notifications">
+    Richte Erinnerungen ein, um anstehende Prüfungen im Blick zu behalten.
+  </Card>
+</CardGroup>
