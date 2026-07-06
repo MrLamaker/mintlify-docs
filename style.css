@@ -54,6 +54,20 @@ h1 {
   letter-spacing: -0.032em;
 }
 
+/* ---- Surface cohesion ---------------------------------------------
+   clamly.app has no pure-white surfaces: the page is cream and cards
+   are a slightly lighter cream. Mintlify otherwise paints a white
+   content panel that clashes with the cream page, so let the warm
+   background show through the content wrappers instead. */
+
+main,
+article,
+.prose,
+#content-area,
+#page-context {
+  background-color: transparent;
+}
+
 /* ---- Accessibility: visible focus everywhere ----------------------- */
 
 a:focus-visible,
@@ -101,10 +115,12 @@ img.nav-logo {
   height: auto;
 }
 
-/* ---- Cards (CardGroup + anchor cards) ------------------------------ */
+/* ---- Cards (CardGroup + anchor cards) ------------------------------
+   Scoped to article content so header/sidebar chrome (search bar, AI
+   button, theme toggle) is never affected. */
 
-a[class*="card"],
-div[class*="card"] {
+article a[class*="card"],
+article div[class*="card"] {
   border-radius: 0.9rem !important;
   border-color: var(--cl-border) !important;
   transition:
@@ -113,14 +129,14 @@ div[class*="card"] {
     transform 0.2s var(--cl-ease);
 }
 
-a[class*="card"]:hover {
+article a[class*="card"]:hover {
   border-color: var(--cl-coral) !important;
   box-shadow: 0 8px 28px -14px rgba(var(--cl-coral-rgb), 0.45);
   transform: translateY(-2px);
 }
 
-a[class*="card"] svg,
-div[class*="card"] svg {
+article a[class*="card"] svg,
+article div[class*="card"] svg {
   color: var(--cl-coral);
 }
 
@@ -213,15 +229,19 @@ article :not(pre) > code {
   border-bottom-color: var(--cl-coral) !important;
 }
 
-/* ---- Content links ------------------------------------------------- */
+/* ---- Content links -------------------------------------------------
+   Restricted to real prose text (paragraphs, lists, tables, quotes) so
+   it never recolors buttons or card links. This was the landing-page
+   button glitch: the old `main a` rule turned button text coral and
+   added an underline on hover. */
 
-main a:not([class*="card"]):not([class*="button"]) {
+.prose :where(p, li, td, th, blockquote) a {
   text-decoration-color: rgba(var(--cl-coral-rgb), 0.45);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.15s var(--cl-ease);
 }
 
-main a:not([class*="card"]):not([class*="button"]):hover {
+.prose :where(p, li, td, th, blockquote) a:hover {
   color: var(--cl-coral);
   text-decoration-color: var(--cl-coral);
 }
