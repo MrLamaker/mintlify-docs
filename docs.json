@@ -4,16 +4,34 @@
   "name": "Clamly",
   "description": "Documentation for Clamly, the all-in-one study platform with AI quizzes, flashcards, notes, and more.",
   "colors": {
-    "primary": "#f46d55",
-    "light": "#fcb4a4",
-    "dark": "#f46d55"
+    "primary": "#d45a3a",
+    "light": "#e88a6f",
+    "dark": "#b84a2e"
+  },
+  "fonts": {
+    "family": "Bricolage Grotesque",
+    "heading": {
+      "family": "Bricolage Grotesque",
+      "weight": 600
+    },
+    "body": {
+      "family": "Bricolage Grotesque",
+      "weight": 400
+    }
+  },
+  "background": {
+    "color": {
+      "light": "#f2f0e3",
+      "dark": "#191919"
+    }
   },
   "favicon": "https://media.brand.dev/4c982d40-85e6-401d-84e8-0af20000860e.png",
   "icons": {
     "library": "tabler"
   },
   "styling": {
-    "eyebrows": "breadcrumbs"
+    "eyebrows": "breadcrumbs",
+    "codeblocks": "system"
   },
   "contextual": {
     "options": ["copy", "view", "assistant"]

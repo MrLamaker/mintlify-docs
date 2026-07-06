@@ -1,247 +1,173 @@
-<<<<<<< editor
-/* ------------------------------------------------------------------
-   Clamly help center — visual polish to align with clamly.app
-   Warm coral accents, soft borders, rounded surfaces, refined type.
-   ------------------------------------------------------------------ */
+/* =====================================================================
+   Clamly help center — warm "almond" theme
+   Design tokens copied from clamly.app for cross-product consistency.
+   Page background + Bricolage Grotesque fonts are set in docs.json;
+   this file handles component polish and accessibility.
+   ===================================================================== */
 
-=======
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap');
-
-/* ── Color tokens ─────────────────────────────────────── */
->>>>>>> git
 :root {
-<<<<<<< editor
-  --clamly-coral: #f46d55;
-  --clamly-coral-soft: #fcb4a4;
-  --clamly-bg-warm: #fff8f5;
-  --clamly-surface: #ffffff;
-  --clamly-border: #f1e3dc;
-  --clamly-text-muted: #6b574f;
-  --default-border-color: var(--clamly-border);
-  --radius-card: 14px;
-=======
-  --default-border-color: rgba(42, 33, 18, 0.1);
-  --warm-bg: #F1F0E3;
-  --warm-card: #f2ede4;
-  --warm-text: #231c12;
->>>>>>> git
+  /* Brand */
+  --cl-coral: #d45a3a;
+  --cl-coral-rgb: 212, 90, 58;
+  --cl-coral-hover: #b84a2e;
+  --cl-sage: #81b29a;
+
+  /* Light surface */
+  --cl-card: #f9f7ee;
+  --cl-border: #d6d3c0;
+  --cl-text: #41413f;
+  --cl-muted: #6e6b5c;
+
+  /* Motion */
+  --cl-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --default-border-color: var(--cl-border);
 }
 
 .dark {
-<<<<<<< editor
-  --clamly-bg-warm: #14110f;
-  --clamly-surface: #1c1815;
-  --clamly-border: #2a2320;
-  --clamly-text-muted: #b8a79d;
-  --default-border-color: var(--clamly-border);
-=======
-  --default-border-color: rgba(240, 236, 228, 0.08);
-  --warm-bg: #202020;
-  --warm-card: #241e16;
-  --warm-text: #f0ece4;
->>>>>>> git
+  --cl-card: #242424;
+  --cl-border: #3a3a38;
+  --cl-text: #e2e0d8;
+  --cl-muted: #b5b3a5;
+
+  --default-border-color: var(--cl-border);
 }
 
-<<<<<<< editor
-/* Base typography — slightly tighter, friendlier */
+/* ---- Typography ---------------------------------------------------- */
+
 body {
-  font-feature-settings: "ss01", "cv11";
-  letter-spacing: -0.005em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.003em;
 }
 
-/* Headings: a touch tighter, in line with clamly.app */
-h1, h2, h3, h4 {
-  letter-spacing: -0.025em;
-  font-weight: 600;
-}
-
-h1 { letter-spacing: -0.032em; }
-
-/* ---------- Sidebar ---------- */
-=======
-/* ── Page background ──────────────────────────────────── */
-html,
-body {
-  background-color: var(--warm-bg);
-}
-
-/* ── Serif headings ───────────────────────────────────── */
 h1,
 h2,
 h3,
-h4,
-h5 {
-  font-family: 'Lora', Georgia, 'Times New Roman', serif;
-}
-
-article h2 {
+h4 {
+  letter-spacing: -0.022em;
   font-weight: 600;
-  letter-spacing: -0.02em;
 }
 
-article h3 {
-  font-weight: 500;
-  letter-spacing: -0.015em;
+h1 {
+  letter-spacing: -0.032em;
 }
 
-/* ── Sidebar section labels ───────────────────────────── */
->>>>>>> git
+/* ---- Accessibility: visible focus everywhere ----------------------- */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+[role="tab"]:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--cl-coral);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- Sidebar ------------------------------------------------------- */
+
 #sidebar .nav-anchor span {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-<<<<<<< editor
-  font-size: 11.5px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-=======
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.05em;
->>>>>>> git
   text-transform: uppercase;
-  color: var(--clamly-text-muted);
+  color: var(--cl-muted);
 }
 
 #sidebar a {
   border-radius: 8px;
 }
 
-/* Active sidebar item: soft coral pill */
 #sidebar a[aria-current="page"],
 #sidebar a.active {
-  background: rgba(244, 109, 85, 0.10);
-  color: var(--clamly-coral);
+  background: rgba(var(--cl-coral-rgb), 0.1);
+  color: var(--cl-coral);
 }
 
 .dark #sidebar a[aria-current="page"],
 .dark #sidebar a.active {
-  background: rgba(244, 109, 85, 0.14);
+  background: rgba(var(--cl-coral-rgb), 0.16);
 }
 
-/* Logo */
 img.nav-logo {
   max-width: 200px;
   height: auto;
 }
 
-<<<<<<< editor
-/* ---------- Cards (CardGroup) ---------- */
-a[class*="card"], div[class*="card"] {
-  border-radius: var(--radius-card) !important;
-  border-color: var(--clamly-border) !important;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+/* ---- Cards (CardGroup + anchor cards) ------------------------------ */
+
+a[class*="card"],
+div[class*="card"] {
+  border-radius: 0.9rem !important;
+  border-color: var(--cl-border) !important;
+  transition:
+    border-color 0.2s var(--cl-ease),
+    box-shadow 0.2s var(--cl-ease),
+    transform 0.2s var(--cl-ease);
 }
 
 a[class*="card"]:hover {
-  border-color: var(--clamly-coral-soft) !important;
-  box-shadow: 0 6px 24px -12px rgba(244, 109, 85, 0.35);
-  transform: translateY(-1px);
+  border-color: var(--cl-coral) !important;
+  box-shadow: 0 8px 28px -14px rgba(var(--cl-coral-rgb), 0.45);
+  transform: translateY(-2px);
 }
 
-.dark a[class*="card"]:hover {
-  box-shadow: 0 6px 24px -10px rgba(244, 109, 85, 0.4);
-}
-
-/* Card icons in coral */
 a[class*="card"] svg,
 div[class*="card"] svg {
-  color: var(--clamly-coral);
+  color: var(--cl-coral);
 }
 
-/* ---------- Steps ---------- */
+/* ---- Steps --------------------------------------------------------- */
+
 ol[class*="steps"] li::before,
 [class*="step-number"] {
-  background: linear-gradient(135deg, var(--clamly-coral), #ff8a73) !important;
+  background: linear-gradient(135deg, var(--cl-coral), #e8836a) !important;
   color: #fff !important;
   border: none !important;
-  box-shadow: 0 2px 8px -2px rgba(244, 109, 85, 0.5);
+  box-shadow: 0 2px 8px -2px rgba(var(--cl-coral-rgb), 0.5);
 }
 
-/* ---------- Callouts (Note, Tip, Warning, Info) ---------- */
-[class*="callout"],
-blockquote {
-  border-radius: 12px !important;
+/* ---- Callouts & blockquotes ---------------------------------------- */
+
+[class*="callout"] {
+  border-radius: 0.75rem !important;
   border-left-width: 3px !important;
 }
 
-/* ---------- Accordions ---------- */
+blockquote {
+  border-left-color: var(--cl-sage);
+}
+
+/* ---- Accordions ---------------------------------------------------- */
+
 [class*="accordion"] {
-  border-radius: 12px !important;
-  border-color: var(--clamly-border) !important;
+  border-radius: 0.75rem !important;
+  border-color: var(--cl-border) !important;
 }
 
 [class*="accordion"] button {
   font-weight: 500;
 }
 
-/* ---------- Tables ---------- */
-table {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid var(--clamly-border);
-}
+/* ---- Tables -------------------------------------------------------- */
 
-thead {
-  background: var(--clamly-bg-warm);
-}
-
-/* ---------- Code blocks ---------- */
-pre, code {
-  border-radius: 10px !important;
-}
-
-:not(pre) > code {
-  background: rgba(244, 109, 85, 0.08);
-  color: var(--clamly-coral);
-  padding: 2px 6px;
-  font-size: 0.9em;
-}
-
-.dark :not(pre) > code {
-  background: rgba(244, 109, 85, 0.14);
-}
-
-/* ---------- Tabs ---------- */
-[role="tab"][aria-selected="true"] {
-  color: var(--clamly-coral) !important;
-  border-bottom-color: var(--clamly-coral) !important;
-}
-
-/* ---------- Links inside content ---------- */
-main a:not([class*="card"]):not([class*="button"]) {
-  text-decoration-color: var(--clamly-coral-soft);
-  text-underline-offset: 3px;
-}
-
-main a:not([class*="card"]):not([class*="button"]):hover {
-  color: var(--clamly-coral);
-  text-decoration-color: var(--clamly-coral);
-}
-
-/* ---------- Navbar primary button (Open Clamly) ---------- */
-header a[class*="primary"],
-header button[class*="primary"] {
-  border-radius: 10px !important;
-  font-weight: 500;
-  box-shadow: 0 4px 14px -4px rgba(244, 109, 85, 0.45);
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
-}
-
-header a[class*="primary"]:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px -4px rgba(244, 109, 85, 0.55);
-}
-
-/* ---------- Selection ---------- */
-::selection {
-  background: rgba(244, 109, 85, 0.25);
-  color: inherit;
-}
-
-=======
-/* ── Tables ───────────────────────────────────────────── */
 article table {
+  border-radius: 0.7rem;
+  overflow: hidden;
+  border: 1px solid var(--cl-border);
   font-size: 0.875rem;
   width: 100%;
+}
+
+article thead {
+  background: rgba(var(--cl-coral-rgb), 0.06);
 }
 
 article th {
@@ -256,17 +182,120 @@ article th {
   padding: 0.625rem 0.875rem;
 }
 
-/* ── Inline code ──────────────────────────────────────── */
-article code:not(pre code) {
+/* ---- Code: warm, rounded ------------------------------------------- */
+
+pre {
+  border-radius: 0.9rem !important;
+  border: 1px solid var(--cl-border);
+}
+
+.prose :not(pre) > code,
+article :not(pre) > code {
+  border-radius: 0.4rem;
+  border: 1px solid var(--cl-border);
+  background: rgba(var(--cl-coral-rgb), 0.08);
+  color: var(--cl-coral-hover);
+  padding: 2px 6px;
   font-size: 0.8125em;
   font-weight: 500;
 }
 
-/* ── Card hover ───────────────────────────────────────── */
-a[class*="rounded-xl"],
-a[class*="rounded-2xl"],
-a[class*="rounded-lg"] {
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+.dark .prose :not(pre) > code,
+.dark article :not(pre) > code {
+  background: rgba(var(--cl-coral-rgb), 0.16);
+  color: #e89a82;
 }
 
->>>>>>> git
+/* ---- Tabs ---------------------------------------------------------- */
+
+[role="tab"][aria-selected="true"] {
+  color: var(--cl-coral) !important;
+  border-bottom-color: var(--cl-coral) !important;
+}
+
+/* ---- Content links ------------------------------------------------- */
+
+main a:not([class*="card"]):not([class*="button"]) {
+  text-decoration-color: rgba(var(--cl-coral-rgb), 0.45);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s var(--cl-ease);
+}
+
+main a:not([class*="card"]):not([class*="button"]):hover {
+  color: var(--cl-coral);
+  text-decoration-color: var(--cl-coral);
+}
+
+/* ---- Navbar primary button (Open Clamly) --------------------------- */
+
+header a[class*="primary"],
+header button[class*="primary"] {
+  border-radius: 0.6rem !important;
+  font-weight: 500;
+  box-shadow: 0 4px 14px -4px rgba(var(--cl-coral-rgb), 0.45);
+  transition:
+    transform 0.15s var(--cl-ease),
+    box-shadow 0.2s var(--cl-ease);
+}
+
+header a[class*="primary"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -4px rgba(var(--cl-coral-rgb), 0.55);
+}
+
+/* ---- Selection ----------------------------------------------------- */
+
+::selection {
+  background: rgba(var(--cl-coral-rgb), 0.24);
+  color: inherit;
+}
+
+/* ---- Warm scrollbar ------------------------------------------------ */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cl-border) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--cl-border);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cl-muted);
+}
+
+/* ---- Respect reduced motion ---------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Reusable helper for the landing page -------------------------- */
+
+.cl-lift {
+  transition:
+    border-color 0.2s var(--cl-ease),
+    box-shadow 0.2s var(--cl-ease),
+    transform 0.2s var(--cl-ease);
+}
+
+.cl-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px -16px rgba(var(--cl-coral-rgb), 0.5);
+}
