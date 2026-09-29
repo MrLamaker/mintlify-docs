@@ -1,0 +1,66 @@
+---
+title: "AI usage and limits"
+description: "Every AI feature uses usage units from two allowances: one per session, one per week. Here is how both work."
+keywords: ["ai usage", "limit", "units", "cooldown", "session limit", "weekly limit", "quota", "reset"]
+---
+
+Everything Clamly AI does uses **usage units**. You spend them from two allowances at the same time, and you can keep using AI while you have room in both.
+
+## Your allowances
+
+| Plan | Per session | Per week |
+| --- | --- | --- |
+| **Free** | 28 units | 50 units |
+| **Starter** | 50 units | 200 units |
+| **Pro** | 120 units | 400 units |
+
+**The session allowance** starts with your first AI request and refills **5 hours** later, whether or not you used all of it.
+
+**The weekly allowance** starts with your first AI request of the week and resets **7 days** later.
+
+<Note>
+  A session is not the same as being signed in. Closing Clamly or signing out does not end it or refill it. Only the 5 hours do.
+</Note>
+
+## What each feature uses
+
+| Feature | Units |
+| --- | --- |
+| Chat message | 1 to 3, by length, plus extras for attachments and quizzes. See [Clamly Chat](/ai/chat#what-it-costs). |
+| AI writing help in a note | 1 |
+| AI hint during a quiz | 1 |
+| Highlight a document | 2 |
+| AI review of a finished quiz | 3 |
+| Study Planner, one week | 3 |
+| Flashcard deck from a document or note | 4 |
+| Quiz from a document | 5 |
+| Study Pack | 1 to plan, then 4 per quiz, 3 for the deck and 2 for notes |
+
+So on Free, one session covers about five generated quizzes, or a long evening of chat messages.
+
+If a request fails partway, the units it reserved are given back automatically.
+
+## See how much you have left
+
+- **Starter and Pro:** the lightning meter in the header shows how much of your session allowance you have used, and says **Cooldown** while it refills. The **Billing** page shows both allowances, with a countdown to the next refill.
+- **Free:** there is no meter. Clamly tells you when you reach a limit.
+
+## When you reach a limit
+
+You will see one of these messages. None of them affects anything that is not AI: quizzes, flashcards, notes and everything else keep working.
+
+<AccordionGroup>
+  <Accordion title="“You've reached your current session limit”">
+    Your session allowance is used up. It refills 5 hours after the session started. Upgrading gives you a larger session allowance straight away.
+  </Accordion>
+  <Accordion title="“You've used a lot of AI recently”">
+    You hit the session limit and the session is cooling down. Wait until the 5 hours are up, or upgrade.
+  </Accordion>
+  <Accordion title="“You've reached your weekly limit”">
+    Your weekly allowance is used up. It resets 7 days after your first AI request of the week. Session refills do not add to it.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Need more? Starter has 4 times the weekly allowance of Free, and Pro has 8 times. See [Plans and billing](/account/plans-and-billing).
+</Tip>

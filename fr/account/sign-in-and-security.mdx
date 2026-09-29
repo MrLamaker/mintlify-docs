@@ -1,0 +1,85 @@
+---
+title: "Connexion et sécurité"
+description: "Réinitialise ou change ton mot de passe, connecte-toi avec Google et protège ton compte avec la double authentification."
+keywords: ["mot de passe", "mot de passe oublié", "réinitialiser", "changer de mot de passe", "connexion google", "double authentification", "2fa", "authentificateur", "codes de récupération", "bloqué", "appareil de confiance"]
+---
+
+Tu peux te connecter à Clamly avec un e-mail et un mot de passe, avec Google, ou les deux. Tes options de sécurité se trouvent dans **Settings**, sous **Security**.
+
+## Réinitialiser un mot de passe oublié
+
+1. Sur la [page de connexion](https://clamly.app/login), choisis **Forgot password?**
+2. Saisis ton adresse e-mail. Clamly t'envoie un lien de réinitialisation.
+3. Ouvre le lien dans l'**heure** et choisis un nouveau mot de passe d'au moins 8 caractères.
+
+Si le lien a expiré, demandes-en un nouveau. Les mêmes étapes ajoutent aussi un mot de passe à un compte créé avec Google.
+
+## Changer de mot de passe
+
+Dans **Settings**, choisis **Change password**. Saisis ton mot de passe actuel, puis le nouveau deux fois. Il doit faire au moins 8 caractères et ne peut pas être identique à l'ancien.
+
+Changer de mot de passe **te déconnecte de tous tes autres appareils**. L'appareil que tu utilises reste connecté.
+
+<Note>
+  Si tu t'es toujours connecté uniquement avec Google, l'option **Change password** n'existe pas, car il n'y a pas de mot de passe à changer. Suis les étapes du mot de passe oublié ci-dessus pour en définir un.
+</Note>
+
+## Se connecter avec Google
+
+Choisis **Continue with Google** sur la page de connexion ou d'inscription. Google gère ton mot de passe et sa propre validation en deux étapes. La double authentification de Clamly ne s'applique qu'à la connexion par e-mail et mot de passe.
+
+## Activer la double authentification
+
+La double authentification (2FA) ajoute une deuxième étape quand tu te connectes avec ton mot de passe, pour que quelqu'un qui découvre ton mot de passe ne puisse quand même pas entrer. Elle est facultative, et recommandée.
+
+<Steps>
+  <Step title="Commencer">
+    Dans **Settings**, trouve la double authentification et choisis **Turn on**. Confirme ton mot de passe. Rien ne change sur ton compte tant que tu n'as pas terminé l'étape suivante.
+  </Step>
+  <Step title="Scanner le code">
+    Scanne le QR code avec une appli d'authentification comme Google Authenticator, 1Password ou Authy. Si tu ne peux pas scanner, saisis à la main la clé affichée en dessous.
+  </Step>
+  <Step title="Saisir le code">
+    Tape le code à 6 chiffres de l'appli et choisis **Verify and turn on**.
+  </Step>
+  <Step title="Garder tes codes de récupération">
+    Clamly t'affiche une série de codes de récupération **une seule fois**. Copie-les dans un endroit sûr, comme un gestionnaire de mots de passe. Chacun te permet d'entrer une seule fois si tu perds ton téléphone.
+  </Step>
+</Steps>
+
+**Pas d'appli d'authentification ?** Choisis **Email me codes instead** à l'étape du scan. Clamly t'enverra alors un code de connexion par e-mail à chaque fois. Une appli d'authentification est plus sûre, car elle ne dépend pas de l'accès à ta boîte mail.
+
+<Info>
+  Inscrit avec Google ? La double authentification demande d'abord un mot de passe, car c'est lui qui prouve que c'est bien toi avant d'ajouter la deuxième étape. Définis un mot de passe avec les étapes du mot de passe oublié, puis reviens.
+</Info>
+
+## Se connecter avec la double authentification
+
+Après ton mot de passe, Clamly te demande un code à 6 chiffres.
+
+- **Appli d'authentification :** tape le code actuel. Les codes changent toutes les 30 secondes.
+- **Code par e-mail :** cherche dans ta boîte le message *« 123456 is your Clamly sign-in code »*. Chaque code est valable 5 minutes. Choisis **Send a new code** s'il a expiré.
+- **Téléphone perdu ?** Choisis **Use a recovery code** et saisis l'un de tes codes enregistrés exactement comme il est écrit, majuscules et minuscules comprises. Chaque code ne marche qu'une fois.
+
+Coche **Trust this device for 30 days** pour ne plus avoir à saisir de code sur cet appareil pendant un mois. Laisse-la décochée sur un ordinateur partagé ou public.
+
+## Appareils de confiance et codes de récupération
+
+Dans la section double authentification de **Settings** :
+
+- **Trusted devices** montre combien d'appareils ne demandent plus de code en ce moment. **Untrust all devices** fait que chacun d'eux, y compris celui que tu utilises, redemandera un code la prochaine fois. Utilise-le si tu as perdu un appareil ou si tu t'es connecté quelque part où tu n'aurais pas dû.
+- **Generate new recovery codes** remplace toute ta série. Les codes enregistrés avant ne marchent plus.
+- **Turn off** désactive la double authentification avec ton mot de passe. Tes codes de récupération ne marchent plus non plus.
+
+## Compte bloqué
+
+Trop de codes faux déclenchent des protections :
+
+| Ce qui s'est passé | Quoi faire |
+| --- | --- |
+| **« Too many tries in a row »** | Attends quelques secondes et réessaie, plus lentement. |
+| 5 essais ratés sur un même code reçu par e-mail | Ce code est désactivé. Reconnecte-toi avec ton mot de passe pour en recevoir un nouveau. |
+| **« Your account is locked for about 15 minutes »** | 10 codes faux d'affilée bloquent la double authentification pendant 15 minutes. Attends, puis utilise un nouveau code. |
+| Les codes de l'appli ne marchent jamais | Règle la date et l'heure de ton téléphone en automatique. Les codes dépendent de l'horloge. |
+
+Tu as perdu ton téléphone **et** tes codes de récupération ? Écris à [support@clamly.app](mailto:support@clamly.app) depuis l'adresse de ton compte.

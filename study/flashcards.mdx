@@ -1,0 +1,80 @@
+---
+title: "Flashcards"
+description: "Decks that come back on a schedule. Clamly uses FSRS spaced repetition, the scheduler modern Anki uses."
+keywords: ["flashcards", "spaced repetition", "fsrs", "anki", "deck", "due cards", "import", "quizlet"]
+---
+
+Flashcards come back when you are about to forget them, not when you happen to think of them. A card you find easy leaves you alone for weeks. One you keep missing returns in a day or two.
+
+## How review works
+
+<Steps>
+  <Step title="Open what is due">
+    The Flashcards page tells you how many cards are due and which decks they are in. Open a deck to start.
+  </Step>
+  <Step title="Try to remember, then flip">
+    Read the front, answer in your head, then flip the card with a click, <kbd>Space</kbd> or <kbd>Enter</kbd>.
+  </Step>
+  <Step title="Grade yourself honestly">
+    Pick how well you knew it. Clamly schedules the next review from your answer.
+  </Step>
+</Steps>
+
+| Grade | Means | What happens next |
+| --- | --- | --- |
+| **Again** | You forgot it | The card restarts and comes back soon |
+| **Hard** | You got it, but struggled | A short interval |
+| **Good** | Some hesitation | A normal interval |
+| **Easy** | Instant recall | A long interval |
+
+<Tip>
+  Grading generously feels good today and costs you next week. **Again** is not a failure. It is how the scheduler learns which cards need more of your time.
+</Tip>
+
+### Why FSRS
+
+Clamly schedules cards with FSRS, the Free Spaced Repetition Scheduler that modern Anki uses by default. It estimates how strong each memory is from your review history, so intervals fit you rather than a fixed formula.
+
+<Note>
+  FSRS replaced the older SM-2 scheduler on 21 September 2026. SM-2 kept no review history that FSRS could learn from, so every card that existed then was reset to new and made due. If a large pile of due cards appeared that week, that is why. Your cards themselves were not changed.
+</Note>
+
+## Make a deck
+
+<Tabs>
+  <Tab title="By hand">
+    Create a deck on the Flashcards page and add cards with a front and a back.
+  </Tab>
+  <Tab title="From your notes">
+    - **One card:** select text in a note and choose **Make a flashcard**. Your selection becomes the back, you write the question for the front, and you pick the deck. The card is due for review straight away. This does not use AI.
+    - **A whole deck:** in the note, choose **Make flashcards** and Clamly AI writes a new deck from the note. This uses 4 AI usage units.
+  </Tab>
+  <Tab title="From a document">
+    Upload a PDF, Word document or text file in [Clamly AI tools](/ai/overview#make-a-flashcard-deck) and generate a deck from it, between 4 and 40 cards. This uses 4 AI usage units and always creates a new deck.
+  </Tab>
+  <Tab title="From a quiz">
+    After a quiz, **Save as flashcards** turns the questions you missed into cards in a deck you choose. The question becomes the front and the correct answer the back.
+  </Tab>
+  <Tab title="Import">
+    Choose **Import** on the Flashcards page and paste one card per line, with the front and back separated by a tab, a comma, or ` - `. That is the format Quizlet's export gives you.
+
+    ```text
+    photosynthesis	how plants turn light into chemical energy
+    osmosis	water moving across a membrane toward the higher concentration
+    ```
+  </Tab>
+</Tabs>
+
+## Your stats
+
+The top of the Flashcards page shows four numbers:
+
+- **Decks** and **Cards**: how much you have.
+- **Due**: cards ready for review right now.
+- **Mastered**: cards you know well enough that they come back rarely. The retention figure next to the due banner is the share of your cards that are mastered.
+
+## Edit and delete
+
+Rename or delete a deck from the deck menu. A deleted deck goes to the [Trash](/account/trash) for 30 days.
+
+Deleting a single card is immediate, with a few seconds to undo it from the message that appears. Single cards do not go to the Trash.

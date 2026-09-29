@@ -1,0 +1,109 @@
+---
+title: "Troubleshooting"
+description: "Fixes for the things that most often go wrong: emails, sign-in, uploads, AI limits, notifications and missing pages."
+keywords: ["problem", "not working", "error", "bug", "help", "fix", "issue", "missing", "stuck"]
+---
+
+Find the message you are seeing, or the thing that is not working. If nothing here helps, check [status.clamly.app](https://status.clamly.app) for an outage, then [get in touch](/help/contact).
+
+## Signing in
+
+<AccordionGroup>
+  <Accordion title="The verification email never arrived">
+    Check spam and promotions for a message from `verify@mails.clamly.app`. Then try to log in: Clamly answers **Email not verified** with a **Resend it** link, usable once every 90 seconds. See [Create your account](/getting-started/create-account#didnt-get-the-verification-email).
+  </Accordion>
+  <Accordion title="My password reset link doesn't work">
+    Reset links last 1 hour and work once. Request a new one from **Forgot password?** on the log in page, and use the newest email if you asked more than once.
+  </Accordion>
+  <Accordion title="Wrong password, but I'm sure it's right">
+    If you signed up with Google, your account may not have a password at all. Use **Continue with Google**, or set a password with **Forgot password?**
+  </Accordion>
+  <Accordion title="My two-factor code is rejected">
+    For an authenticator app, set your phone's date and time to update automatically, then use the current code. For an emailed code, use the latest one, within 5 minutes. After 10 wrong codes, two-factor sign-in locks for about 15 minutes. See [Locked out](/account/sign-in-and-security#locked-out).
+  </Accordion>
+</AccordionGroup>
+
+## Clamly AI
+
+<AccordionGroup>
+  <Accordion title="“You've reached your current session limit” or “weekly limit”">
+    You have used your AI allowance for now. Everything that is not AI keeps working. The session refills 5 hours after it started, and the week 7 days after your first AI request. See [AI usage and limits](/ai/usage).
+  </Accordion>
+  <Accordion title="“The AI service is busy right now”">
+    The AI provider is overloaded for a moment. Nothing was charged. Wait a minute and try again.
+  </Accordion>
+  <Accordion title="“This feature is temporarily unavailable”">
+    The feature has been paused for everyone for a short while, usually to fix something. Try again later, and check [status.clamly.app](https://status.clamly.app).
+  </Accordion>
+  <Accordion title="My quiz only covers the start of my document">
+    Your plan reads a set amount of each document, and Clamly says so in the message after generating. Split the document into chapters and upload them separately, or see [how much each plan reads](/ai/overview#how-much-of-a-long-document-is-read).
+  </Accordion>
+  <Accordion title="The generated quiz is empty or makes no sense">
+    The document may be a scan, with pictures of pages rather than text. Try a PDF where you can select the text, or a Word document.
+  </Accordion>
+</AccordionGroup>
+
+## Uploads
+
+<AccordionGroup>
+  <Accordion title="“File too large”">
+    The limit is 10 MB per file. Split the document, or export it again without large images.
+  </Accordion>
+  <Accordion title="“Unsupported file type”">
+    AI Tools accepts PDF, Word (`.docx`) and plain text (`.txt`). Older `.doc` files need saving as `.docx` first. Chat also accepts JPEG, PNG, WEBP and GIF images, but not iPhone HEIC photos.
+  </Accordion>
+  <Accordion title="“You've reached your plan's limit of uploaded files”">
+    Your upload library is full: 50 files or 200 MB on Free, 200 files or 1 GB on Starter, 1,000 files or 5 GB on Pro. Delete uploads you no longer need, but note that [deleting an upload also deletes the quiz made from it](/ai/overview#delete-an-upload).
+  </Accordion>
+</AccordionGroup>
+
+## Studying
+
+<AccordionGroup>
+  <Accordion title="Suddenly I have hundreds of flashcards due">
+    If that started around 21 September 2026, it is the move to the FSRS scheduler, which reset every existing card to new. Work through them over a few days; FSRS spaces them out quickly once it knows how well you remember each one. See [Why FSRS](/study/flashcards#why-fsrs).
+  </Accordion>
+  <Accordion title="My streak reset even though I opened Clamly">
+    Only finishing a quiz, reviewing flashcards or completing a focus session counts, and a study day runs from 4:00 to 3:59 in your time zone. See [Your streak](/progress/streaks-and-achievements#your-streak).
+  </Accordion>
+  <Accordion title="My Pomodoro timer stopped">
+    Reloading the page or closing the tab pauses a running timer instead of losing it. Open Pomodoro and resume.
+  </Accordion>
+  <Accordion title="Google Calendar import found nothing">
+    Import only picks up events in the next six months whose titles contain words like *exam*, *test*, *quiz*, *midterm* or *final*, in English. See [Exams](/study/exams#sync-with-google-calendar).
+  </Accordion>
+  <Accordion title="I deleted something by mistake">
+    Quizzes, notes, todos and flashcard decks are in the [Trash](/account/trash) for 30 days.
+  </Accordion>
+</AccordionGroup>
+
+## Notifications and the app
+
+<AccordionGroup>
+  <Accordion title="Push notifications say “Blocked”">
+    Your browser is refusing notifications for clamly.app. Allow them in the browser's site settings, then turn **Push notifications** on again in [Settings](/account/settings#notifications). On iPhone, push only works once Clamly is added to your home screen.
+  </Accordion>
+  <Accordion title="A page is missing from my sidebar">
+    **Billing** only appears on a paid plan, and **Early Access** only when a Labs feature is open to you. Discover, Study Groups, Exams and Clamly AI disappear while that feature is paused for maintenance.
+  </Accordion>
+  <Accordion title="I'm seeing an old version of Clamly">
+    The installed app checks for updates every 30 minutes. Reload the page, or close and reopen the app, to get the newest version straight away.
+  </Accordion>
+  <Accordion title="I'm offline">
+    A banner says so. Quizzes and notes you opened recently still load, but saving changes and AI need a connection.
+  </Accordion>
+</AccordionGroup>
+
+## Billing
+
+<AccordionGroup>
+  <Accordion title="I cancelled but still have my paid plan">
+    That is expected. You keep it until the end of the period you paid for, and you will not be charged again.
+  </Accordion>
+  <Accordion title="I was charged and want a refund">
+    In the EU or EEA you can withdraw within 14 days of a purchase for a pro-rata refund. See [Refunds](/account/plans-and-billing#refunds).
+  </Accordion>
+  <Accordion title="Where are my invoices?">
+    **Billing**, then **Manage Subscription**, opens Stripe's portal, where you can download every invoice.
+  </Accordion>
+</AccordionGroup>

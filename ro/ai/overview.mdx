@@ -1,0 +1,84 @@
+---
+title: "Instrumentele Clamly AI"
+description: "Încarcă un PDF, un document Word sau un fișier text și transformă-l într-un quiz, un pachet de flashcard-uri sau în ideile cheie."
+keywords: ["ai", "încărcare", "pdf", "docx", "generare quiz", "evidențieri", "flashcard", "document"]
+---
+
+Clamly AI citește materialele tale de curs și le transformă în exercițiu. Deschide **Clamly AI** din bara laterală. De acolo ajungi în trei locuri: **AI Tools**, **AI Chat** și **Study Pack**.
+
+## Încarcă un document
+
+1. Deschide **Clamly AI**, apoi **AI Tools**.
+2. Trage un fișier în zona de încărcare sau apasă pe ea ca să-l alegi.
+3. Așteaptă mesajul **File uploaded!** Documentul apare în lista de încărcări, gata de folosit.
+
+| | |
+| --- | --- |
+| **Tipuri de fișiere** | PDF, Word (`.docx`) și text simplu (`.txt`) |
+| **Fișier maxim** | 10 MB |
+| **Spațiu în bibliotecă** | Free: 50 de fișiere, 200 MB. Starter: 200 de fișiere, 1 GB. Pro: 1.000 de fișiere, 5 GB. |
+
+<Note>
+  PDF-urile scanate, care sunt de fapt poze ale paginilor, nu au text pe care Clamly să-l poată citi. Dacă generarea iese goală, încearcă un PDF în care poți selecta textul.
+</Note>
+
+## Fă un quiz dintr-un document
+
+Sub fișierul încărcat, alege:
+
+- **Questions**: între 2 și 50. Implicit sunt 10.
+- **Difficulty**: basic, intermediate sau advanced.
+- **Question types**: cu variante (MCQ), adevărat sau fals, sau ambele.
+
+Apoi alege **Generate Quiz**. Quiz-ul ajunge în **Quizzes** cu indicii și explicații, iar **View Quiz** te duce direct la el. Nu-ți place? **Regenerate Quiz** scrie unul nou.
+
+Generarea unui quiz consumă **5 unități AI**.
+
+## Fă un pachet de flashcard-uri
+
+Alege **Flashcards** sub fișierul încărcat. Clamly AI scrie din document un pachet nou, de aproximativ 15 carduri, și îl pune imediat în [repetiția spațiată](/ro/study/flashcards). **View Deck** îl deschide.
+
+Un pachet consumă **4 unități AI**. Se creează mereu un pachet nou, nu se adaugă la unul vechi.
+
+## Evidențiază ideile cheie
+
+Alege **Highlight**, iar Clamly AI alege pasajele cele mai importante din document, ca să știi ce să citești cu atenție. Evidențierea consumă **2 unități AI**, o singură dată pe document.
+
+## Cât se citește dintr-un document lung
+
+Planul tău stabilește cât citește generarea dintr-un document. Aproximativ 2.000 de caractere înseamnă o pagină densă.
+
+| Plan | Quiz-uri și pachete | Evidențieri |
+| --- | --- | --- |
+| **Free** | Primele 15.000 de caractere, cam 8 pagini | Primele 15.000 de caractere |
+| **Starter** | Primele 50.000 de caractere, cam 25 de pagini | Primele 50.000 de caractere |
+| **Pro** | Până la 600.000 de caractere, cam 300 de pagini. Peste 120.000, documentul e citit pe bucăți, iar rezultatele sunt combinate. | Primele 120.000 de caractere, cam 60 de pagini |
+
+Când un document e mai lung decât citește planul tău, Clamly îți spune asta în mesajul care apare după generare, așa că știi mereu că rezultatul acoperă doar o parte din fișier. Nu pretinde niciodată că a citit ce nu a citit.
+
+<Tip>
+  Pe Free sau Starter, împarte un document lung pe capitole și încarcă-le separat. Fiecare parte e citită integral.
+</Tip>
+
+## Șterge un fișier încărcat
+
+Iconița de coș de pe un fișier încărcat îl șterge imediat. Fișierul și indexul lui de căutare sunt eliminate din spațiul de stocare Clamly.
+
+<Warning>
+  Ștergerea unui fișier încărcat șterge definitiv și **quiz-ul generat din el**, cu tot cu încercări. Acel quiz nu ajunge în Coșul de gunoi. Pachetele de flashcard-uri făcute din fișier rămân, cu tot progresul. Dacă vrei să păstrezi quiz-ul, păstrează fișierul.
+</Warning>
+
+## Dacă ceva nu merge
+
+Dacă generarea eșuează pe parcurs, unitățile AI rezervate îți sunt returnate automat. Dacă o funcție spune că e **temporarily unavailable**, a fost oprită pentru scurt timp pentru toată lumea. Verifică [status.clamly.app](https://status.clamly.app) și încearcă mai târziu.
+
+## Mai departe
+
+<Columns cols={2}>
+  <Card title="Clamly Chat" icon="/icons/chat-circle-text.svg" href="/ro/ai/chat">
+    Pune întrebări despre un document sau despre ce ai greșit.
+  </Card>
+  <Card title="Study Pack" icon="/icons/package.svg" href="/ro/ai/study-pack">
+    Un singur fișier devine quiz-uri legate între ele, un pachet de carduri și notițe de studiu, dintr-o dată.
+  </Card>
+</Columns>

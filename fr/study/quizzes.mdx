@@ -1,0 +1,84 @@
+---
+title: "Quiz"
+description: "Écris un quiz, importe-le ou laisse Clamly AI le construire. Puis joue-le dans trois modes chronométrés et vois sur quelles questions tu bloques."
+keywords: ["quiz", "créer un quiz", "import", "csv", "quizlet", "hell mode", "partager un quiz", "mélanger"]
+---
+
+Les quiz sont au cœur de Clamly. Il y a trois façons d'en créer un, trois vitesses pour y jouer, et un écran de résultats qui transforme tes erreurs en révisions.
+
+## Créer un quiz
+
+<Tabs>
+  <Tab title="L'écrire toi-même">
+    1. Ouvre **Quizzes** et crée un nouveau quiz.
+    2. Donne-lui un titre (jusqu'à 200 caractères) et, si tu veux, une description, des tags et une matière.
+    3. Ajoute des questions. Chaque question a entre 2 et 6 réponses possibles et peut avoir plusieurs bonnes réponses.
+    4. Ajoute une explication à n'importe quelle question (jusqu'à 1 000 caractères). Elle s'affiche après ta réponse, pour que tu comprennes pourquoi, pas seulement quoi.
+  </Tab>
+  <Tab title="L'importer">
+    Dans **Quizzes**, choisis **Import** et colle ton contenu. Deux formats fonctionnent :
+
+    - **Des paires terme et définition**, une par ligne, comme les exporte Quizlet. Sépare le terme de la définition par une tabulation, une virgule ou ` - `. Clamly crée une question à choix multiple à partir de chaque paire et prend les mauvaises réponses dans les autres lignes, comme un test d'entraînement.
+    - **Un CSV** avec les colonnes `question, correct, wrong1, wrong2, …`
+
+    ```text Paires façon Quizlet
+    Mitochondrie	Produit l'essentiel de l'ATP de la cellule
+    Ribosome	Fabrique les protéines à partir des acides aminés
+    Lysosome	Dégrade les déchets dans la cellule
+    ```
+
+    ```text CSV
+    question,correct,wrong1,wrong2,wrong3
+    Capitale du Portugal ?,Lisbonne,Porto,Madrid,Séville
+    ```
+  </Tab>
+  <Tab title="Laisser Clamly AI le créer">
+    Envoie un PDF, un document Word ou un fichier texte, et Clamly AI rédige les questions à partir de ce document, avec des indices et des explications. Les questions portent sur ton cours, pas sur la matière en général. Voir [Les outils Clamly AI](/fr/ai/overview).
+  </Tab>
+</Tabs>
+
+## Jouer un quiz
+
+Choisis un mode avant de commencer. La seule différence, c'est le temps par question.
+
+| Mode | Temps par question | Idéal pour |
+| --- | --- | --- |
+| **Normal** | 45 secondes | Apprendre la matière |
+| **Hard** | 25 secondes | Vérifier que tu la maîtrises vraiment |
+| **Hell** | 12 secondes | Rendre le rappel automatique avant un examen |
+
+Pendant la partie :
+
+- Chaque réponse est tout de suite marquée juste ou fausse, avec l'explication si le quiz en a une.
+- **AI Hint** te donne un coup de pouce sans la réponse. Chaque indice utilise 1 unité d'IA.
+- **Shuffle questions**, sur la page du quiz, change l'ordre à chaque partie. C'est activé par défaut.
+
+<Warning>
+  Si tu quittes un quiz en cours de route, la tentative est perdue. Clamly te demande confirmation avant de te laisser partir.
+</Warning>
+
+## Après un quiz
+
+L'écran de résultats affiche ton score et chaque question ratée. De là, tu peux :
+
+- **Get AI Review.** Clamly analyse tes erreurs et t'explique ce qui revient. Ça utilise 3 unités d'IA.
+- **Discuss with AI**, qui ouvre [Clamly Chat](/fr/ai/chat) avec ton score déjà dans le message.
+- **Save as flashcards.** Choisis un paquet et les questions ratées que tu veux. Chaque carte a la question au recto et la bonne réponse au verso, et part directement en [répétition espacée](/fr/study/flashcards).
+
+Chaque quiz a aussi ses propres statistiques : tentatives, score moyen et taux de bonnes réponses par question, pour que tu voies exactement où tu bloques.
+
+## Partager un quiz
+
+Chaque quiz a l'un de ces trois niveaux de visibilité.
+
+| Visibilité | Qui peut l'ouvrir |
+| --- | --- |
+| **Private** | Toi seul. C'est le réglage par défaut. |
+| **Unlisted** | Toute personne qui a le lien. Il n'apparaît pas sur Discover. |
+| **Public** | Tout le monde, et il est listé sur [Discover](/fr/together/discover). |
+
+Tu peux aussi partager un quiz dans un [groupe d'étude](/fr/together/groups). Quand quelqu'un d'autre joue à ton quiz, ses réponses sont vérifiées sur les serveurs de Clamly, donc les bonnes réponses n'arrivent jamais dans son navigateur.
+
+## Supprimer un quiz
+
+Un quiz supprimé va dans la [Corbeille](/fr/account/trash), où tu peux le restaurer pendant 30 jours.

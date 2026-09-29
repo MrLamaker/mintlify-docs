@@ -1,0 +1,80 @@
+---
+title: "Flashcard-uri"
+description: "Pachete care revin după un program. Clamly folosește repetiția spațiată FSRS, algoritmul folosit de Anki în prezent."
+keywords: ["flashcard", "repetiție spațiată", "fsrs", "anki", "pachet", "carduri scadente", "import", "quizlet"]
+---
+
+Flashcard-urile revin exact când ești pe punctul să le uiți, nu când îți aduci tu aminte de ele. Un card care ți se pare ușor te lasă în pace săptămâni întregi. Unul pe care îl tot greșești revine într-o zi sau două.
+
+## Cum funcționează repetarea
+
+<Steps>
+  <Step title="Deschide ce e scadent">
+    Pagina Flashcards îți spune câte carduri sunt scadente și în ce pachete sunt. Deschide un pachet ca să începi.
+  </Step>
+  <Step title="Încearcă să-ți amintești, apoi întoarce">
+    Citește fața, răspunde în gând, apoi întoarce cardul cu un clic, <kbd>Space</kbd> sau <kbd>Enter</kbd>.
+  </Step>
+  <Step title="Notează-te sincer">
+    Alege cât de bine ai știut. Clamly programează următoarea repetare pe baza răspunsului tău.
+  </Step>
+</Steps>
+
+| Notă | Înseamnă | Ce urmează |
+| --- | --- | --- |
+| **Again** | Ai uitat | Cardul o ia de la capăt și revine curând |
+| **Hard** | Ai știut, dar cu greu | Un interval scurt |
+| **Good** | Cu puțină ezitare | Un interval normal |
+| **Easy** | Ți-ai amintit imediat | Un interval lung |
+
+<Tip>
+  O notă generoasă te face să te simți bine azi și te costă săptămâna viitoare. **Again** nu e un eșec. Așa află algoritmul care carduri au nevoie de mai mult timp.
+</Tip>
+
+### De ce FSRS
+
+Clamly programează cardurile cu FSRS (Free Spaced Repetition Scheduler), algoritmul pe care Anki îl folosește implicit în prezent. Estimează cât de puternică e fiecare amintire pe baza istoricului tău de repetări, așa că intervalele se potrivesc cu tine, nu cu o formulă fixă.
+
+<Note>
+  FSRS a înlocuit vechiul algoritm SM-2 pe 21 septembrie 2026. SM-2 nu păstra un istoric de repetări din care FSRS să poată învăța, așa că toate cardurile existente atunci au fost resetate ca noi și au devenit scadente. Dacă în săptămâna aceea ai văzut brusc multe carduri scadente, de aici vine. Cardurile în sine nu s-au schimbat.
+</Note>
+
+## Fă un pachet
+
+<Tabs>
+  <Tab title="Manual">
+    Creează un pachet pe pagina Flashcards și adaugă carduri cu față și spate.
+  </Tab>
+  <Tab title="Din notițe">
+    - **Un card:** selectează text într-o notiță și alege **Make a flashcard**. Selecția devine spatele, tu scrii întrebarea de pe față și alegi pachetul. Cardul e scadent imediat. Nu folosește AI.
+    - **Un pachet întreg:** în notiță, alege **Make flashcards**, iar Clamly AI scrie un pachet nou din notiță. Consumă 4 unități AI.
+  </Tab>
+  <Tab title="Dintr-un document">
+    Încarcă un PDF, un document Word sau un fișier text în [instrumentele Clamly AI](/ro/ai/overview) și generează din el un pachet de 4 până la 40 de carduri. Consumă 4 unități AI și creează mereu un pachet nou.
+  </Tab>
+  <Tab title="Dintr-un quiz">
+    După un quiz, **Save as flashcards** transformă întrebările greșite în carduri, într-un pachet ales de tine. Întrebarea devine fața, iar răspunsul corect spatele.
+  </Tab>
+  <Tab title="Import">
+    Alege **Import** pe pagina Flashcards și lipește câte un card pe rând, cu fața și spatele separate prin tab, virgulă sau ` - `. E formatul pe care ți-l dă exportul din Quizlet.
+
+    ```text
+    fotosinteză	cum transformă plantele lumina în energie chimică
+    osmoză	apa trece printr-o membrană spre concentrația mai mare
+    ```
+  </Tab>
+</Tabs>
+
+## Statisticile tale
+
+Sus pe pagina Flashcards vezi patru cifre:
+
+- **Decks** și **Cards**: câte ai.
+- **Due**: cardurile gata de repetat acum.
+- **Mastered**: cardurile pe care le știi destul de bine încât revin rar. Procentul de retenție de lângă bannerul cu carduri scadente este partea din carduri pe care o stăpânești.
+
+## Editare și ștergere
+
+Redenumește sau șterge un pachet din meniul lui. Un pachet șters ajunge în [Coșul de gunoi](/ro/account/trash) pentru 30 de zile.
+
+Ștergerea unui singur card are loc imediat, cu câteva secunde în care o poți anula din mesajul care apare. Cardurile individuale nu ajung în Coșul de gunoi.

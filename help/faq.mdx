@@ -1,110 +1,74 @@
 ---
-title: "Clamly FAQ: frequently asked questions and answers"
+title: "Frequently asked questions"
 sidebarTitle: "FAQ"
-description: "Find answers to the most common questions about Clamly, covering pricing, AI features, privacy, flashcards, study groups, and account management."
+description: "Short answers to the questions people ask most, with links to the full guides."
+keywords: ["faq", "questions", "free", "languages", "teacher", "leaderboard", "coins", "github"]
 ---
 
-Quick answers to the most common questions about Clamly.
-
-## Getting started
+## About Clamly
 
 <AccordionGroup>
   <Accordion title="What is Clamly?">
-    Clamly is an all-in-one study platform built for students. It combines AI-generated quizzes, an AI study assistant, spaced-repetition flashcards, notes, a focus timer, study groups, and exam scheduling, all in a single web app.
+    A study app that keeps track of what you get wrong. You make quizzes and flashcards from your own notes, or let Clamly AI write them from a PDF, and Clamly brings the questions you missed back to you before you forget them. Notes, a focus timer, your exam dates and study groups live in the same place.
   </Accordion>
-
-  <Accordion title="Is Clamly free?">
-    Yes, all core features are free, with session-based AI usage included. If you need more AI sessions or want access to extra features, two paid plans are available:
-
-    - **Starter:** $4.99/month
-    - **Pro:** $9.99/month
-
-    You can upgrade, downgrade, or cancel at any time from your Billing page.
+  <Accordion title="Who makes Clamly?">
+    One student. I built Clamly because every study app I tried did too much, badly. It is run by Clamly SRL, a company registered in Romania. More on the [About page](https://clamly.app/about).
   </Accordion>
-
-  <Accordion title="What is the minimum age to use Clamly?">
-    You must be at least **13 years old** to create a Clamly account. In some EEA countries, the minimum age is **16**. If you're unsure about the rules in your country, check with a parent or guardian before signing up.
+  <Accordion title="Is Clamly a homework answer service?">
+    No. Clamly helps you learn your material. Clamly Chat will not write essays or assignments for you to hand in.
   </Accordion>
-
-  <Accordion title="How do I reset my password?">
-    Head to [clamly.app/forgot-password](https://clamly.app/forgot-password), enter the email address linked to your account, and Clamly will send you a password reset link. Check your spam folder if the email doesn't arrive within a few minutes.
-  </Accordion>
-
-  <Accordion title="How do I contact support?">
-    Email the Clamly support team at **support@clamly.app**. Include your account email, a description of the issue, and steps you've already tried.
+  <Accordion title="Which languages does Clamly speak?">
+    The app itself is in English. Clamly AI works in your language: Clamly Chat answers in whatever language you write in, quizzes and flashcards are written in the language of your document, and note writing help can translate into 10 languages.
   </Accordion>
 </AccordionGroup>
 
-## Features
+## Plans
 
 <AccordionGroup>
-  <Accordion title="What are flashcards and how do they work?">
-    Clamly flashcards use the **SM-2 spaced-repetition algorithm** to surface cards at exactly the right moment, right before you're likely to forget them. You can track due cards, monitor your retention rate, and work towards mastering entire decks over time.
+  <Accordion title="Is Clamly free?">
+    Yes, and the free plan is not a demo. Quizzes, flashcards, notes, todos, the timer, groups and exams are all included, with AI usage limited per session and per week. No card is needed to sign up. See [Plans and billing](/account/plans-and-billing).
   </Accordion>
-
-  <Accordion title="Does the Pomodoro timer follow me across pages?">
-    Yes. The focus timer runs **globally** across the entire app. A mini timer stays pinned to the interface no matter which page you navigate to. Start a session on one page and keep studying elsewhere. The timer keeps going.
+  <Accordion title="What do Starter and Pro add?">
+    More AI: 4 times the weekly allowance on Starter and 8 times on Pro. Both read larger documents, give richer answers about your documents, and unlock advanced analytics. Pro also gets new features early through Labs.
   </Accordion>
-
-  <Accordion title="Can I study with friends?">
-    Yes. Create a study group, share the invite code with your friends, and start collaborating. Inside a group you can share quizzes and study together. Group owners and admins can manage members and assign roles.
+  <Accordion title="How do I cancel?">
+    **Plans**, then **Cancel subscription**. You keep your plan until the end of the period you paid for. See [Cancel your subscription](/account/plans-and-billing#cancel-your-subscription).
   </Accordion>
-
-  <Accordion title="How do I cancel my subscription?">
-    You can cancel your subscription at any time from the **Billing page** inside Clamly or directly through the **Stripe customer portal**. Your access continues until the end of the billing period. You won't be charged again after cancellation.
+  <Accordion title="Is there a plan for my class or school?">
+    Email [support@clamly.app](mailto:support@clamly.app) about a custom plan for a class or institution.
   </Accordion>
 </AccordionGroup>
 
-## AI
+## Studying
 
 <AccordionGroup>
   <Accordion title="What can I upload to Clamly AI?">
-    You can upload **PDFs**, **Word documents**, or **plain text files**, or paste your notes directly into Clamly. Clamly AI reads your material and generates quiz questions and a summary.
+    PDFs, Word documents (`.docx`) and plain text, up to 10 MB each. Clamly Chat also takes images. See [Clamly AI tools](/ai/overview).
   </Accordion>
-
-  <Accordion title="What is Clamly Chat?">
-    Clamly Chat is your AI study assistant. It comes with four distinct modes so you can choose the interaction style that suits you best:
-
-    - **Adaptive:** adjusts its tone and depth based on how you respond
-    - **Tutor:** guides you step by step through concepts
-    - **Buddy:** casual and conversational, great for brainstorming
-    - **Professor:** detailed and academic, ideal for deep understanding
-
-    In any mode, Clamly Chat can explain concepts, answer your questions, and even turn your conversation into a live quiz.
+  <Accordion title="Why is my AI usage limited?">
+    Every AI request has a real cost to answer, so each plan has an allowance per session and per week. See [AI usage and limits](/ai/usage).
   </Accordion>
-
-  <Accordion title="What AI model powers Clamly?">
-    Clamly uses **Mistral AI** via their API to power its AI features. Mistral does not train on data you submit. Your notes, documents, and quiz responses stay private.
+  <Accordion title="Can I study with friends?">
+    Yes. Make a [study group](/together/groups), send people the invite code, and share quizzes and notes inside it. Nobody sees your scores unless you share them.
+  </Accordion>
+  <Accordion title="Can I bring my cards from Quizlet or another app?">
+    Yes. Export your Quizlet set and paste it into **Import** on the Flashcards or Quizzes page. Any other app works the same way if it can export one card per line, with a tab, a comma or ` - ` between the front and the back. See [Flashcards](/study/flashcards#make-a-deck).
   </Accordion>
 </AccordionGroup>
 
-## Privacy and data
+## Things that changed
 
 <AccordionGroup>
-  <Accordion title="Is my data safe?">
-    Yes. Clamly stores your data in **secure, encrypted databases**. Passwords are hashed and never stored in plain text. Sessions use secure, HTTP-only cookies to protect your login. Clamly is operated from Romania and complies with **GDPR** and EU data protection regulations.
+  <Accordion title="Where did coins, the shop and the leaderboard go?">
+    They were removed in July 2026. Your streak and the 22 [achievements](/progress/streaks-and-achievements) remain.
   </Accordion>
-
-  <Accordion title="Does Mistral AI train on my data?">
-    No. Mistral AI does not use data you submit through Clamly to train their models. Your notes, uploaded documents, and chat history are not fed back into AI training pipelines.
+  <Accordion title="Can I still sign in with GitHub?">
+    No. Sign in with your email and password, or with Google. If you used GitHub before, use [Forgot password?](/account/sign-in-and-security#reset-a-forgotten-password) with the same email address to get back in.
   </Accordion>
-
-  <Accordion title="How do I delete my account?">
-    You can delete your account from your **Profile page** inside Clamly. Once you confirm deletion, all of your personal data is permanently removed from Clamly's systems **within 30 days**. This action cannot be undone, so make sure you've exported anything you want to keep beforehand.
+  <Accordion title="Where is the How to Use page?">
+    It moved here. These guides replace it, and they are linked from **Profile**, then **Help wiki**.
+  </Accordion>
+  <Accordion title="Why do my flashcards come back at different times now?">
+    Clamly switched from SM-2 to the FSRS scheduler on 21 September 2026. See [Why FSRS](/study/flashcards#why-fsrs).
   </Accordion>
 </AccordionGroup>
-
-<Note>
-  Still have a question that isn't answered here? Reach out to the Clamly support team at **support@clamly.app** and they'll get back to you as soon as possible.
-</Note>
-
-## Get started
-
-<CardGroup cols={2}>
-  <Card title="Create your account" icon="user-plus" href="/getting-started/create-account">
-    Sign up for free in under a minute.
-  </Card>
-  <Card title="Service status" icon="activity" href="/help/status">
-    Check if Clamly is running normally.
-  </Card>
-</CardGroup>

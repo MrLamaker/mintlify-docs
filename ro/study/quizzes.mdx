@@ -1,0 +1,84 @@
+---
+title: "Quiz-uri"
+description: "Scrie un quiz, importă unul sau lasă Clamly AI să-l construiască. Apoi joacă-l în trei moduri cronometrate și vezi la ce întrebări te împiedici."
+keywords: ["quiz", "creare quiz", "import", "csv", "quizlet", "hell mode", "partajare quiz", "amestecare"]
+---
+
+Quiz-urile sunt centrul Clamly. Ai trei moduri de a face unul, trei viteze de joc și un ecran de rezultate care transformă ce ai greșit în ceva de repetat.
+
+## Fă un quiz
+
+<Tabs>
+  <Tab title="Scrie-l singur">
+    1. Deschide **Quizzes** și creează un quiz nou.
+    2. Dă-i un titlu (până la 200 de caractere) și, dacă vrei, o descriere, etichete și o materie.
+    3. Adaugă întrebări. Fiecare întrebare are între 2 și 6 variante de răspuns și poate avea mai multe răspunsuri corecte.
+    4. Adaugă o explicație la orice întrebare (până la 1.000 de caractere). Apare după ce răspunzi, ca să înveți de ce, nu doar ce.
+  </Tab>
+  <Tab title="Importă unul">
+    Din **Quizzes**, alege **Import** și lipește conținutul. Merg două formate:
+
+    - **Perechi termen și definiție**, câte una pe rând, așa cum le exportă Quizlet. Separă termenul de definiție cu tab, virgulă sau ` - `. Clamly face din fiecare pereche o întrebare cu variante și ia răspunsurile greșite din celelalte rânduri, ca la un test de exersare.
+    - **Un CSV** cu coloanele `question, correct, wrong1, wrong2, …`
+
+    ```text Perechi în stil Quizlet
+    Mitocondrie	Produce cea mai mare parte din ATP-ul celulei
+    Ribozom	Construiește proteine din aminoacizi
+    Lizozom	Descompune reziduurile din celulă
+    ```
+
+    ```text CSV
+    question,correct,wrong1,wrong2,wrong3
+    Capitala Portugaliei?,Lisabona,Porto,Madrid,Sevilla
+    ```
+  </Tab>
+  <Tab title="Lasă Clamly AI să-l facă">
+    Încarcă un PDF, un document Word sau un fișier text, iar Clamly AI scrie întrebările pe baza lui, cu indicii și explicații. Întrebările sunt despre cursul tău, nu despre materie în general. Vezi [Instrumentele Clamly AI](/ro/ai/overview).
+  </Tab>
+</Tabs>
+
+## Joacă un quiz
+
+Alege un mod înainte să începi. Singura diferență e cât timp ai pentru fiecare întrebare.
+
+| Mod | Timp pe întrebare | Potrivit pentru |
+| --- | --- | --- |
+| **Normal** | 45 de secunde | Învățarea materiei |
+| **Hard** | 25 de secunde | Să verifici că o știi cu adevărat |
+| **Hell** | 12 secunde | Să-ți intre în reflex înainte de examen |
+
+În timpul jocului:
+
+- Fiecare răspuns e marcat imediat ca corect sau greșit, cu explicația, dacă quiz-ul are una.
+- **AI Hint** îți dă un indiciu fără să-ți spună răspunsul. Fiecare indiciu consumă 1 unitate AI.
+- **Shuffle questions**, de pe pagina quiz-ului, schimbă ordinea la fiecare joc. E activat implicit.
+
+<Warning>
+  Dacă ieși dintr-un quiz la jumătate, încercarea se pierde. Clamly te întreabă înainte să te lase să pleci.
+</Warning>
+
+## După un quiz
+
+Ecranul de rezultate îți arată scorul și fiecare întrebare greșită. De acolo poți:
+
+- **Get AI Review.** Clamly se uită la ce ai greșit și îți explică tiparul. Consumă 3 unități AI.
+- **Discuss with AI**, care deschide [Clamly Chat](/ro/ai/chat) cu scorul tău deja în mesaj.
+- **Save as flashcards.** Alegi un pachet și întrebările greșite pe care le vrei. Fiecare card are întrebarea pe față și răspunsul corect pe spate și intră direct în [repetiția spațiată](/ro/study/flashcards).
+
+Fiecare quiz are și propriile statistici: încercări, scor mediu și cât de des e nimerită fiecare întrebare, ca să vezi exact unde te împiedici.
+
+## Partajează un quiz
+
+Fiecare quiz are una dintre trei setări de vizibilitate.
+
+| Vizibilitate | Cine îl poate deschide |
+| --- | --- |
+| **Private** | Doar tu. E setarea implicită. |
+| **Unlisted** | Oricine are linkul. Nu apare pe Discover. |
+| **Public** | Oricine, și apare pe [Discover](/ro/together/discover). |
+
+Poți partaja un quiz și într-un [grup de studiu](/ro/together/groups). Când altcineva îți joacă quiz-ul, răspunsurile lui sunt verificate pe serverele Clamly, așa că răspunsurile corecte nu ajung niciodată în browserul lui.
+
+## Șterge un quiz
+
+Un quiz șters ajunge în [Coșul de gunoi](/ro/account/trash), de unde îl poți restaura timp de 30 de zile.

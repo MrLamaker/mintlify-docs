@@ -1,209 +1,59 @@
 ---
-title: Clamly documentation
-description: Clamly's help center with setup guides, feature walkthroughs, study session tips, and account management docs for the Clamly study platform.
-mode: frame
+title: "How can I help?"
+sidebarTitle: "Welcome"
+description: "Guides for every part of Clamly: quizzes, flashcards, notes, Clamly AI, study groups, plans and your account."
+mode: "wide"
 ---
 
-<div className="flex w-full flex-col gap-16 max-w-5xl mx-auto px-4 md:px-8 py-16 md:py-24 text-[#41413f] dark:text-[#e2e0d8]">
+<div className="not-prose">
+  <p className="clamly-lede">
+    Clamly keeps what you get wrong and brings it back before you forget it. These guides cover every part of it, <em>plainly</em>. Search with <span className="clamly-keys"><kbd>Ctrl</kbd> <kbd>K</kbd></span>, or <span className="clamly-keys"><kbd>⌘</kbd> <kbd>K</kbd></span> on a Mac, or start from a topic below.
+  </p>
 
-  {/* Hero */}
-  <div className="flex flex-col gap-6 text-center items-center">
-    <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#d45a3a] font-mono">
-      Clamly help center
-    </span>
-    <h1 className="font-serif text-5xl md:text-7xl font-medium leading-[1.02] tracking-tight text-[#41413f] dark:text-[#f2f0e3]">
-      Study smarter,<br />
-      <span className="italic" style={{ color: '#d45a3a' }}>documented.</span>
-    </h1>
-    <p className="text-base md:text-lg text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed max-w-md">
-      Guides and references for the Clamly study platform. Set up your account, learn every feature, and get the most out of each session.
-    </p>
-    <div className="flex flex-row gap-3 items-center pt-1">
-      <a
-        href="/introduction"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold no-underline bg-[#191919] text-[#f2f0e3] hover:bg-black dark:bg-[#f2f0e3] dark:text-[#191919] dark:hover:bg-white transition-colors"
-      >
-        Get started
-        <Icon icon="arrow-right" size={16} />
-      </a>
-      <a
-        href="https://clamly.app"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold no-underline border border-[#d6d3c0] dark:border-[#3a3a38] text-[#41413f] dark:text-[#e2e0d8] hover:border-[#d45a3a] dark:hover:border-[#d45a3a] hover:bg-[#f9f7ee] dark:hover:bg-[#242424] transition-colors"
-      >
-        Open Clamly
-      </a>
-    </div>
-  </div>
+  <div className="clamly-kicker">Popular right now</div>
 
-  {/* 3 main categories */}
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    <a
-      href="/introduction"
-      className="cl-lift flex flex-col gap-4 p-6 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] hover:border-[#d45a3a] dark:hover:border-[#d45a3a]"
-    >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#d45a3a]/10 text-[#d45a3a]">
-        <Icon icon="rocket" color="#d45a3a" size={22} />
-      </span>
-      <div className="flex flex-col gap-1.5">
-        <span className="text-base font-semibold text-[#41413f] dark:text-[#f2f0e3]">Get started</span>
-        <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed">Create your account and learn the basics.</span>
-      </div>
-    </a>
+  <ul className="clamly-quicklinks">
+    <li><a href="/ai/overview#make-a-quiz-from-a-document">Make a quiz from a PDF</a></li>
+    <li><a href="/account/sign-in-and-security#reset-a-forgotten-password">Reset a forgotten password</a></li>
+    <li><a href="/ai/usage">How AI usage and limits work</a></li>
+    <li><a href="/account/plans-and-billing#cancel-your-subscription">Cancel or change your plan</a></li>
+    <li><a href="/account/sign-in-and-security#turn-on-two-factor-authentication">Turn on two-factor authentication</a></li>
+    <li><a href="/account/trash">Get back something you deleted</a></li>
+  </ul>
 
-    <a
-      href="/study-tools/quizzes"
-      className="cl-lift flex flex-col gap-4 p-6 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] hover:border-[#d45a3a] dark:hover:border-[#d45a3a]"
-    >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#d45a3a]/10 text-[#d45a3a]">
-        <Icon icon="book-open" color="#d45a3a" size={22} />
-      </span>
-      <div className="flex flex-col gap-1.5">
-        <span className="text-base font-semibold text-[#41413f] dark:text-[#f2f0e3]">Study tools</span>
-        <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed">Quizzes, flashcards, notes, timer, todos, and exams.</span>
-      </div>
-    </a>
+  <div className="clamly-kicker">Browse by topic</div>
+</div>
 
-    <a
-      href="/ai/clamly-ai"
-      className="cl-lift flex flex-col gap-4 p-6 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] hover:border-[#d45a3a] dark:hover:border-[#d45a3a]"
-    >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#81b29a]/15 text-[#5f9179]">
-        <Icon icon="sparkles" color="#5f9179" size={22} />
-      </span>
-      <div className="flex flex-col gap-1.5">
-        <span className="text-base font-semibold text-[#41413f] dark:text-[#f2f0e3]">AI features</span>
-        <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed">Generate quizzes from documents and chat with an AI study assistant.</span>
-      </div>
-    </a>
-  </div>
+<Columns cols={3}>
+  <Card title="Getting started" icon="/icons/rocket-launch.svg" href="/getting-started/create-account">
+    Create your account, find your way around, and install Clamly on your phone or computer.
+  </Card>
+  <Card title="Study tools" icon="/icons/exam.svg" href="/study/quizzes">
+    Quizzes, flashcards, notes, todos, classes, the focus timer and your exam calendar.
+  </Card>
+  <Card title="Clamly AI" icon="/icons/brain.svg" href="/ai/overview">
+    Turn a PDF into a quiz or a deck, and ask Clamly Chat why you got something wrong.
+  </Card>
+  <Card title="Study together" icon="/icons/users-three.svg" href="/together/groups">
+    Study groups with invite codes, and quizzes other students have shared on Discover.
+  </Card>
+  <Card title="Progress" icon="/icons/medal.svg" href="/progress/streaks-and-achievements">
+    Your streak, the 22 achievements, and what your analytics are telling you.
+  </Card>
+  <Card title="Plans and billing" icon="/icons/credit-card.svg" href="/account/plans-and-billing">
+    Free, Starter and Pro, what each includes, and how to upgrade, switch or cancel.
+  </Card>
+  <Card title="Sign-in and security" icon="/icons/shield-check.svg" href="/account/sign-in-and-security">
+    Passwords, Google sign-in, two-factor authentication and recovery codes.
+  </Card>
+  <Card title="Privacy and data" icon="/icons/lock-key.svg" href="/privacy/your-data">
+    What Clamly stores, what the AI sees, and how to export or delete your data.
+  </Card>
+  <Card title="Troubleshooting" icon="/icons/wrench.svg" href="/help/troubleshooting">
+    Missing emails, stuck uploads, AI limits and other things that go wrong.
+  </Card>
+</Columns>
 
-  <hr className="border-0 border-t border-[#d6d3c0] dark:border-[#3a3a38]" />
-
-  {/* All features */}
-  <div className="flex flex-col gap-6">
-    <span className="text-xs font-semibold tracking-[0.18em] uppercase text-[#6e6b5c] dark:text-[#b5b3a5] font-mono">All features</span>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-
-      <a href="/study-tools/quizzes" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="help-circle" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Quizzes</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Manual and AI-generated. Three difficulty modes.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/flashcards" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="layers" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Flashcards</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">SM-2 spaced repetition decks.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/notes" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="file-text" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Notes</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Full-screen Markdown editor with pins and color labels.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/focus-timer" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="clock" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Focus Timer</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Global Pomodoro that follows you across every page.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/todos" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="checkbox" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Todos</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Priorities, due dates, and drag-and-drop ordering.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/exams" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="calendar" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Exams</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Visual exam calendar with Google Calendar sync.</span>
-        </div>
-      </a>
-
-      <a href="/ai/clamly-ai" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#81b29a] dark:hover:border-[#81b29a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#81b29a]/15">
-          <Icon icon="sparkles" color="#5f9179" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Clamly AI</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Generate quizzes and summaries from your documents.</span>
-        </div>
-      </a>
-
-      <a href="/ai/clamly-chat" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#81b29a] dark:hover:border-[#81b29a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#81b29a]/15">
-          <Icon icon="message-circle" color="#5f9179" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Clamly Chat</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">AI study assistant with four conversation modes.</span>
-        </div>
-      </a>
-
-      <a href="/collaboration/study-groups" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="users" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Study groups</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Invite classmates, share quizzes, and study together.</span>
-        </div>
-      </a>
-
-      <a href="/collaboration/sharing" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="share" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Sharing</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Share quizzes with groups and export notes.</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
-  <hr className="border-0 border-t border-[#d6d3c0] dark:border-[#3a3a38]" />
-
-  {/* Help footer */}
-  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] px-6 py-5">
-    <div className="flex flex-col gap-1">
-      <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Need help?</span>
-      <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">
-        Check the <a href="/help/faq" className="text-[#d45a3a] font-medium hover:underline">FAQ</a> or email <a href="mailto:support@clamly.app" className="text-[#d45a3a] font-medium hover:underline">support@clamly.app</a>.
-      </span>
-    </div>
-    <a
-      href="/help/status"
-      className="inline-flex items-center gap-2 text-sm font-medium text-[#6e6b5c] dark:text-[#b5b3a5] hover:text-[#d45a3a] dark:hover:text-[#d45a3a] transition-colors"
-    >
-      <Icon icon="activity" size={15} />
-      System status
-    </a>
-  </div>
-
+<div className="not-prose clamly-note">
+  Can't find what you need? Email <a href="mailto:support@clamly.app">support@clamly.app</a>. I read every message, and most replies go out within one business day.
 </div>

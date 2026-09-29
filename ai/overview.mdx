@@ -1,0 +1,84 @@
+---
+title: "Clamly AI tools"
+description: "Upload a PDF, Word document or text file and turn it into a quiz, a flashcard deck, or the highlights that matter."
+keywords: ["ai", "upload", "pdf", "docx", "generate quiz", "highlights", "flashcards", "document"]
+---
+
+Clamly AI reads your own course material and turns it into practice. Open **Clamly AI** in the sidebar. The hub leads to three places: **AI Tools**, **AI Chat** and **Study Pack**.
+
+## Upload a document
+
+1. Open **Clamly AI**, then **AI Tools**.
+2. Drop a file onto the upload area, or click it to browse.
+3. Wait for **File uploaded!** Your document appears in your upload list, ready to use.
+
+| | |
+| --- | --- |
+| **File types** | PDF, Word (`.docx`) and plain text (`.txt`) |
+| **Largest file** | 10 MB |
+| **Library size** | Free: 50 files, 200 MB. Starter: 200 files, 1 GB. Pro: 1,000 files, 5 GB. |
+
+<Note>
+  Scanned PDFs that are pictures of pages have no text for Clamly to read. If generation comes back empty, try a PDF where you can select the text.
+</Note>
+
+## Make a quiz from a document
+
+Under your upload, choose:
+
+- **Questions**: between 2 and 50. The default is 10.
+- **Difficulty**: basic, intermediate or advanced.
+- **Question types**: multiple choice (MCQ), true or false, or both.
+
+Then choose **Generate Quiz**. The quiz lands in **Quizzes** with hints and explanations, and **View Quiz** takes you straight to it. Not happy with it? **Regenerate Quiz** writes a fresh one.
+
+Generating a quiz uses **5 AI usage units**.
+
+## Make a flashcard deck
+
+Choose **Flashcards** under your upload. Clamly AI writes a new deck from the document, about 15 cards, and puts it into [spaced repetition](/study/flashcards) straight away. **View Deck** opens it.
+
+A deck uses **4 AI usage units**. It always creates a new deck rather than adding to an old one.
+
+## Highlight the key points
+
+Choose **Highlight** and Clamly AI picks out the passages that matter most in the document, so you know what to read closely. Highlighting uses **2 AI usage units**, once per document.
+
+## How much of a long document is read
+
+Your plan sets how much of a document generation reads. About 2,000 characters is one dense page.
+
+| Plan | Quizzes and decks read | Highlights read |
+| --- | --- | --- |
+| **Free** | The first 15,000 characters, about 8 pages | The first 15,000 characters |
+| **Starter** | The first 50,000 characters, about 25 pages | The first 50,000 characters |
+| **Pro** | Up to 600,000 characters, about 300 pages. Past 120,000, the document is read in parts and the results combined. | The first 120,000 characters, about 60 pages |
+
+When a document is longer than your plan reads, Clamly tells you in the message that appears after generating, so you always know the result covers part of the file. It never pretends to have read what it did not.
+
+<Tip>
+  On Free or Starter, split a long document into chapters and upload them separately. Each part is read in full.
+</Tip>
+
+## Delete an upload
+
+The bin icon on an upload deletes it straight away. The file and its search index are erased from Clamly's storage.
+
+<Warning>
+  Deleting an upload also permanently deletes **the quiz generated from it**, with its attempts. That quiz does not go to the Trash. Flashcard decks made from the upload are kept, with their review progress. To keep the quiz, keep the upload.
+</Warning>
+
+## If something fails
+
+If generation fails partway, the AI usage units it reserved are given back automatically. If a feature says it is **temporarily unavailable**, it has been paused for everyone for a short while. Check [status.clamly.app](https://status.clamly.app) and try again later.
+
+## Keep going
+
+<Columns cols={2}>
+  <Card title="Clamly Chat" icon="/icons/chat-circle-text.svg" href="/ai/chat">
+    Ask questions about a document, or why you got something wrong.
+  </Card>
+  <Card title="Study Pack" icon="/icons/package.svg" href="/ai/study-pack">
+    One upload becomes linked quizzes, a deck and study notes in one go.
+  </Card>
+</Columns>

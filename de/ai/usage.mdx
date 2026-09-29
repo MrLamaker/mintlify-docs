@@ -1,0 +1,66 @@
+---
+title: "KI-Nutzung und Limits"
+description: "Jede KI-Funktion verbraucht Einheiten aus zwei Kontingenten: eines pro Sitzung, eines pro Woche. So funktionieren beide."
+keywords: ["ki-nutzung", "limit", "einheiten", "cooldown", "sitzungslimit", "wochenlimit", "kontingent", "zurücksetzen"]
+---
+
+Alles, was Clamly AI macht, verbraucht **Nutzungseinheiten**. Du verbrauchst sie gleichzeitig aus zwei Kontingenten und kannst KI nutzen, solange in beiden noch Platz ist.
+
+## Deine Kontingente
+
+| Tarif | Pro Sitzung | Pro Woche |
+| --- | --- | --- |
+| **Free** | 28 Einheiten | 50 Einheiten |
+| **Starter** | 50 Einheiten | 200 Einheiten |
+| **Pro** | 120 Einheiten | 400 Einheiten |
+
+**Das Sitzungskontingent** beginnt mit deiner ersten KI-Anfrage und füllt sich **5 Stunden** später wieder auf, egal ob du alles verbraucht hast.
+
+**Das Wochenkontingent** beginnt mit deiner ersten KI-Anfrage der Woche und wird **7 Tage** später zurückgesetzt.
+
+<Note>
+  Eine Sitzung ist nicht dasselbe wie angemeldet sein. Clamly zu schließen oder dich abzumelden beendet sie nicht und füllt sie nicht auf. Das tun nur die 5 Stunden.
+</Note>
+
+## Was jede Funktion verbraucht
+
+| Funktion | Einheiten |
+| --- | --- |
+| Chat-Nachricht | 1 bis 3, je nach Länge, plus Aufschläge für Anhänge und Quizze. Siehe [Clamly Chat](/de/ai/chat). |
+| KI-Schreibhilfe in einer Notiz | 1 |
+| KI-Hinweis im Quiz | 1 |
+| Dokument markieren | 2 |
+| KI-Auswertung eines beendeten Quiz | 3 |
+| Study Planner, eine Woche | 3 |
+| Kartenstapel aus Dokument oder Notiz | 4 |
+| Quiz aus einem Dokument | 5 |
+| Study Pack | 1 für den Vorschlag, dann 4 pro Quiz, 3 für den Stapel und 2 für Notizen |
+
+Bei Free reicht eine Sitzung also für etwa fünf erstellte Quizze oder einen langen Abend voller Chat-Nachrichten.
+
+Wenn eine Anfrage mittendrin fehlschlägt, bekommst du die reservierten Einheiten automatisch zurück.
+
+## Sehen, wie viel übrig ist
+
+- **Starter und Pro:** Die Blitz-Anzeige in der Kopfzeile zeigt, wie viel deines Sitzungskontingents verbraucht ist, und zeigt **Cooldown**, während es sich auffüllt. Die Seite **Billing** zeigt beide Kontingente mit einem Countdown bis zum nächsten Auffüllen.
+- **Free:** Es gibt keine Anzeige. Clamly sagt dir Bescheid, wenn du ein Limit erreichst.
+
+## Wenn du ein Limit erreichst
+
+Du siehst eine dieser Meldungen (auf Englisch, wie in der App). Keine davon betrifft etwas, das nicht KI ist: Quizze, Karteikarten, Notizen und alles andere funktionieren weiter.
+
+<AccordionGroup>
+  <Accordion title="“You've reached your current session limit”">
+    Dein Sitzungskontingent ist aufgebraucht. Es füllt sich 5 Stunden nach Beginn der Sitzung wieder auf. Ein Upgrade gibt dir sofort ein größeres Sitzungskontingent.
+  </Accordion>
+  <Accordion title="“You've used a lot of AI recently”">
+    Du hast das Sitzungslimit erreicht, und die Sitzung kühlt ab. Warte, bis die 5 Stunden um sind, oder mach ein Upgrade.
+  </Accordion>
+  <Accordion title="“You've reached your weekly limit”">
+    Dein Wochenkontingent ist aufgebraucht. Es wird 7 Tage nach deiner ersten KI-Anfrage der Woche zurückgesetzt. Aufgefüllte Sitzungen erhöhen es nicht.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Du brauchst mehr? Starter hat das 4-fache Wochenkontingent von Free, Pro das 8-fache. Siehe [Tarife und Abrechnung](/de/account/plans-and-billing).
+</Tip>

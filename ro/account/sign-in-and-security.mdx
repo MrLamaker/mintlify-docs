@@ -1,0 +1,85 @@
+---
+title: "Conectare și securitate"
+description: "Resetează sau schimbă parola, conectează-te cu Google și protejează-ți contul cu autentificarea în doi pași."
+keywords: ["parolă", "parolă uitată", "resetare parolă", "schimbare parolă", "conectare google", "doi pași", "2fa", "autentificator", "coduri de recuperare", "blocat", "dispozitiv de încredere"]
+---
+
+Te poți conecta la Clamly cu email și parolă, cu Google sau cu amândouă. Opțiunile de securitate sunt în **Settings**, la **Security**.
+
+## Resetează o parolă uitată
+
+1. Pe [pagina de conectare](https://clamly.app/login), alege **Forgot password?**
+2. Introdu adresa de email. Clamly îți trimite un link de resetare.
+3. Deschide linkul în cel mult **o oră** și alege o parolă nouă de cel puțin 8 caractere.
+
+Dacă linkul a expirat, cere unul nou. Aceiași pași adaugă o parolă și la un cont creat cu Google.
+
+## Schimbă parola
+
+În **Settings**, alege **Change password**. Introdu parola actuală, apoi pe cea nouă de două ori. Trebuie să aibă cel puțin 8 caractere și nu poate fi aceeași cu cea veche.
+
+Schimbarea parolei **te deconectează de pe toate celelalte dispozitive**. Dispozitivul pe care îl folosești rămâne conectat.
+
+<Note>
+  Dacă te-ai conectat mereu doar cu Google, nu există opțiunea **Change password**, pentru că nu ai o parolă de schimbat. Folosește pașii de mai sus pentru parola uitată ca să-ți setezi una.
+</Note>
+
+## Conectare cu Google
+
+Alege **Continue with Google** pe pagina de conectare sau de înscriere. Google se ocupă de parolă și de propria verificare în doi pași. Autentificarea în doi pași a Clamly se aplică doar la conectarea cu email și parolă.
+
+## Activează autentificarea în doi pași
+
+Autentificarea în doi pași (2FA) adaugă un al doilea pas când te conectezi cu parola, așa că cineva care îți află parola tot nu poate intra. E opțională și recomandată.
+
+<Steps>
+  <Step title="Începe">
+    În **Settings**, găsește autentificarea în doi pași și alege **Turn on**. Confirmă parola. Nu se schimbă nimic în cont până nu termini pasul următor.
+  </Step>
+  <Step title="Scanează codul">
+    Scanează codul QR cu o aplicație de autentificare, cum ar fi Google Authenticator, 1Password sau Authy. Dacă nu poți scana, introdu manual cheia afișată dedesubt.
+  </Step>
+  <Step title="Introdu codul">
+    Scrie codul de 6 cifre din aplicație și alege **Verify and turn on**.
+  </Step>
+  <Step title="Salvează codurile de recuperare">
+    Clamly îți arată un set de coduri de recuperare **o singură dată**. Copiază-le într-un loc sigur, de exemplu un manager de parole. Fiecare te lasă să intri o singură dată dacă îți pierzi telefonul.
+  </Step>
+</Steps>
+
+**Nu ai aplicație de autentificare?** Alege **Email me codes instead** la pasul de scanare. Clamly îți va trimite atunci un cod de conectare pe email de fiecare dată. O aplicație de autentificare e mai sigură, pentru că nu depinde de accesul la căsuța de email.
+
+<Info>
+  Te-ai înscris cu Google? Pentru autentificarea în doi pași ai nevoie mai întâi de o parolă, pentru că ea dovedește că ești tu înainte să se adauge al doilea pas. Setează o parolă cu pașii pentru parola uitată, apoi revino.
+</Info>
+
+## Conectarea cu doi pași activată
+
+După parolă, Clamly îți cere un cod de 6 cifre.
+
+- **Aplicație de autentificare:** scrie codul curent. Codurile se schimbă la fiecare 30 de secunde.
+- **Cod pe email:** caută în inbox mesajul *„123456 is your Clamly sign-in code”*. Fiecare cod e valabil 5 minute. Alege **Send a new code** dacă a expirat.
+- **Ți-ai pierdut telefonul?** Alege **Use a recovery code** și introdu unul dintre codurile salvate exact cum e scris, inclusiv literele mari și mici. Fiecare cod merge o singură dată.
+
+Bifează **Trust this device for 30 days** ca să nu ți se mai ceară codul pe acel dispozitiv timp de o lună. Nu o bifa pe un calculator comun sau public.
+
+## Dispozitive de încredere și coduri de recuperare
+
+În secțiunea de autentificare în doi pași din **Settings**:
+
+- **Trusted devices** arată câte dispozitive nu mai cer codul acum. **Untrust all devices** face ca fiecare dintre ele, inclusiv cel pe care ești, să ceară un cod data viitoare. Folosește-l dacă ai pierdut un dispozitiv sau te-ai conectat undeva unde nu trebuia.
+- **Generate new recovery codes** îți înlocuiește tot setul. Codurile salvate înainte nu mai funcționează.
+- **Turn off** dezactivează autentificarea în doi pași, cu parola ta. Codurile de recuperare nu mai funcționează nici ele.
+
+## Cont blocat
+
+Prea multe coduri greșite activează protecțiile:
+
+| Ce s-a întâmplat | Ce faci |
+| --- | --- |
+| **„Too many tries in a row”** | Așteaptă câteva secunde și încearcă din nou, mai încet. |
+| 5 încercări greșite pentru un cod primit pe email | Codul e retras. Conectează-te din nou cu parola ca să primești altul. |
+| **„Your account is locked for about 15 minutes”** | 10 coduri greșite la rând blochează conectarea în doi pași pentru 15 minute. Așteaptă, apoi folosește un cod nou. |
+| Codurile din aplicația de autentificare nu merg niciodată | Setează data și ora telefonului pe automat. Codurile depind de ceas. |
+
+Ți-ai pierdut telefonul **și** codurile de recuperare? Scrie la [support@clamly.app](mailto:support@clamly.app) de pe adresa contului.
