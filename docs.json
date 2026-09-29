@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "Clamly Help",
   "description": "Guides and answers for Clamly, a calmer way to study: quizzes, flashcards, notes, Clamly AI, study groups, plans and your account.",
   "colors": {
@@ -8,22 +8,8 @@
     "light": "#8DA2FB",
     "dark": "#4A5CC0"
   },
-  "background": {
-    "color": {
-      "light": "#F2F0E3",
-      "dark": "#191919"
-    }
-  },
-  "fonts": {
-    "heading": {
-      "family": "Junicode",
-      "source": "/fonts/Junicode.woff2",
-      "format": "woff2",
-      "weight": 400
-    },
-    "body": {
-      "family": "Bricolage Grotesque"
-    }
+  "icons": {
+    "library": "tabler"
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -32,10 +18,6 @@
   "favicon": "/favicon.png",
   "appearance": {
     "default": "system"
-  },
-  "styling": {
-    "eyebrows": "section",
-    "codeblocks": "system"
   },
   "search": {
     "prompt": "Search help, like \"reset password\""
