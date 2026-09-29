@@ -20,7 +20,8 @@ This is the Mintlify source for [help.clamly.app](https://help.clamly.app), the 
 - Never use em-dashes or en-dashes. Use a colon, a comma or a new sentence
 - Second person ("you") for instructions. Where the founder speaks (contact, FAQ, the home page note), use first person singular: Clamly is built by one student, not a team
 - Sentence case for headings
-- Icons: Phosphor SVGs from `icons/` only. Never sparkle or star icons
+- Icons: Tabler icon names only. Never sparkle or star icons
+- No custom CSS or fonts unless the change was checked in a real Mintlify preview
 - Every price, limit and cost comes from the Clamly code, never from memory
 
 ## Content boundaries

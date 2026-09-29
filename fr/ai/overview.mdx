@@ -17,6 +17,7 @@ Clamly AI lit tes propres supports de cours et les transforme en exercices. Ouvr
 | **Types de fichiers** | PDF, Word (`.docx`) et texte brut (`.txt`) |
 | **Taille maximale** | 10 Mo |
 | **Taille de la bibliothèque** | Free : 50 fichiers, 200 Mo. Starter : 200 fichiers, 1 Go. Pro : 1 000 fichiers, 5 Go. |
+| **Document le plus long** | 500 pages pour un PDF. Les très longs documents peuvent aussi dépasser une limite de texte : découpe-les en fichiers plus petits. |
 
 <Note>
   Les PDF scannés, qui ne sont que des images de pages, ne contiennent pas de texte que Clamly peut lire. Si la génération revient vide, essaie un PDF dont tu peux sélectionner le texte.
@@ -30,9 +31,9 @@ Sous ton fichier, choisis :
 - **Difficulty** : basic, intermediate ou advanced.
 - **Question types** : choix multiple (MCQ), vrai ou faux, ou les deux.
 
-Puis choisis **Generate Quiz**. Le quiz arrive dans **Quizzes** avec des indices et des explications, et **View Quiz** t'y emmène directement. Pas satisfait ? **Regenerate Quiz** en écrit un nouveau.
+Puis choisis **Generate Quiz**. Le quiz arrive dans **Quizzes** avec des indices et des explications, et **View Quiz** t'y emmène directement. Tu veux une autre version à partir du même document ? **New Quiz** en écrit un nouveau et garde l'ancien.
 
-Générer un quiz utilise **5 unités d'IA**.
+Générer un quiz utilise **5 unités d'IA**. Chaque bouton indique combien d'unités d'IA il coûte avant que tu appuies dessus.
 
 ## Créer un paquet de flashcards
 
@@ -62,11 +63,11 @@ Quand un document est plus long que ce que lit ton abonnement, Clamly te le dit 
 
 ## Supprimer un fichier envoyé
 
-L'icône de corbeille sur un fichier le supprime immédiatement. Le fichier et son index de recherche sont effacés du stockage de Clamly.
+L'icône de corbeille sur un fichier le supprime, après confirmation. Le fichier et son index de recherche sont effacés du stockage de Clamly.
 
-<Warning>
-  Supprimer un fichier supprime aussi définitivement **le quiz généré à partir de ce fichier**, avec ses tentatives. Ce quiz ne va pas dans la Corbeille. Les paquets de flashcards créés à partir du fichier sont conservés, avec leur progression. Pour garder le quiz, garde le fichier.
-</Warning>
+<Note>
+  Les quiz, paquets de flashcards et notes créés à partir du fichier sont conservés, avec leurs tentatives et leur progression. Seul le fichier disparaît.
+</Note>
 
 ## Si quelque chose échoue
 
@@ -75,10 +76,10 @@ Si une génération échoue en cours de route, les unités d'IA réservées te s
 ## Pour aller plus loin
 
 <Columns cols={2}>
-  <Card title="Clamly Chat" icon="/icons/chat-circle-text.svg" href="/fr/ai/chat">
+  <Card title="Clamly Chat" icon="message-circle" href="/fr/ai/chat">
     Pose des questions sur un document, ou demande pourquoi tu t'es trompé.
   </Card>
-  <Card title="Study Pack" icon="/icons/package.svg" href="/fr/ai/study-pack">
+  <Card title="Study Pack" icon="package" href="/fr/ai/study-pack">
     Un seul fichier devient d'un coup des quiz liés, un paquet de cartes et des notes de révision.
   </Card>
 </Columns>

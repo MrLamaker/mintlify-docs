@@ -17,6 +17,7 @@ Clamly AI reads your own course material and turns it into practice. Open **Clam
 | **File types** | PDF, Word (`.docx`) and plain text (`.txt`) |
 | **Largest file** | 10 MB |
 | **Library size** | Free: 50 files, 200 MB. Starter: 200 files, 1 GB. Pro: 1,000 files, 5 GB. |
+| **Longest document** | 500 pages for a PDF. Very long documents can hit a text limit too: split them into smaller files. |
 
 <Note>
   Scanned PDFs that are pictures of pages have no text for Clamly to read. If generation comes back empty, try a PDF where you can select the text.
@@ -30,9 +31,9 @@ Under your upload, choose:
 - **Difficulty**: basic, intermediate or advanced.
 - **Question types**: multiple choice (MCQ), true or false, or both.
 
-Then choose **Generate Quiz**. The quiz lands in **Quizzes** with hints and explanations, and **View Quiz** takes you straight to it. Not happy with it? **Regenerate Quiz** writes a fresh one.
+Then choose **Generate Quiz**. The quiz lands in **Quizzes** with hints and explanations, and **View Quiz** takes you straight to it. Want another take on the same document? **New Quiz** writes a fresh quiz and keeps the old one.
 
-Generating a quiz uses **5 AI usage units**.
+Generating a quiz uses **5 AI usage units**. Each button shows how many AI usage units it costs before you press it.
 
 ## Make a flashcard deck
 
@@ -62,11 +63,11 @@ When a document is longer than your plan reads, Clamly tells you in the message 
 
 ## Delete an upload
 
-The bin icon on an upload deletes it straight away. The file and its search index are erased from Clamly's storage.
+The bin icon on an upload deletes it, after you confirm. The file and its search index are erased from Clamly's storage.
 
-<Warning>
-  Deleting an upload also permanently deletes **the quiz generated from it**, with its attempts. That quiz does not go to the Trash. Flashcard decks made from the upload are kept, with their review progress. To keep the quiz, keep the upload.
-</Warning>
+<Note>
+  Quizzes, flashcard decks and notes made from the upload are kept, with their attempts and review progress. Only the file itself goes.
+</Note>
 
 ## If something fails
 
@@ -75,10 +76,10 @@ If generation fails partway, the AI usage units it reserved are given back autom
 ## Keep going
 
 <Columns cols={2}>
-  <Card title="Clamly Chat" icon="/icons/chat-circle-text.svg" href="/ai/chat">
+  <Card title="Clamly Chat" icon="message-circle" href="/ai/chat">
     Ask questions about a document, or why you got something wrong.
   </Card>
-  <Card title="Study Pack" icon="/icons/package.svg" href="/ai/study-pack">
+  <Card title="Study Pack" icon="package" href="/ai/study-pack">
     One upload becomes linked quizzes, a deck and study notes in one go.
   </Card>
 </Columns>

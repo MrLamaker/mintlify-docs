@@ -1,6 +1,6 @@
 # Clamly Help
 
-Source for [help.clamly.app](https://help.clamly.app), the user guides for [Clamly](https://clamly.app). Built with [Mintlify](https://mintlify.com): `docs.json` is the site config, every page is an `.mdx` file, and `style.css` adds the Clamly look on top of the `maple` theme.
+Source for [help.clamly.app](https://help.clamly.app), the user guides for [Clamly](https://clamly.app). Built with [Mintlify](https://mintlify.com): `docs.json` is the site config and every page is an `.mdx` file. The site uses Mintlify's default `mint` theme with Clamly's colours and no custom CSS.
 
 Mintlify ignores this README, so it never becomes a page.
 
@@ -20,7 +20,6 @@ Publishing happens through the Mintlify GitHub app: every push to the deploy bra
 | Path | What it holds |
 | --- | --- |
 | `docs.json` | Theme, colours, fonts, navbar, footer, sidebar navigation |
-| `style.css` | Paper-and-periwinkle touches the config cannot express |
 | `index.mdx` | The help home page |
 | `getting-started/`, `study/`, `ai/`, `together/`, `progress/`, `account/`, `privacy/`, `help/` | One folder per sidebar group (English) |
 | `ro/`, `de/`, `fr/` | Romanian, German and French, mirroring the English tree page for page |
@@ -38,21 +37,15 @@ English is the default and lives at the root. Every English page has a translati
 
 Old URLs from the previous version of this site (`/introduction`, `/study-tools/*`, `/collaboration/*` and so on, in all four languages) redirect to their new pages through `redirects` in `docs.json`.
 | `logo/` | The `clamly help` wordmark, drawn from Junicode glyph outlines so it needs no font |
-| `fonts/` | Junicode, copied from `apps/web/public/` in the Clamly repo |
-| `icons/` | Phosphor duotone icons (MIT), filled `#6477E0` so they read in light and dark mode |
 
 ## Brand
 
-Same tokens as `apps/web/src/app/globals.css` in the Clamly repo.
+The theme is Mintlify's default `mint`, with only the colours changed. Keep it that way unless a change has been checked in a real preview (`mint dev` or a Mintlify preview deployment): custom CSS and fonts that were never seen rendered made an earlier version of this site look broken.
 
 | Token | Value | Used for |
 | --- | --- | --- |
-| Periwinkle | `#8DA2FB` | Brand colour, dark-mode links, wordmark |
-| Periwinkle ink | `#4A5CC0` | Light-mode links and buttons. `#8DA2FB` is only 2.1:1 on the cream background; this is 5.1:1 |
-| Paper | `#F2F0E3` | Light background |
-| Ink | `#191919` | Dark background |
-| Junicode | self-hosted | Headings |
-| Bricolage Grotesque | Google Fonts | Body text |
+| Periwinkle | `#8DA2FB` | Brand colour, dark-mode accents, wordmark |
+| Periwinkle ink | `#4A5CC0` | Light-mode links and buttons, readable on white |
 
 ## Writing rules
 
@@ -61,7 +54,7 @@ These follow the rules the Clamly app holds its own copy to.
 - **No em-dashes.** Use a colon, a comma or a new sentence.
 - **Second person** for instructions. Where the founder speaks (contact, FAQ), **first person singular**: Clamly is built by one student, not a team.
 - **Name UI labels exactly as the app shows them**, in bold: **Generate Quiz**, not "the generate button".
-- **Phosphor icons only**, never sparkle or star icons. Mintlify's sidebar only accepts Font Awesome, Lucide or Tabler, so the sidebar has no icons; cards use the SVGs in `icons/`.
+- **Icons come from Tabler** (`icons.library` in `docs.json`), never sparkle or star icons.
 - **Every number comes from the code.** Prices, limits and costs are copied from the Clamly repo, not from memory. When one changes there, change it here.
 
 ## Keeping in sync with Clamly
