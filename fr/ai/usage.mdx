@@ -1,0 +1,66 @@
+---
+title: "Usage et limites de l'IA"
+description: "Chaque fonction IA utilise des unités de deux quotas : un par session et un par semaine. Voici comment ils fonctionnent."
+keywords: ["usage ia", "limite", "unités", "cooldown", "limite de session", "limite hebdomadaire", "quota", "réinitialisation"]
+---
+
+Tout ce que fait Clamly AI utilise des **unités d'usage**. Tu les dépenses dans deux quotas à la fois, et tu peux utiliser l'IA tant qu'il reste de la place dans les deux.
+
+## Tes quotas
+
+| Abonnement | Par session | Par semaine |
+| --- | --- | --- |
+| **Free** | 28 unités | 50 unités |
+| **Starter** | 50 unités | 200 unités |
+| **Pro** | 120 unités | 400 unités |
+
+**Le quota de session** démarre avec ta première requête IA et se recharge **5 heures** plus tard, que tu l'aies entièrement utilisé ou non.
+
+**Le quota hebdomadaire** démarre avec ta première requête IA de la semaine et se réinitialise **7 jours** plus tard.
+
+<Note>
+  Une session, ce n'est pas le fait d'être connecté. Fermer Clamly ou te déconnecter ne la termine pas et ne la recharge pas. Seules les 5 heures le font.
+</Note>
+
+## Ce qu'utilise chaque fonction
+
+| Fonction | Unités |
+| --- | --- |
+| Message dans le chat | De 1 à 3 selon la longueur, plus un supplément pour les pièces jointes et les quiz. Voir [Clamly Chat](/fr/ai/chat). |
+| Aide à l'écriture IA dans une note | 1 |
+| Indice IA pendant un quiz | 1 |
+| Points clés d'un document | 2 |
+| Analyse IA d'un quiz terminé | 3 |
+| Study Planner, une semaine | 3 |
+| Paquet de flashcards à partir d'un document ou d'une note | 4 |
+| Quiz à partir d'un document | 5 |
+| Study Pack | 1 pour la proposition, puis 4 par quiz, 3 pour le paquet et 2 pour les notes |
+
+Avec Free, une session couvre donc environ cinq quiz générés, ou une longue soirée de messages dans le chat.
+
+Si une requête échoue en cours de route, les unités réservées te sont rendues automatiquement.
+
+## Voir ce qu'il te reste
+
+- **Starter et Pro :** l'indicateur en forme d'éclair dans l'en-tête montre la part de ton quota de session utilisée, et affiche **Cooldown** pendant qu'il se recharge. La page **Billing** montre les deux quotas, avec un compte à rebours jusqu'à la prochaine recharge.
+- **Free :** il n'y a pas d'indicateur. Clamly te prévient quand tu atteins une limite.
+
+## Quand tu atteins une limite
+
+Tu verras l'un de ces messages (en anglais, comme dans l'appli). Aucun ne touche à ce qui n'est pas de l'IA : les quiz, les flashcards, les notes et tout le reste continuent de fonctionner.
+
+<AccordionGroup>
+  <Accordion title="“You've reached your current session limit”">
+    Ton quota de session est épuisé. Il se recharge 5 heures après le début de la session. Passer à l'offre supérieure te donne tout de suite un quota de session plus grand.
+  </Accordion>
+  <Accordion title="“You've used a lot of AI recently”">
+    Tu as atteint la limite de session et la session est en période de recharge. Attends que les 5 heures soient passées, ou passe à l'offre supérieure.
+  </Accordion>
+  <Accordion title="“You've reached your weekly limit”">
+    Ton quota hebdomadaire est épuisé. Il se réinitialise 7 jours après ta première requête IA de la semaine. Les recharges de session ne s'y ajoutent pas.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Besoin de plus ? Starter a 4 fois le quota hebdomadaire de Free, et Pro 8 fois. Voir [Abonnements et facturation](/fr/account/plans-and-billing).
+</Tip>

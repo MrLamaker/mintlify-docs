@@ -1,0 +1,84 @@
+---
+title: "Les outils Clamly AI"
+description: "Envoie un PDF, un document Word ou un fichier texte et transforme-le en quiz, en paquet de flashcards ou en points clés."
+keywords: ["ia", "envoi", "pdf", "docx", "générer un quiz", "points clés", "flashcards", "document"]
+---
+
+Clamly AI lit tes propres supports de cours et les transforme en exercices. Ouvre **Clamly AI** dans la barre latérale. De là, tu accèdes à trois endroits : **AI Tools**, **AI Chat** et **Study Pack**.
+
+## Envoyer un document
+
+1. Ouvre **Clamly AI**, puis **AI Tools**.
+2. Dépose un fichier dans la zone d'envoi, ou clique dessus pour en choisir un.
+3. Attends **File uploaded!** Ton document apparaît dans ta liste de fichiers, prêt à l'emploi.
+
+| | |
+| --- | --- |
+| **Types de fichiers** | PDF, Word (`.docx`) et texte brut (`.txt`) |
+| **Taille maximale** | 10 Mo |
+| **Taille de la bibliothèque** | Free : 50 fichiers, 200 Mo. Starter : 200 fichiers, 1 Go. Pro : 1 000 fichiers, 5 Go. |
+
+<Note>
+  Les PDF scannés, qui ne sont que des images de pages, ne contiennent pas de texte que Clamly peut lire. Si la génération revient vide, essaie un PDF dont tu peux sélectionner le texte.
+</Note>
+
+## Créer un quiz à partir d'un document
+
+Sous ton fichier, choisis :
+
+- **Questions** : entre 2 et 50. Par défaut, 10.
+- **Difficulty** : basic, intermediate ou advanced.
+- **Question types** : choix multiple (MCQ), vrai ou faux, ou les deux.
+
+Puis choisis **Generate Quiz**. Le quiz arrive dans **Quizzes** avec des indices et des explications, et **View Quiz** t'y emmène directement. Pas satisfait ? **Regenerate Quiz** en écrit un nouveau.
+
+Générer un quiz utilise **5 unités d'IA**.
+
+## Créer un paquet de flashcards
+
+Choisis **Flashcards** sous ton fichier. Clamly AI rédige à partir du document un nouveau paquet d'environ 15 cartes et le met tout de suite en [répétition espacée](/fr/study/flashcards). **View Deck** l'ouvre.
+
+Un paquet utilise **4 unités d'IA**. Il crée toujours un nouveau paquet au lieu de compléter un ancien.
+
+## Faire ressortir les points clés
+
+Choisis **Highlight** et Clamly AI repère les passages les plus importants du document, pour que tu saches quoi lire attentivement. Cela utilise **2 unités d'IA**, une seule fois par document.
+
+## Quelle part d'un long document est lue
+
+Ton abonnement détermine quelle part d'un document est lue. Environ 2 000 caractères correspondent à une page dense.
+
+| Abonnement | Quiz et paquets | Points clés |
+| --- | --- | --- |
+| **Free** | Les 15 000 premiers caractères, environ 8 pages | Les 15 000 premiers caractères |
+| **Starter** | Les 50 000 premiers caractères, environ 25 pages | Les 50 000 premiers caractères |
+| **Pro** | Jusqu'à 600 000 caractères, environ 300 pages. Au-delà de 120 000, le document est lu en plusieurs parties et les résultats sont regroupés. | Les 120 000 premiers caractères, environ 60 pages |
+
+Quand un document est plus long que ce que lit ton abonnement, Clamly te le dit dans le message qui s'affiche après la génération, pour que tu saches toujours que le résultat ne couvre qu'une partie du fichier. Il ne prétend jamais avoir lu ce qu'il n'a pas lu.
+
+<Tip>
+  Avec Free ou Starter, découpe un long document par chapitres et envoie-les séparément. Chaque partie est lue en entier.
+</Tip>
+
+## Supprimer un fichier envoyé
+
+L'icône de corbeille sur un fichier le supprime immédiatement. Le fichier et son index de recherche sont effacés du stockage de Clamly.
+
+<Warning>
+  Supprimer un fichier supprime aussi définitivement **le quiz généré à partir de ce fichier**, avec ses tentatives. Ce quiz ne va pas dans la Corbeille. Les paquets de flashcards créés à partir du fichier sont conservés, avec leur progression. Pour garder le quiz, garde le fichier.
+</Warning>
+
+## Si quelque chose échoue
+
+Si une génération échoue en cours de route, les unités d'IA réservées te sont rendues automatiquement. Si une fonction indique **temporarily unavailable**, elle a été mise en pause pour tout le monde pendant un court moment. Consulte [status.clamly.app](https://status.clamly.app) et réessaie plus tard.
+
+## Pour aller plus loin
+
+<Columns cols={2}>
+  <Card title="Clamly Chat" icon="/icons/chat-circle-text.svg" href="/fr/ai/chat">
+    Pose des questions sur un document, ou demande pourquoi tu t'es trompé.
+  </Card>
+  <Card title="Study Pack" icon="/icons/package.svg" href="/fr/ai/study-pack">
+    Un seul fichier devient d'un coup des quiz liés, un paquet de cartes et des notes de révision.
+  </Card>
+</Columns>

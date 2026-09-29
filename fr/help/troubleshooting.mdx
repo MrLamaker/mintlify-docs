@@ -1,0 +1,109 @@
+---
+title: "Dépannage"
+description: "Des solutions aux problèmes les plus fréquents : e-mails, connexion, envois de fichiers, limites de l'IA, notifications et pages manquantes."
+keywords: ["problème", "ne marche pas", "erreur", "bug", "aide", "solution", "manquant", "bloqué"]
+---
+
+Cherche le message que tu vois, ou ce qui ne marche pas. Les messages d'erreur sont indiqués en anglais ci-dessous, exactement comme dans l'appli. Si rien ici ne t'aide, consulte [status.clamly.app](https://status.clamly.app) en cas de panne, puis [écris-moi](/fr/help/contact).
+
+## Connexion
+
+<AccordionGroup>
+  <Accordion title="L'e-mail de confirmation n'est jamais arrivé">
+    Regarde dans tes spams et tes promotions s'il y a un message de `verify@mails.clamly.app`. Ensuite, essaie de te connecter : Clamly répond **Email not verified** avec un lien **Resend it**, utilisable une fois toutes les 90 secondes. Voir [Créer ton compte](/fr/getting-started/create-account).
+  </Accordion>
+  <Accordion title="Mon lien de réinitialisation ne marche pas">
+    Les liens de réinitialisation sont valables 1 heure et ne marchent qu'une fois. Demandes-en un nouveau avec **Forgot password?** sur la page de connexion, et utilise le plus récent si tu en as demandé plusieurs.
+  </Accordion>
+  <Accordion title="Mot de passe incorrect, alors que je suis sûr de moi">
+    Si tu t'es inscrit avec Google, ton compte n'a peut-être aucun mot de passe. Utilise **Continue with Google**, ou définis un mot de passe avec **Forgot password?**
+  </Accordion>
+  <Accordion title="Mon code de double authentification est refusé">
+    Avec une appli d'authentification, règle la date et l'heure de ton téléphone en automatique, puis utilise le code actuel. Avec un code par e-mail, utilise le plus récent, dans les 5 minutes. Après 10 codes faux, la double authentification se bloque pendant environ 15 minutes. Voir [Connexion et sécurité](/fr/account/sign-in-and-security).
+  </Accordion>
+</AccordionGroup>
+
+## Clamly AI
+
+<AccordionGroup>
+  <Accordion title="“You've reached your current session limit” ou “weekly limit”">
+    Tu as épuisé ton quota d'IA pour l'instant. Tout ce qui n'est pas de l'IA continue de marcher. La session se recharge 5 heures après son début, et la semaine 7 jours après ta première requête IA. Voir [Usage et limites de l'IA](/fr/ai/usage).
+  </Accordion>
+  <Accordion title="“The AI service is busy right now”">
+    Le fournisseur d'IA est surchargé pour le moment. Rien ne t'a été décompté. Attends une minute et réessaie.
+  </Accordion>
+  <Accordion title="“This feature is temporarily unavailable”">
+    La fonction a été mise en pause pour tout le monde pendant un court moment, en général pour réparer quelque chose. Réessaie plus tard et consulte [status.clamly.app](https://status.clamly.app).
+  </Accordion>
+  <Accordion title="Mon quiz ne couvre que le début de mon document">
+    Ton abonnement lit une quantité fixe de chaque document, et Clamly te le dit dans le message qui suit la génération. Découpe le document par chapitres et envoie-les séparément, ou regarde [ce que lit chaque abonnement](/fr/ai/overview).
+  </Accordion>
+  <Accordion title="Le quiz généré est vide ou n'a pas de sens">
+    Le document est peut-être un scan, avec des images de pages plutôt que du texte. Essaie un PDF dont tu peux sélectionner le texte, ou un document Word.
+  </Accordion>
+</AccordionGroup>
+
+## Envoi de fichiers
+
+<AccordionGroup>
+  <Accordion title="“File too large”">
+    La limite est de 10 Mo par fichier. Découpe le document, ou exporte-le à nouveau sans grandes images.
+  </Accordion>
+  <Accordion title="“Unsupported file type”">
+    AI Tools accepte les PDF, Word (`.docx`) et texte brut (`.txt`). Les anciens fichiers `.doc` doivent d'abord être enregistrés en `.docx`. Le chat accepte aussi les images JPEG, PNG, WEBP et GIF, mais pas les photos HEIC de l'iPhone.
+  </Accordion>
+  <Accordion title="“You've reached your plan's limit of uploaded files”">
+    Ta bibliothèque de fichiers est pleine : 50 fichiers ou 200 Mo avec Free, 200 fichiers ou 1 Go avec Starter, 1 000 fichiers ou 5 Go avec Pro. Supprime les fichiers dont tu n'as plus besoin, mais attention : [supprimer un fichier supprime aussi le quiz créé à partir de lui](/fr/ai/overview).
+  </Accordion>
+</AccordionGroup>
+
+## Études
+
+<AccordionGroup>
+  <Accordion title="D'un coup, j'ai des centaines de flashcards à réviser">
+    Si ça a commencé autour du 21 septembre 2026, c'est le passage à l'algorithme FSRS, qui a remis toutes les cartes existantes à zéro. Révise-les sur quelques jours ; FSRS les espace vite une fois qu'il sait à quel point tu te souviens de chacune. Voir [Flashcards](/fr/study/flashcards).
+  </Accordion>
+  <Accordion title="Ma série est retombée alors que j'ai ouvert Clamly">
+    Seuls terminer un quiz, réviser des flashcards ou terminer une session de concentration comptent, et une journée d'étude va de 4 h 00 à 3 h 59 dans ton fuseau horaire. Voir [Séries et succès](/fr/progress/streaks-and-achievements).
+  </Accordion>
+  <Accordion title="Mon minuteur Pomodoro s'est arrêté">
+    Recharger la page ou fermer l'onglet met en pause un minuteur en cours au lieu de le perdre. Ouvre Pomodoro et reprends.
+  </Accordion>
+  <Accordion title="L'import depuis Google Calendar n'a rien trouvé">
+    L'import ne récupère que les événements des six prochains mois dont le titre contient des mots comme *exam*, *test*, *quiz*, *midterm* ou *final*, en anglais. Voir [Examens](/fr/study/exams).
+  </Accordion>
+  <Accordion title="J'ai supprimé quelque chose par erreur">
+    Les quiz, notes, tâches et paquets de flashcards restent 30 jours dans la [Corbeille](/fr/account/trash).
+  </Accordion>
+</AccordionGroup>
+
+## Notifications et appli
+
+<AccordionGroup>
+  <Accordion title="Les notifications push indiquent “Blocked”">
+    Ton navigateur refuse les notifications pour clamly.app. Autorise-les dans les réglages du site de ton navigateur, puis réactive **Push notifications** dans les [Réglages](/fr/account/settings). Sur iPhone, les notifications push ne marchent qu'une fois Clamly ajouté à l'écran d'accueil.
+  </Accordion>
+  <Accordion title="Une page manque dans ma barre latérale">
+    **Billing** n'apparaît qu'avec un abonnement payant, et **Early Access** seulement quand une fonction Labs t'est ouverte. Discover, Study Groups, Exams et Clamly AI disparaissent pendant que la fonction concernée est en pause pour maintenance.
+  </Accordion>
+  <Accordion title="Je vois une ancienne version de Clamly">
+    L'appli installée vérifie les mises à jour toutes les 30 minutes. Recharge la page, ou ferme et rouvre l'appli, pour avoir tout de suite la dernière version.
+  </Accordion>
+  <Accordion title="Je suis hors ligne">
+    Un bandeau te l'indique. Les quiz et notes ouverts récemment se chargent encore, mais l'enregistrement des modifications et l'IA ont besoin d'une connexion.
+  </Accordion>
+</AccordionGroup>
+
+## Facturation
+
+<AccordionGroup>
+  <Accordion title="J'ai résilié mais j'ai toujours mon abonnement payant">
+    C'est normal. Tu le gardes jusqu'à la fin de la période payée, et tu ne seras plus prélevé.
+  </Accordion>
+  <Accordion title="J'ai été prélevé et je veux un remboursement">
+    Dans l'UE ou l'EEE, tu peux te rétracter dans les 14 jours suivant un achat pour un remboursement au prorata. Voir [Abonnements et facturation](/fr/account/plans-and-billing).
+  </Accordion>
+  <Accordion title="Où sont mes factures ?">
+    **Billing**, puis **Manage Subscription**, ouvre le portail Stripe, où tu peux télécharger toutes tes factures.
+  </Accordion>
+</AccordionGroup>

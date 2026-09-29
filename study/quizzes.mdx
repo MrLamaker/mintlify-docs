@@ -1,0 +1,84 @@
+---
+title: "Quizzes"
+description: "Write a quiz, import one, or let Clamly AI build it. Then play it in three timed modes and see which questions trip you up."
+keywords: ["quiz", "create quiz", "import", "csv", "quizlet", "hell mode", "share quiz", "shuffle"]
+---
+
+Quizzes are the centre of Clamly. There are three ways to make one, three speeds to play it at, and a results screen that turns what you missed into something to review.
+
+## Make a quiz
+
+<Tabs>
+  <Tab title="Write it yourself">
+    1. Open **Quizzes** and create a new quiz.
+    2. Give it a title (up to 200 characters) and, if you like, a description, tags and a class.
+    3. Add questions. Each question has between 2 and 6 answer options, and can have more than one correct answer.
+    4. Add an explanation to any question (up to 1,000 characters). It shows after you answer, so you learn why, not just what.
+  </Tab>
+  <Tab title="Import one">
+    From **Quizzes**, choose **Import** and paste your content. Two formats work:
+
+    - **Term and definition pairs**, one per line, the way Quizlet exports them. Separate term and definition with a tab, a comma, or ` - `. Clamly builds a multiple choice question from each pair and draws the wrong answers from the other rows, like a practice test.
+    - **A CSV** with the columns `question, correct, wrong1, wrong2, …`
+
+    ```text Quizlet-style pairs
+    Mitochondrion	Produces most of the cell's ATP
+    Ribosome	Builds proteins from amino acids
+    Lysosome	Breaks down waste inside the cell
+    ```
+
+    ```text CSV
+    question,correct,wrong1,wrong2,wrong3
+    Capital of Portugal?,Lisbon,Porto,Madrid,Seville
+    ```
+  </Tab>
+  <Tab title="Let Clamly AI build it">
+    Upload a PDF, Word document or text file and Clamly AI writes the questions from it, with hints and explanations. The questions are about your course, not the subject in general. See [Clamly AI tools](/ai/overview#make-a-quiz-from-a-document).
+  </Tab>
+</Tabs>
+
+## Play a quiz
+
+Pick a mode before you start. The only difference is how long you get per question.
+
+| Mode | Time per question | Good for |
+| --- | --- | --- |
+| **Normal** | 45 seconds | Learning the material |
+| **Hard** | 25 seconds | Checking you really know it |
+| **Hell** | 12 seconds | Making recall automatic before an exam |
+
+While you play:
+
+- Each answer is marked right or wrong straight away, with the explanation if the quiz has one.
+- **AI Hint** gives you a nudge without the answer. Each hint uses 1 AI usage unit.
+- **Shuffle questions**, on the quiz page, changes the order every time you play. It is on by default.
+
+<Warning>
+  Leaving a quiz halfway loses that attempt. Clamly asks before it lets you go.
+</Warning>
+
+## After a quiz
+
+The results screen shows your score and every question you missed. From there you can:
+
+- **Get AI Review.** Clamly looks at what you got wrong and explains the pattern. This uses 3 AI usage units.
+- **Discuss with AI**, which opens [Clamly Chat](/ai/chat) with your score already in the message.
+- **Save as flashcards.** Pick a deck and the missed questions you want. Each card uses the question as the front and the correct answer as the back, and goes straight into [spaced repetition](/study/flashcards).
+
+Every quiz also keeps its own analytics: attempts, average score, and how often each question is answered correctly, so you can see exactly which ones trip you up.
+
+## Share a quiz
+
+Every quiz has one of three visibility settings.
+
+| Visibility | Who can open it |
+| --- | --- |
+| **Private** | Only you. This is the default. |
+| **Unlisted** | Anyone with the link. It does not appear on Discover. |
+| **Public** | Anyone, and it is listed on [Discover](/together/discover). |
+
+You can also share a quiz into a [study group](/together/groups). When someone else plays your quiz, their answers are checked on Clamly's servers, so the answer key never reaches their browser.
+
+## Delete a quiz
+
+Deleting a quiz moves it to the [Trash](/account/trash), where you can restore it for 30 days.

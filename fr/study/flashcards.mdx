@@ -1,0 +1,80 @@
+---
+title: "Flashcards"
+description: "Des paquets qui reviennent selon un planning. Clamly utilise la répétition espacée FSRS, l'algorithme qu'utilise Anki aujourd'hui."
+keywords: ["flashcards", "cartes mémoire", "répétition espacée", "fsrs", "anki", "paquet", "cartes à réviser", "import", "quizlet"]
+---
+
+Les flashcards reviennent au moment où tu es sur le point de les oublier, pas quand tu y penses par hasard. Une carte facile te laisse tranquille pendant des semaines. Une carte que tu rates souvent revient au bout d'un jour ou deux.
+
+## Comment fonctionne la révision
+
+<Steps>
+  <Step title="Ouvre ce qui est à réviser">
+    La page Flashcards t'indique combien de cartes sont à réviser et dans quels paquets. Ouvre un paquet pour commencer.
+  </Step>
+  <Step title="Essaie de te souvenir, puis retourne">
+    Lis le recto, réponds dans ta tête, puis retourne la carte d'un clic, avec <kbd>Space</kbd> ou <kbd>Enter</kbd>.
+  </Step>
+  <Step title="Note-toi honnêtement">
+    Indique à quel point tu la connaissais. Clamly planifie la prochaine révision à partir de ta réponse.
+  </Step>
+</Steps>
+
+| Note | Signifie | Ce qui se passe ensuite |
+| --- | --- | --- |
+| **Again** | Tu l'as oubliée | La carte recommence et revient vite |
+| **Hard** | Trouvée, mais difficilement | Un intervalle court |
+| **Good** | Un peu d'hésitation | Un intervalle normal |
+| **Easy** | Rappel immédiat | Un intervalle long |
+
+<Tip>
+  Se noter généreusement fait plaisir aujourd'hui et coûte cher la semaine prochaine. **Again** n'est pas un échec. C'est comme ça que l'algorithme apprend quelles cartes demandent plus de temps.
+</Tip>
+
+### Pourquoi FSRS
+
+Clamly planifie les cartes avec FSRS (Free Spaced Repetition Scheduler), l'algorithme qu'Anki utilise par défaut aujourd'hui. Il estime la solidité de chaque souvenir à partir de ton historique de révisions, pour que les intervalles s'adaptent à toi plutôt qu'à une formule fixe.
+
+<Note>
+  FSRS a remplacé l'ancien algorithme SM-2 le 21 septembre 2026. SM-2 ne gardait aucun historique de révisions dont FSRS aurait pu se servir, donc toutes les cartes existantes à ce moment-là ont été remises à zéro comme nouvelles et rendues à réviser. Si une grosse pile de cartes à réviser est apparue cette semaine-là, c'est pour ça. Les cartes elles-mêmes n'ont pas changé.
+</Note>
+
+## Créer un paquet
+
+<Tabs>
+  <Tab title="À la main">
+    Crée un paquet sur la page Flashcards et ajoute des cartes avec un recto et un verso.
+  </Tab>
+  <Tab title="Depuis tes notes">
+    - **Une carte :** sélectionne du texte dans une note et choisis **Make a flashcard**. Ta sélection devient le verso, tu écris la question du recto et tu choisis le paquet. La carte est tout de suite à réviser. Ça n'utilise pas l'IA.
+    - **Un paquet entier :** dans la note, choisis **Make flashcards** et Clamly AI rédige un nouveau paquet à partir de la note. Ça utilise 4 unités d'IA.
+  </Tab>
+  <Tab title="Depuis un document">
+    Envoie un PDF, un document Word ou un fichier texte dans les [outils Clamly AI](/fr/ai/overview) et génère un paquet de 4 à 40 cartes. Ça utilise 4 unités d'IA et crée toujours un nouveau paquet.
+  </Tab>
+  <Tab title="Depuis un quiz">
+    Après un quiz, **Save as flashcards** transforme les questions ratées en cartes, dans le paquet de ton choix. La question devient le recto et la bonne réponse le verso.
+  </Tab>
+  <Tab title="Import">
+    Choisis **Import** sur la page Flashcards et colle une carte par ligne, avec le recto et le verso séparés par une tabulation, une virgule ou ` - `. C'est le format que donne l'export de Quizlet.
+
+    ```text
+    photosynthèse	comment les plantes transforment la lumière en énergie chimique
+    osmose	l'eau traverse une membrane vers la concentration la plus élevée
+    ```
+  </Tab>
+</Tabs>
+
+## Tes statistiques
+
+En haut de la page Flashcards, tu vois quatre chiffres :
+
+- **Decks** et **Cards** : combien tu en as.
+- **Due** : les cartes prêtes à être révisées maintenant.
+- **Mastered** : les cartes que tu connais assez bien pour qu'elles reviennent rarement. Le taux de rétention à côté du bandeau des cartes à réviser est la part de tes cartes maîtrisées.
+
+## Modifier et supprimer
+
+Renomme ou supprime un paquet depuis son menu. Un paquet supprimé va dans la [Corbeille](/fr/account/trash) pour 30 jours.
+
+Supprimer une seule carte est immédiat, avec quelques secondes pour annuler depuis le message qui apparaît. Les cartes seules ne vont pas dans la Corbeille.

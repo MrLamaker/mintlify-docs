@@ -1,397 +1,1046 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "Clamly",
-  "description": "Documentation for Clamly, the all-in-one study platform with AI quizzes, flashcards, notes, and more.",
+  "theme": "maple",
+  "name": "Clamly Help",
+  "description": "Guides and answers for Clamly, a calmer way to study: quizzes, flashcards, notes, Clamly AI, study groups, plans and your account.",
   "colors": {
-    "primary": "#d45a3a",
-    "light": "#e88a6f",
-    "dark": "#b84a2e"
-  },
-  "fonts": {
-    "family": "Bricolage Grotesque",
-    "heading": {
-      "family": "Bricolage Grotesque",
-      "weight": 600
-    },
-    "body": {
-      "family": "Bricolage Grotesque",
-      "weight": 400
-    }
+    "primary": "#4A5CC0",
+    "light": "#8DA2FB",
+    "dark": "#4A5CC0"
   },
   "background": {
     "color": {
-      "light": "#f2f0e3",
+      "light": "#F2F0E3",
       "dark": "#191919"
     }
   },
-  "favicon": "https://media.brand.dev/4c982d40-85e6-401d-84e8-0af20000860e.png",
-  "icons": {
-    "library": "tabler"
+  "fonts": {
+    "heading": {
+      "family": "Junicode",
+      "source": "/fonts/Junicode.woff2",
+      "format": "woff2",
+      "weight": 400
+    },
+    "body": {
+      "family": "Bricolage Grotesque"
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.png",
+  "appearance": {
+    "default": "system"
   },
   "styling": {
-    "eyebrows": "breadcrumbs",
+    "eyebrows": "section",
     "codeblocks": "system"
   },
-  "contextual": {
-    "options": ["copy", "view", "assistant"]
-  },
   "search": {
-    "prompt": "Search Clamly docs..."
+    "prompt": "Search help, like \"reset password\""
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "assistant"
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Status",
+        "href": "https://status.clamly.app"
+      },
+      {
+        "label": "Contact",
+        "href": "mailto:support@clamly.app"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open Clamly",
+      "href": "https://clamly.app/dashboard"
+    }
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "home",
-          "href": "/"
-        },
-        {
-          "anchor": "Status",
-          "icon": "activity",
-          "href": "https://clamly.app/status"
-        },
-        {
-          "anchor": "Support",
-          "icon": "lifebuoy",
-          "href": "mailto:support@clamly.app"
-        }
-      ]
-    },
     "languages": [
       {
         "language": "en",
         "default": true,
-        "tabs": [
+        "navbar": {
+          "links": [
+            {
+              "label": "Status",
+              "href": "https://status.clamly.app"
+            },
+            {
+              "label": "Contact",
+              "href": "mailto:support@clamly.app"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Open Clamly",
+            "href": "https://clamly.app/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "website": "https://clamly.app",
+            "x": "https://x.com/clamlyxyz"
+          },
+          "links": [
+            {
+              "header": "Clamly",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "https://clamly.app"
+                },
+                {
+                  "label": "Pricing",
+                  "href": "https://clamly.app/pricing"
+                },
+                {
+                  "label": "Download",
+                  "href": "https://clamly.app/download"
+                },
+                {
+                  "label": "About",
+                  "href": "https://clamly.app/about"
+                }
+              ]
+            },
+            {
+              "header": "Legal",
+              "items": [
+                {
+                  "label": "Privacy Policy",
+                  "href": "https://clamly.app/privacy"
+                },
+                {
+                  "label": "Terms of Service",
+                  "href": "https://clamly.app/terms"
+                }
+              ]
+            },
+            {
+              "header": "Support",
+              "items": [
+                {
+                  "label": "Contact",
+                  "href": "https://clamly.app/contact"
+                },
+                {
+                  "label": "Status",
+                  "href": "https://status.clamly.app"
+                },
+                {
+                  "label": "support@clamly.app",
+                  "href": "mailto:support@clamly.app"
+                }
+              ]
+            }
+          ]
+        },
+        "groups": [
           {
-            "tab": "Get started",
-            "groups": [
-              {
-                "group": "Overview",
-                "pages": [
-                  "introduction"
-                ]
-              },
-              {
-                "group": "Setup",
-                "pages": [
-                  "getting-started/create-account",
-                  "getting-started/plans"
-                ]
-              }
+            "group": "Start here",
+            "pages": [
+              "index",
+              "getting-started/create-account",
+              "getting-started/find-your-way",
+              "getting-started/install"
             ]
           },
           {
-            "tab": "Features",
-            "groups": [
-              {
-                "group": "Study tools",
-                "pages": [
-                  "study-tools/quizzes",
-                  "study-tools/flashcards",
-                  "study-tools/notes",
-                  "study-tools/focus-timer",
-                  "study-tools/todos",
-                  "study-tools/exams"
-                ]
-              },
-              {
-                "group": "AI",
-                "pages": [
-                  "ai/clamly-ai",
-                  "ai/clamly-chat"
-                ]
-              },
-              {
-                "group": "Collaboration",
-                "pages": [
-                  "collaboration/study-groups",
-                  "collaboration/sharing"
-                ]
-              }
+            "group": "Study tools",
+            "pages": [
+              "study/quizzes",
+              "study/flashcards",
+              "study/notes",
+              "study/todos",
+              "study/classes",
+              "study/pomodoro",
+              "study/exams"
             ]
           },
           {
-            "tab": "Account",
-            "groups": [
-              {
-                "group": "Settings",
-                "pages": [
-                  "account/profile",
-                  "account/billing",
-                  "account/notifications",
-                  "account/google-calendar",
-                  "account/data-export"
-                ]
-              }
+            "group": "Clamly AI",
+            "pages": [
+              "ai/overview",
+              "ai/chat",
+              "ai/study-pack",
+              "ai/study-planner",
+              "ai/usage"
             ]
           },
           {
-            "tab": "Help",
-            "groups": [
-              {
-                "group": "Help",
-                "pages": [
-                  "help/faq",
-                  "help/status"
-                ]
-              }
+            "group": "Study together",
+            "pages": [
+              "together/discover",
+              "together/groups"
+            ]
+          },
+          {
+            "group": "Progress",
+            "pages": [
+              "progress/streaks-and-achievements",
+              "progress/analytics"
+            ]
+          },
+          {
+            "group": "Account and billing",
+            "pages": [
+              "account/plans-and-billing",
+              "account/sign-in-and-security",
+              "account/settings",
+              "account/trash",
+              "account/delete-account",
+              "account/pearl"
+            ]
+          },
+          {
+            "group": "Privacy and data",
+            "pages": [
+              "privacy/your-data",
+              "privacy/ai-and-your-data"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/troubleshooting",
+              "help/faq",
+              "help/contact"
             ]
           }
         ]
       },
       {
         "language": "ro",
-        "tabs": [
+        "navbar": {
+          "links": [
+            {
+              "label": "Stare",
+              "href": "https://status.clamly.app"
+            },
+            {
+              "label": "Contact",
+              "href": "mailto:support@clamly.app"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Deschide Clamly",
+            "href": "https://clamly.app/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "website": "https://clamly.app",
+            "x": "https://x.com/clamlyxyz"
+          },
+          "links": [
+            {
+              "header": "Clamly",
+              "items": [
+                {
+                  "label": "Acasă",
+                  "href": "https://clamly.app"
+                },
+                {
+                  "label": "Prețuri",
+                  "href": "https://clamly.app/pricing"
+                },
+                {
+                  "label": "Descărcare",
+                  "href": "https://clamly.app/download"
+                },
+                {
+                  "label": "Despre",
+                  "href": "https://clamly.app/about"
+                }
+              ]
+            },
+            {
+              "header": "Legal",
+              "items": [
+                {
+                  "label": "Politica de confidențialitate",
+                  "href": "https://clamly.app/privacy"
+                },
+                {
+                  "label": "Termeni și condiții",
+                  "href": "https://clamly.app/terms"
+                }
+              ]
+            },
+            {
+              "header": "Suport",
+              "items": [
+                {
+                  "label": "Contact",
+                  "href": "https://clamly.app/contact"
+                },
+                {
+                  "label": "Stare",
+                  "href": "https://status.clamly.app"
+                },
+                {
+                  "label": "support@clamly.app",
+                  "href": "mailto:support@clamly.app"
+                }
+              ]
+            }
+          ]
+        },
+        "groups": [
           {
-            "tab": "Începe aici",
-            "groups": [
-              {
-                "group": "Prezentare generală",
-                "pages": [
-                  "ro/introduction"
-                ]
-              },
-              {
-                "group": "Configurare",
-                "pages": [
-                  "ro/getting-started/create-account",
-                  "ro/getting-started/plans"
-                ]
-              }
+            "group": "Începe aici",
+            "pages": [
+              "ro/index",
+              "ro/getting-started/create-account",
+              "ro/getting-started/find-your-way",
+              "ro/getting-started/install"
             ]
           },
           {
-            "tab": "Funcționalități",
-            "groups": [
-              {
-                "group": "Instrumente de studiu",
-                "pages": [
-                  "ro/study-tools/quizzes",
-                  "ro/study-tools/flashcards",
-                  "ro/study-tools/notes",
-                  "ro/study-tools/focus-timer",
-                  "ro/study-tools/todos",
-                  "ro/study-tools/exams"
-                ]
-              },
-              {
-                "group": "AI",
-                "pages": [
-                  "ro/ai/clamly-ai",
-                  "ro/ai/clamly-chat"
-                ]
-              },
-              {
-                "group": "Colaborare",
-                "pages": [
-                  "ro/collaboration/study-groups",
-                  "ro/collaboration/sharing"
-                ]
-              }
+            "group": "Instrumente de studiu",
+            "pages": [
+              "ro/study/quizzes",
+              "ro/study/flashcards",
+              "ro/study/notes",
+              "ro/study/todos",
+              "ro/study/classes",
+              "ro/study/pomodoro",
+              "ro/study/exams"
             ]
           },
           {
-            "tab": "Cont",
-            "groups": [
-              {
-                "group": "Setări",
-                "pages": [
-                  "ro/account/profile",
-                  "ro/account/billing",
-                  "ro/account/notifications",
-                  "ro/account/google-calendar",
-                  "ro/account/data-export"
-                ]
-              }
+            "group": "Clamly AI",
+            "pages": [
+              "ro/ai/overview",
+              "ro/ai/chat",
+              "ro/ai/study-pack",
+              "ro/ai/study-planner",
+              "ro/ai/usage"
             ]
           },
           {
-            "tab": "Ajutor",
-            "groups": [
-              {
-                "group": "Ajutor",
-                "pages": [
-                  "ro/help/faq",
-                  "ro/help/status"
-                ]
-              }
+            "group": "Învață împreună",
+            "pages": [
+              "ro/together/discover",
+              "ro/together/groups"
+            ]
+          },
+          {
+            "group": "Progres",
+            "pages": [
+              "ro/progress/streaks-and-achievements",
+              "ro/progress/analytics"
+            ]
+          },
+          {
+            "group": "Cont și facturare",
+            "pages": [
+              "ro/account/plans-and-billing",
+              "ro/account/sign-in-and-security",
+              "ro/account/settings",
+              "ro/account/trash",
+              "ro/account/delete-account",
+              "ro/account/pearl"
+            ]
+          },
+          {
+            "group": "Confidențialitate și date",
+            "pages": [
+              "ro/privacy/your-data",
+              "ro/privacy/ai-and-your-data"
+            ]
+          },
+          {
+            "group": "Ajutor",
+            "pages": [
+              "ro/help/troubleshooting",
+              "ro/help/faq",
+              "ro/help/contact"
             ]
           }
         ]
       },
       {
         "language": "de",
-        "tabs": [
+        "navbar": {
+          "links": [
+            {
+              "label": "Status",
+              "href": "https://status.clamly.app"
+            },
+            {
+              "label": "Kontakt",
+              "href": "mailto:support@clamly.app"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Clamly öffnen",
+            "href": "https://clamly.app/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "website": "https://clamly.app",
+            "x": "https://x.com/clamlyxyz"
+          },
+          "links": [
+            {
+              "header": "Clamly",
+              "items": [
+                {
+                  "label": "Startseite",
+                  "href": "https://clamly.app"
+                },
+                {
+                  "label": "Preise",
+                  "href": "https://clamly.app/pricing"
+                },
+                {
+                  "label": "Download",
+                  "href": "https://clamly.app/download"
+                },
+                {
+                  "label": "Über Clamly",
+                  "href": "https://clamly.app/about"
+                }
+              ]
+            },
+            {
+              "header": "Rechtliches",
+              "items": [
+                {
+                  "label": "Datenschutz",
+                  "href": "https://clamly.app/privacy"
+                },
+                {
+                  "label": "Nutzungsbedingungen",
+                  "href": "https://clamly.app/terms"
+                }
+              ]
+            },
+            {
+              "header": "Support",
+              "items": [
+                {
+                  "label": "Kontakt",
+                  "href": "https://clamly.app/contact"
+                },
+                {
+                  "label": "Status",
+                  "href": "https://status.clamly.app"
+                },
+                {
+                  "label": "support@clamly.app",
+                  "href": "mailto:support@clamly.app"
+                }
+              ]
+            }
+          ]
+        },
+        "groups": [
           {
-            "tab": "Erste Schritte",
-            "groups": [
-              {
-                "group": "Übersicht",
-                "pages": [
-                  "de/introduction"
-                ]
-              },
-              {
-                "group": "Einrichtung",
-                "pages": [
-                  "de/getting-started/create-account",
-                  "de/getting-started/plans"
-                ]
-              }
+            "group": "Erste Schritte",
+            "pages": [
+              "de/index",
+              "de/getting-started/create-account",
+              "de/getting-started/find-your-way",
+              "de/getting-started/install"
             ]
           },
           {
-            "tab": "Funktionen",
-            "groups": [
-              {
-                "group": "Lern-Tools",
-                "pages": [
-                  "de/study-tools/quizzes",
-                  "de/study-tools/flashcards",
-                  "de/study-tools/notes",
-                  "de/study-tools/focus-timer",
-                  "de/study-tools/todos",
-                  "de/study-tools/exams"
-                ]
-              },
-              {
-                "group": "KI",
-                "pages": [
-                  "de/ai/clamly-ai",
-                  "de/ai/clamly-chat"
-                ]
-              },
-              {
-                "group": "Zusammenarbeit",
-                "pages": [
-                  "de/collaboration/study-groups",
-                  "de/collaboration/sharing"
-                ]
-              }
+            "group": "Lernwerkzeuge",
+            "pages": [
+              "de/study/quizzes",
+              "de/study/flashcards",
+              "de/study/notes",
+              "de/study/todos",
+              "de/study/classes",
+              "de/study/pomodoro",
+              "de/study/exams"
             ]
           },
           {
-            "tab": "Konto",
-            "groups": [
-              {
-                "group": "Einstellungen",
-                "pages": [
-                  "de/account/profile",
-                  "de/account/billing",
-                  "de/account/notifications",
-                  "de/account/google-calendar",
-                  "de/account/data-export"
-                ]
-              }
+            "group": "Clamly AI",
+            "pages": [
+              "de/ai/overview",
+              "de/ai/chat",
+              "de/ai/study-pack",
+              "de/ai/study-planner",
+              "de/ai/usage"
             ]
           },
           {
-            "tab": "Hilfe",
-            "groups": [
-              {
-                "group": "Hilfe",
-                "pages": [
-                  "de/help/faq",
-                  "de/help/status"
-                ]
-              }
+            "group": "Gemeinsam lernen",
+            "pages": [
+              "de/together/discover",
+              "de/together/groups"
+            ]
+          },
+          {
+            "group": "Fortschritt",
+            "pages": [
+              "de/progress/streaks-and-achievements",
+              "de/progress/analytics"
+            ]
+          },
+          {
+            "group": "Konto und Abrechnung",
+            "pages": [
+              "de/account/plans-and-billing",
+              "de/account/sign-in-and-security",
+              "de/account/settings",
+              "de/account/trash",
+              "de/account/delete-account",
+              "de/account/pearl"
+            ]
+          },
+          {
+            "group": "Datenschutz und Daten",
+            "pages": [
+              "de/privacy/your-data",
+              "de/privacy/ai-and-your-data"
+            ]
+          },
+          {
+            "group": "Hilfe",
+            "pages": [
+              "de/help/troubleshooting",
+              "de/help/faq",
+              "de/help/contact"
             ]
           }
         ]
       },
       {
         "language": "fr",
-        "tabs": [
+        "navbar": {
+          "links": [
+            {
+              "label": "Statut",
+              "href": "https://status.clamly.app"
+            },
+            {
+              "label": "Contact",
+              "href": "mailto:support@clamly.app"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Ouvrir Clamly",
+            "href": "https://clamly.app/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "website": "https://clamly.app",
+            "x": "https://x.com/clamlyxyz"
+          },
+          "links": [
+            {
+              "header": "Clamly",
+              "items": [
+                {
+                  "label": "Accueil",
+                  "href": "https://clamly.app"
+                },
+                {
+                  "label": "Tarifs",
+                  "href": "https://clamly.app/pricing"
+                },
+                {
+                  "label": "Télécharger",
+                  "href": "https://clamly.app/download"
+                },
+                {
+                  "label": "À propos",
+                  "href": "https://clamly.app/about"
+                }
+              ]
+            },
+            {
+              "header": "Mentions légales",
+              "items": [
+                {
+                  "label": "Confidentialité",
+                  "href": "https://clamly.app/privacy"
+                },
+                {
+                  "label": "Conditions d'utilisation",
+                  "href": "https://clamly.app/terms"
+                }
+              ]
+            },
+            {
+              "header": "Support",
+              "items": [
+                {
+                  "label": "Contact",
+                  "href": "https://clamly.app/contact"
+                },
+                {
+                  "label": "Statut",
+                  "href": "https://status.clamly.app"
+                },
+                {
+                  "label": "support@clamly.app",
+                  "href": "mailto:support@clamly.app"
+                }
+              ]
+            }
+          ]
+        },
+        "groups": [
           {
-            "tab": "Commencer",
-            "groups": [
-              {
-                "group": "Aperçu",
-                "pages": [
-                  "fr/introduction"
-                ]
-              },
-              {
-                "group": "Configuration",
-                "pages": [
-                  "fr/getting-started/create-account",
-                  "fr/getting-started/plans"
-                ]
-              }
+            "group": "Pour commencer",
+            "pages": [
+              "fr/index",
+              "fr/getting-started/create-account",
+              "fr/getting-started/find-your-way",
+              "fr/getting-started/install"
             ]
           },
           {
-            "tab": "Fonctionnalités",
-            "groups": [
-              {
-                "group": "Outils d'étude",
-                "pages": [
-                  "fr/study-tools/quizzes",
-                  "fr/study-tools/flashcards",
-                  "fr/study-tools/notes",
-                  "fr/study-tools/focus-timer",
-                  "fr/study-tools/todos",
-                  "fr/study-tools/exams"
-                ]
-              },
-              {
-                "group": "IA",
-                "pages": [
-                  "fr/ai/clamly-ai",
-                  "fr/ai/clamly-chat"
-                ]
-              },
-              {
-                "group": "Collaboration",
-                "pages": [
-                  "fr/collaboration/study-groups",
-                  "fr/collaboration/sharing"
-                ]
-              }
+            "group": "Outils d'étude",
+            "pages": [
+              "fr/study/quizzes",
+              "fr/study/flashcards",
+              "fr/study/notes",
+              "fr/study/todos",
+              "fr/study/classes",
+              "fr/study/pomodoro",
+              "fr/study/exams"
             ]
           },
           {
-            "tab": "Compte",
-            "groups": [
-              {
-                "group": "Paramètres",
-                "pages": [
-                  "fr/account/profile",
-                  "fr/account/billing",
-                  "fr/account/notifications",
-                  "fr/account/google-calendar",
-                  "fr/account/data-export"
-                ]
-              }
+            "group": "Clamly AI",
+            "pages": [
+              "fr/ai/overview",
+              "fr/ai/chat",
+              "fr/ai/study-pack",
+              "fr/ai/study-planner",
+              "fr/ai/usage"
             ]
           },
           {
-            "tab": "Aide",
-            "groups": [
-              {
-                "group": "Aide",
-                "pages": [
-                  "fr/help/faq",
-                  "fr/help/status"
-                ]
-              }
+            "group": "Étudier ensemble",
+            "pages": [
+              "fr/together/discover",
+              "fr/together/groups"
+            ]
+          },
+          {
+            "group": "Progression",
+            "pages": [
+              "fr/progress/streaks-and-achievements",
+              "fr/progress/analytics"
+            ]
+          },
+          {
+            "group": "Compte et facturation",
+            "pages": [
+              "fr/account/plans-and-billing",
+              "fr/account/sign-in-and-security",
+              "fr/account/settings",
+              "fr/account/trash",
+              "fr/account/delete-account",
+              "fr/account/pearl"
+            ]
+          },
+          {
+            "group": "Confidentialité et données",
+            "pages": [
+              "fr/privacy/your-data",
+              "fr/privacy/ai-and-your-data"
+            ]
+          },
+          {
+            "group": "Aide",
+            "pages": [
+              "fr/help/troubleshooting",
+              "fr/help/faq",
+              "fr/help/contact"
             ]
           }
         ]
       }
     ]
   },
-  "navbar": {
-    "links": [],
-    "primary": {
-      "type": "button",
-      "label": "Open Clamly",
-      "href": "https://clamly.app"
+  "footer": {
+    "socials": {
+      "website": "https://clamly.app",
+      "x": "https://x.com/clamlyxyz"
+    },
+    "links": [
+      {
+        "header": "Clamly",
+        "items": [
+          {
+            "label": "Home",
+            "href": "https://clamly.app"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://clamly.app/pricing"
+          },
+          {
+            "label": "Download",
+            "href": "https://clamly.app/download"
+          },
+          {
+            "label": "About",
+            "href": "https://clamly.app/about"
+          }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Privacy Policy",
+            "href": "https://clamly.app/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "https://clamly.app/terms"
+          }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          {
+            "label": "Contact",
+            "href": "https://clamly.app/contact"
+          },
+          {
+            "label": "Status",
+            "href": "https://status.clamly.app"
+          },
+          {
+            "label": "support@clamly.app",
+            "href": "mailto:support@clamly.app"
+          }
+        ]
+      }
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/introduction",
+      "destination": "/"
+    },
+    {
+      "source": "/getting-started/plans",
+      "destination": "/account/plans-and-billing"
+    },
+    {
+      "source": "/study-tools/quizzes",
+      "destination": "/study/quizzes"
+    },
+    {
+      "source": "/study-tools/flashcards",
+      "destination": "/study/flashcards"
+    },
+    {
+      "source": "/study-tools/notes",
+      "destination": "/study/notes"
+    },
+    {
+      "source": "/study-tools/focus-timer",
+      "destination": "/study/pomodoro"
+    },
+    {
+      "source": "/study-tools/todos",
+      "destination": "/study/todos"
+    },
+    {
+      "source": "/study-tools/exams",
+      "destination": "/study/exams"
+    },
+    {
+      "source": "/ai/clamly-ai",
+      "destination": "/ai/overview"
+    },
+    {
+      "source": "/ai/clamly-chat",
+      "destination": "/ai/chat"
+    },
+    {
+      "source": "/collaboration/study-groups",
+      "destination": "/together/groups"
+    },
+    {
+      "source": "/collaboration/sharing",
+      "destination": "/together/discover"
+    },
+    {
+      "source": "/account/profile",
+      "destination": "/account/settings"
+    },
+    {
+      "source": "/account/google-calendar",
+      "destination": "/study/exams"
+    },
+    {
+      "source": "/account/notifications",
+      "destination": "/account/settings"
+    },
+    {
+      "source": "/account/data-export",
+      "destination": "/privacy/your-data"
+    },
+    {
+      "source": "/account/billing",
+      "destination": "/account/plans-and-billing"
+    },
+    {
+      "source": "/help/status",
+      "destination": "/help/troubleshooting"
+    },
+    {
+      "source": "/ro/introduction",
+      "destination": "/ro"
+    },
+    {
+      "source": "/ro/getting-started/plans",
+      "destination": "/ro/account/plans-and-billing"
+    },
+    {
+      "source": "/ro/study-tools/quizzes",
+      "destination": "/ro/study/quizzes"
+    },
+    {
+      "source": "/ro/study-tools/flashcards",
+      "destination": "/ro/study/flashcards"
+    },
+    {
+      "source": "/ro/study-tools/notes",
+      "destination": "/ro/study/notes"
+    },
+    {
+      "source": "/ro/study-tools/focus-timer",
+      "destination": "/ro/study/pomodoro"
+    },
+    {
+      "source": "/ro/study-tools/todos",
+      "destination": "/ro/study/todos"
+    },
+    {
+      "source": "/ro/study-tools/exams",
+      "destination": "/ro/study/exams"
+    },
+    {
+      "source": "/ro/ai/clamly-ai",
+      "destination": "/ro/ai/overview"
+    },
+    {
+      "source": "/ro/ai/clamly-chat",
+      "destination": "/ro/ai/chat"
+    },
+    {
+      "source": "/ro/collaboration/study-groups",
+      "destination": "/ro/together/groups"
+    },
+    {
+      "source": "/ro/collaboration/sharing",
+      "destination": "/ro/together/discover"
+    },
+    {
+      "source": "/ro/account/profile",
+      "destination": "/ro/account/settings"
+    },
+    {
+      "source": "/ro/account/google-calendar",
+      "destination": "/ro/study/exams"
+    },
+    {
+      "source": "/ro/account/notifications",
+      "destination": "/ro/account/settings"
+    },
+    {
+      "source": "/ro/account/data-export",
+      "destination": "/ro/privacy/your-data"
+    },
+    {
+      "source": "/ro/account/billing",
+      "destination": "/ro/account/plans-and-billing"
+    },
+    {
+      "source": "/ro/help/status",
+      "destination": "/ro/help/troubleshooting"
+    },
+    {
+      "source": "/de/introduction",
+      "destination": "/de"
+    },
+    {
+      "source": "/de/getting-started/plans",
+      "destination": "/de/account/plans-and-billing"
+    },
+    {
+      "source": "/de/study-tools/quizzes",
+      "destination": "/de/study/quizzes"
+    },
+    {
+      "source": "/de/study-tools/flashcards",
+      "destination": "/de/study/flashcards"
+    },
+    {
+      "source": "/de/study-tools/notes",
+      "destination": "/de/study/notes"
+    },
+    {
+      "source": "/de/study-tools/focus-timer",
+      "destination": "/de/study/pomodoro"
+    },
+    {
+      "source": "/de/study-tools/todos",
+      "destination": "/de/study/todos"
+    },
+    {
+      "source": "/de/study-tools/exams",
+      "destination": "/de/study/exams"
+    },
+    {
+      "source": "/de/ai/clamly-ai",
+      "destination": "/de/ai/overview"
+    },
+    {
+      "source": "/de/ai/clamly-chat",
+      "destination": "/de/ai/chat"
+    },
+    {
+      "source": "/de/collaboration/study-groups",
+      "destination": "/de/together/groups"
+    },
+    {
+      "source": "/de/collaboration/sharing",
+      "destination": "/de/together/discover"
+    },
+    {
+      "source": "/de/account/profile",
+      "destination": "/de/account/settings"
+    },
+    {
+      "source": "/de/account/google-calendar",
+      "destination": "/de/study/exams"
+    },
+    {
+      "source": "/de/account/notifications",
+      "destination": "/de/account/settings"
+    },
+    {
+      "source": "/de/account/data-export",
+      "destination": "/de/privacy/your-data"
+    },
+    {
+      "source": "/de/account/billing",
+      "destination": "/de/account/plans-and-billing"
+    },
+    {
+      "source": "/de/help/status",
+      "destination": "/de/help/troubleshooting"
+    },
+    {
+      "source": "/fr/introduction",
+      "destination": "/fr"
+    },
+    {
+      "source": "/fr/getting-started/plans",
+      "destination": "/fr/account/plans-and-billing"
+    },
+    {
+      "source": "/fr/study-tools/quizzes",
+      "destination": "/fr/study/quizzes"
+    },
+    {
+      "source": "/fr/study-tools/flashcards",
+      "destination": "/fr/study/flashcards"
+    },
+    {
+      "source": "/fr/study-tools/notes",
+      "destination": "/fr/study/notes"
+    },
+    {
+      "source": "/fr/study-tools/focus-timer",
+      "destination": "/fr/study/pomodoro"
+    },
+    {
+      "source": "/fr/study-tools/todos",
+      "destination": "/fr/study/todos"
+    },
+    {
+      "source": "/fr/study-tools/exams",
+      "destination": "/fr/study/exams"
+    },
+    {
+      "source": "/fr/ai/clamly-ai",
+      "destination": "/fr/ai/overview"
+    },
+    {
+      "source": "/fr/ai/clamly-chat",
+      "destination": "/fr/ai/chat"
+    },
+    {
+      "source": "/fr/collaboration/study-groups",
+      "destination": "/fr/together/groups"
+    },
+    {
+      "source": "/fr/collaboration/sharing",
+      "destination": "/fr/together/discover"
+    },
+    {
+      "source": "/fr/account/profile",
+      "destination": "/fr/account/settings"
+    },
+    {
+      "source": "/fr/account/google-calendar",
+      "destination": "/fr/study/exams"
+    },
+    {
+      "source": "/fr/account/notifications",
+      "destination": "/fr/account/settings"
+    },
+    {
+      "source": "/fr/account/data-export",
+      "destination": "/fr/privacy/your-data"
+    },
+    {
+      "source": "/fr/account/billing",
+      "destination": "/fr/account/plans-and-billing"
+    },
+    {
+      "source": "/fr/help/status",
+      "destination": "/fr/help/troubleshooting"
+    }
+  ],
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "That page isn't here",
+      "description": "It may have moved when these guides were rebuilt. Try the search bar, or go back to the [help home](/)."
     }
   },
-  "footer": {
-    "socials": {}
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:site_name": "Clamly Help",
+      "twitter:site": "@clamlyxyz"
+    }
   }
 }

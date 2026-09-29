@@ -1,0 +1,85 @@
+---
+title: "Sign-in and security"
+description: "Reset or change your password, sign in with Google, and protect your account with two-factor authentication."
+keywords: ["password", "forgot password", "reset password", "change password", "google sign in", "two-factor", "2fa", "authenticator", "recovery codes", "locked out", "trusted device"]
+---
+
+You can sign in to Clamly with an email and password, with Google, or both. Your security options live in **Settings**, under **Security**.
+
+## Reset a forgotten password
+
+1. On the [log in page](https://clamly.app/login), choose **Forgot password?**
+2. Enter your email address. Clamly sends a reset link.
+3. Open the link within **1 hour** and choose a new password of at least 8 characters.
+
+If the link has expired, request a new one. The same steps also add a password to an account you created with Google.
+
+## Change your password
+
+In **Settings**, choose **Change password**. Enter your current password, then the new one twice. It needs at least 8 characters, and it cannot be the same as the old one.
+
+Changing your password **signs you out on every other device**. The device you are using stays signed in.
+
+<Note>
+  If you only ever signed in with Google, there is no **Change password** option, because there is no password to change. Use [Forgot password](#reset-a-forgotten-password) to set one.
+</Note>
+
+## Sign in with Google
+
+Choose **Continue with Google** on the log in or sign-up page. Google handles your password and its own 2-step verification. Clamly's two-factor authentication applies to email and password sign-in only.
+
+## Turn on two-factor authentication
+
+Two-factor authentication (2FA) adds a second step when you sign in with your password, so someone who learns your password still cannot get in. It is optional, and recommended.
+
+<Steps>
+  <Step title="Start">
+    In **Settings**, find two-factor authentication and choose **Turn on**. Confirm your password. Nothing changes on your account until you finish the next step.
+  </Step>
+  <Step title="Scan the code">
+    Scan the QR code with an authenticator app such as Google Authenticator, 1Password or Authy. If you cannot scan, enter the key shown under it by hand.
+  </Step>
+  <Step title="Enter the code">
+    Type the 6-digit code from the app and choose **Verify and turn on**.
+  </Step>
+  <Step title="Save your recovery codes">
+    Clamly shows you a set of recovery codes **once**. Copy them somewhere safe, like a password manager. Each one gets you in a single time if you lose your phone.
+  </Step>
+</Steps>
+
+**No authenticator app?** Choose **Email me codes instead** on the scan step. Clamly then emails you a sign-in code each time. An authenticator app is safer, because it does not depend on access to your inbox.
+
+<Info>
+  Signed up with Google? Two-factor setup needs a password first, because that is what proves it is you before the second step is added. [Set a password](#reset-a-forgotten-password), then come back.
+</Info>
+
+## Signing in with two-factor on
+
+After your password, Clamly asks for a 6-digit code.
+
+- **Authenticator app:** type the current code. Codes change every 30 seconds.
+- **Emailed code:** check your inbox for *"123456 is your Clamly sign-in code"*. Each code lasts 5 minutes. **Send a new code** if it expired.
+- **Lost your phone?** Choose **Use a recovery code** and enter one of your saved codes exactly as written, including upper and lower case. Each code works once.
+
+Tick **Trust this device for 30 days** to skip the code on that device for a month. Leave it off on a shared or public computer.
+
+## Trusted devices and recovery codes
+
+In the two-factor section of **Settings**:
+
+- **Trusted devices** shows how many devices currently skip the code. **Untrust all devices** makes every one of them, including the one you are on, ask for a code next time. Use it if you lost a device or signed in somewhere you should not have.
+- **Generate new recovery codes** replaces your whole set. Codes you saved before stop working.
+- **Turn off** two-factor with your password. Your recovery codes stop working too.
+
+## Locked out
+
+Too many wrong codes trigger protections:
+
+| What happened | What to do |
+| --- | --- |
+| **"Too many tries in a row"** | Wait a few seconds and try again, more slowly. |
+| 5 wrong tries on one emailed code | That code is retired. Sign in with your password again to get a new one. |
+| **"Your account is locked for about 15 minutes"** | 10 wrong codes in a row lock two-factor sign-in for 15 minutes. Wait, then use a fresh code. |
+| Authenticator codes never work | Set your phone's date and time to update automatically. Authenticator codes depend on the clock. |
+
+Lost your phone **and** your recovery codes? Email [support@clamly.app](mailto:support@clamly.app) from your account's address.

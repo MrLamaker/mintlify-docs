@@ -1,0 +1,85 @@
+---
+title: "Anmeldung und Sicherheit"
+description: "Passwort zurücksetzen oder ändern, mit Google anmelden und dein Konto mit Zwei-Faktor-Anmeldung schützen."
+keywords: ["passwort", "passwort vergessen", "passwort zurücksetzen", "passwort ändern", "google anmeldung", "zwei-faktor", "2fa", "authenticator", "wiederherstellungscodes", "gesperrt", "vertrauenswürdiges gerät"]
+---
+
+Du kannst dich bei Clamly mit E-Mail und Passwort, mit Google oder mit beidem anmelden. Deine Sicherheitsoptionen findest du in **Settings** unter **Security**.
+
+## Vergessenes Passwort zurücksetzen
+
+1. Wähl auf der [Anmeldeseite](https://clamly.app/login) **Forgot password?**
+2. Gib deine E-Mail-Adresse ein. Clamly schickt dir einen Link zum Zurücksetzen.
+3. Öffne den Link innerhalb von **1 Stunde** und wähl ein neues Passwort mit mindestens 8 Zeichen.
+
+Ist der Link abgelaufen, fordere einen neuen an. Mit denselben Schritten fügst du auch einem Konto, das du mit Google erstellt hast, ein Passwort hinzu.
+
+## Passwort ändern
+
+Wähl in **Settings** **Change password**. Gib dein aktuelles Passwort ein, dann zweimal das neue. Es braucht mindestens 8 Zeichen und darf nicht dem alten entsprechen.
+
+Eine Passwortänderung **meldet dich auf allen anderen Geräten ab**. Das Gerät, das du gerade nutzt, bleibt angemeldet.
+
+<Note>
+  Wenn du dich immer nur mit Google angemeldet hast, gibt es kein **Change password**, weil es kein Passwort zu ändern gibt. Setz mit den Schritten für ein vergessenes Passwort oben eines.
+</Note>
+
+## Mit Google anmelden
+
+Wähl **Continue with Google** auf der Anmelde- oder Registrierungsseite. Google kümmert sich um dein Passwort und seine eigene Bestätigung in zwei Schritten. Die Zwei-Faktor-Anmeldung von Clamly gilt nur für die Anmeldung mit E-Mail und Passwort.
+
+## Zwei-Faktor-Anmeldung einschalten
+
+Die Zwei-Faktor-Anmeldung (2FA) fügt einen zweiten Schritt hinzu, wenn du dich mit Passwort anmeldest. Wer dein Passwort herausfindet, kommt trotzdem nicht rein. Sie ist freiwillig und empfohlen.
+
+<Steps>
+  <Step title="Starten">
+    Such in **Settings** die Zwei-Faktor-Anmeldung und wähl **Turn on**. Bestätige dein Passwort. An deinem Konto ändert sich nichts, bis du den nächsten Schritt abschließt.
+  </Step>
+  <Step title="Code scannen">
+    Scann den QR-Code mit einer Authenticator-App wie Google Authenticator, 1Password oder Authy. Wenn du nicht scannen kannst, gib den darunter angezeigten Schlüssel von Hand ein.
+  </Step>
+  <Step title="Code eingeben">
+    Tipp den 6-stelligen Code aus der App ein und wähl **Verify and turn on**.
+  </Step>
+  <Step title="Wiederherstellungscodes speichern">
+    Clamly zeigt dir **ein einziges Mal** eine Reihe von Wiederherstellungscodes. Kopier sie an einen sicheren Ort, etwa einen Passwortmanager. Jeder bringt dich einmal rein, falls du dein Handy verlierst.
+  </Step>
+</Steps>
+
+**Keine Authenticator-App?** Wähl beim Scan-Schritt **Email me codes instead**. Clamly schickt dir dann bei jeder Anmeldung einen Code per E-Mail. Eine Authenticator-App ist sicherer, weil sie nicht vom Zugang zu deinem Postfach abhängt.
+
+<Info>
+  Mit Google registriert? Für die Zwei-Faktor-Einrichtung brauchst du zuerst ein Passwort, denn damit beweist du, dass du es bist, bevor der zweite Schritt dazukommt. Setz mit den Schritten für ein vergessenes Passwort eines und komm dann zurück.
+</Info>
+
+## Anmelden mit eingeschalteter Zwei-Faktor-Anmeldung
+
+Nach dem Passwort fragt Clamly nach einem 6-stelligen Code.
+
+- **Authenticator-App:** Tipp den aktuellen Code ein. Codes wechseln alle 30 Sekunden.
+- **Code per E-Mail:** Such in deinem Postfach nach *„123456 is your Clamly sign-in code“*. Jeder Code gilt 5 Minuten. Wähl **Send a new code**, wenn er abgelaufen ist.
+- **Handy verloren?** Wähl **Use a recovery code** und gib einen deiner gespeicherten Codes genau so ein, wie er geschrieben ist, mit Groß- und Kleinschreibung. Jeder Code funktioniert einmal.
+
+Setz ein Häkchen bei **Trust this device for 30 days**, damit dieses Gerät einen Monat lang keinen Code braucht. Lass es an einem gemeinsam genutzten oder öffentlichen Computer aus.
+
+## Vertrauenswürdige Geräte und Wiederherstellungscodes
+
+Im Zwei-Faktor-Bereich von **Settings**:
+
+- **Trusted devices** zeigt, wie viele Geräte gerade keinen Code brauchen. **Untrust all devices** sorgt dafür, dass jedes davon, auch das aktuelle, beim nächsten Mal einen Code verlangt. Nutze das, wenn du ein Gerät verloren oder dich irgendwo angemeldet hast, wo du es nicht hättest tun sollen.
+- **Generate new recovery codes** ersetzt deinen ganzen Satz. Vorher gespeicherte Codes funktionieren nicht mehr.
+- **Turn off** schaltet die Zwei-Faktor-Anmeldung mit deinem Passwort aus. Deine Wiederherstellungscodes funktionieren dann ebenfalls nicht mehr.
+
+## Ausgesperrt
+
+Zu viele falsche Codes lösen Schutzmechanismen aus:
+
+| Was passiert ist | Was du tun kannst |
+| --- | --- |
+| **„Too many tries in a row“** | Warte ein paar Sekunden und versuch es langsamer noch einmal. |
+| 5 Fehlversuche bei einem E-Mail-Code | Der Code ist verbraucht. Melde dich erneut mit Passwort an, um einen neuen zu bekommen. |
+| **„Your account is locked for about 15 minutes“** | 10 falsche Codes hintereinander sperren die Zwei-Faktor-Anmeldung für 15 Minuten. Warte, dann nimm einen frischen Code. |
+| Authenticator-Codes funktionieren nie | Stell Datum und Uhrzeit deines Handys auf automatisch. Authenticator-Codes hängen von der Uhr ab. |
+
+Handy **und** Wiederherstellungscodes verloren? Schreib an [support@clamly.app](mailto:support@clamly.app), von der Adresse deines Kontos.

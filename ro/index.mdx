@@ -1,209 +1,59 @@
 ---
-title: Documentație Clamly
-description: Răsfoiește centrul de ajutor Clamly pentru a-ți configura contul, învăța funcțiile și a obține maximul din sesiunile tale de studiu.
-mode: frame
+title: "Cu ce te pot ajuta?"
+sidebarTitle: "Bun venit"
+description: "Ghiduri pentru fiecare parte din Clamly: quiz-uri, flashcard-uri, notițe, Clamly AI, grupuri de studiu, planuri și contul tău."
+mode: "wide"
 ---
 
-<div className="flex w-full flex-col gap-16 max-w-5xl mx-auto px-4 md:px-8 py-16 md:py-24 text-[#41413f] dark:text-[#e2e0d8]">
+<div className="not-prose">
+  <p className="clamly-lede">
+    Clamly ține minte ce greșești și ți le aduce înapoi înainte să le uiți. Ghidurile de aici acoperă fiecare parte din aplicație, <em>pe înțeles</em>. Caută cu <span className="clamly-keys"><kbd>Ctrl</kbd> <kbd>K</kbd></span>, sau <span className="clamly-keys"><kbd>⌘</kbd> <kbd>K</kbd></span> pe Mac, ori pornește de la un subiect de mai jos.
+  </p>
 
-  {/* Hero */}
-  <div className="flex flex-col gap-6 text-center items-center">
-    <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#d45a3a] font-mono">
-      Centrul de ajutor Clamly
-    </span>
-    <h1 className="font-serif text-5xl md:text-7xl font-medium leading-[1.02] tracking-tight text-[#41413f] dark:text-[#f2f0e3]">
-      Învață mai inteligent,<br />
-      <span className="italic" style={{ color: '#d45a3a' }}>documentat.</span>
-    </h1>
-    <p className="text-base md:text-lg text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed max-w-md">
-      Ghiduri și referințe pentru platforma de studiu Clamly. Configurează-ți contul, învață fiecare funcție și obține maximul din fiecare sesiune.
-    </p>
-    <div className="flex flex-row gap-3 items-center pt-1">
-      <a
-        href="/introduction"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold no-underline bg-[#191919] text-[#f2f0e3] hover:bg-black dark:bg-[#f2f0e3] dark:text-[#191919] dark:hover:bg-white transition-colors"
-      >
-        Începe
-        <Icon icon="arrow-right" size={16} />
-      </a>
-      <a
-        href="https://clamly.app"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold no-underline border border-[#d6d3c0] dark:border-[#3a3a38] text-[#41413f] dark:text-[#e2e0d8] hover:border-[#d45a3a] dark:hover:border-[#d45a3a] hover:bg-[#f9f7ee] dark:hover:bg-[#242424] transition-colors"
-      >
-        Deschide Clamly
-      </a>
-    </div>
-  </div>
+  <div className="clamly-kicker">Cele mai căutate</div>
 
-  {/* 3 main categories */}
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    <a
-      href="/introduction"
-      className="cl-lift flex flex-col gap-4 p-6 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] hover:border-[#d45a3a] dark:hover:border-[#d45a3a]"
-    >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#d45a3a]/10 text-[#d45a3a]">
-        <Icon icon="rocket" color="#d45a3a" size={22} />
-      </span>
-      <div className="flex flex-col gap-1.5">
-        <span className="text-base font-semibold text-[#41413f] dark:text-[#f2f0e3]">Începe</span>
-        <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed">Creează-ți contul și învață noțiunile de bază.</span>
-      </div>
-    </a>
+  <ul className="clamly-quicklinks">
+    <li><a href="/ro/ai/overview">Fă un quiz dintr-un PDF</a></li>
+    <li><a href="/ro/account/sign-in-and-security">Resetează o parolă uitată</a></li>
+    <li><a href="/ro/ai/usage">Cum funcționează limitele AI</a></li>
+    <li><a href="/ro/account/plans-and-billing">Anulează sau schimbă planul</a></li>
+    <li><a href="/ro/account/sign-in-and-security">Activează autentificarea în doi pași</a></li>
+    <li><a href="/ro/account/trash">Recuperează ceva ce ai șters</a></li>
+  </ul>
 
-    <a
-      href="/study-tools/quizzes"
-      className="cl-lift flex flex-col gap-4 p-6 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] hover:border-[#d45a3a] dark:hover:border-[#d45a3a]"
-    >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#d45a3a]/10 text-[#d45a3a]">
-        <Icon icon="book-open" color="#d45a3a" size={22} />
-      </span>
-      <div className="flex flex-col gap-1.5">
-        <span className="text-base font-semibold text-[#41413f] dark:text-[#f2f0e3]">Instrumente de studiu</span>
-        <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed">Quiz-uri, flashcard-uri, notițe, timer, todo-uri și examene.</span>
-      </div>
-    </a>
+  <div className="clamly-kicker">Alege un subiect</div>
+</div>
 
-    <a
-      href="/ai/clamly-ai"
-      className="cl-lift flex flex-col gap-4 p-6 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] hover:border-[#d45a3a] dark:hover:border-[#d45a3a]"
-    >
-      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#81b29a]/15 text-[#5f9179]">
-        <Icon icon="sparkles" color="#5f9179" size={22} />
-      </span>
-      <div className="flex flex-col gap-1.5">
-        <span className="text-base font-semibold text-[#41413f] dark:text-[#f2f0e3]">Funcții AI</span>
-        <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5] leading-relaxed">Generează quiz-uri din documente și discută cu un asistent de studiu AI.</span>
-      </div>
-    </a>
-  </div>
+<Columns cols={3}>
+  <Card title="Primii pași" icon="/icons/rocket-launch.svg" href="/ro/getting-started/create-account">
+    Creează-ți contul, orientează-te în aplicație și instalează Clamly pe telefon sau calculator.
+  </Card>
+  <Card title="Instrumente de studiu" icon="/icons/exam.svg" href="/ro/study/quizzes">
+    Quiz-uri, flashcard-uri, notițe, to-do-uri, materii, cronometrul de concentrare și calendarul examenelor.
+  </Card>
+  <Card title="Clamly AI" icon="/icons/brain.svg" href="/ro/ai/overview">
+    Transformă un PDF într-un quiz sau un pachet de carduri și întreabă-l pe Clamly Chat de ce ai greșit.
+  </Card>
+  <Card title="Învață împreună" icon="/icons/users-three.svg" href="/ro/together/groups">
+    Grupuri de studiu cu coduri de invitație și quiz-uri partajate de alți studenți pe Discover.
+  </Card>
+  <Card title="Progres" icon="/icons/medal.svg" href="/ro/progress/streaks-and-achievements">
+    Seria ta de zile, cele 22 de realizări și ce îți spun statisticile.
+  </Card>
+  <Card title="Planuri și facturare" icon="/icons/credit-card.svg" href="/ro/account/plans-and-billing">
+    Free, Starter și Pro, ce include fiecare și cum faci upgrade, schimbi sau anulezi.
+  </Card>
+  <Card title="Conectare și securitate" icon="/icons/shield-check.svg" href="/ro/account/sign-in-and-security">
+    Parole, conectare cu Google, autentificare în doi pași și coduri de recuperare.
+  </Card>
+  <Card title="Confidențialitate și date" icon="/icons/lock-key.svg" href="/ro/privacy/your-data">
+    Ce păstrează Clamly, ce vede AI-ul și cum îți exporți sau ștergi datele.
+  </Card>
+  <Card title="Depanare" icon="/icons/wrench.svg" href="/ro/help/troubleshooting">
+    Emailuri care nu ajung, încărcări blocate, limite AI și alte probleme.
+  </Card>
+</Columns>
 
-  <hr className="border-0 border-t border-[#d6d3c0] dark:border-[#3a3a38]" />
-
-  {/* All features */}
-  <div className="flex flex-col gap-6">
-    <span className="text-xs font-semibold tracking-[0.18em] uppercase text-[#6e6b5c] dark:text-[#b5b3a5] font-mono">Toate funcțiile</span>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-
-      <a href="/study-tools/quizzes" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="help-circle" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Quiz-uri</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Manuale și generate de AI. Trei moduri de dificultate.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/flashcards" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="layers" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Flashcard-uri</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Pachete cu repetiție spațiată SM-2.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/notes" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="file-text" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Notițe</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Editor Markdown pe ecran complet cu fixare și etichete colorate.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/focus-timer" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="clock" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Focus Timer</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Pomodoro global care te urmărește pe fiecare pagină.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/todos" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="checkbox" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Todo-uri</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Priorități, termene și reordonare prin drag-and-drop.</span>
-        </div>
-      </a>
-
-      <a href="/study-tools/exams" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="calendar" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Examene</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Calendar vizual de examene cu sincronizare Google Calendar.</span>
-        </div>
-      </a>
-
-      <a href="/ai/clamly-ai" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#81b29a] dark:hover:border-[#81b29a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#81b29a]/15">
-          <Icon icon="sparkles" color="#5f9179" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Clamly AI</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Generează quiz-uri și rezumate din documentele tale.</span>
-        </div>
-      </a>
-
-      <a href="/ai/clamly-chat" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#81b29a] dark:hover:border-[#81b29a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#81b29a]/15">
-          <Icon icon="message-circle" color="#5f9179" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Clamly Chat</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Asistent de studiu AI cu patru moduri de conversație.</span>
-        </div>
-      </a>
-
-      <a href="/collaboration/study-groups" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="users" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Grupuri de studiu</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Invită colegi, partajează quiz-uri și studiați împreună.</span>
-        </div>
-      </a>
-
-      <a href="/collaboration/sharing" className="cl-lift flex items-start gap-3.5 p-4 rounded-xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee]/70 dark:bg-[#242424]/60 hover:border-[#d45a3a] dark:hover:border-[#d45a3a]">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#d45a3a]/10">
-          <Icon icon="share" color="#d45a3a" size={17} />
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Partajare</span>
-          <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">Partajează quiz-uri cu grupuri și exportă notițe.</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
-  <hr className="border-0 border-t border-[#d6d3c0] dark:border-[#3a3a38]" />
-
-  {/* Help footer */}
-  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-2xl border border-[#d6d3c0] dark:border-[#3a3a38] bg-[#f9f7ee] dark:bg-[#242424] px-6 py-5">
-    <div className="flex flex-col gap-1">
-      <span className="text-sm font-semibold text-[#41413f] dark:text-[#f2f0e3]">Ai nevoie de ajutor?</span>
-      <span className="text-sm text-[#6e6b5c] dark:text-[#b5b3a5]">
-        Consultă <a href="/help/faq" className="text-[#d45a3a] font-medium hover:underline">FAQ</a> sau scrie la <a href="mailto:support@clamly.app" className="text-[#d45a3a] font-medium hover:underline">support@clamly.app</a>.
-      </span>
-    </div>
-    <a
-      href="/help/status"
-      className="inline-flex items-center gap-2 text-sm font-medium text-[#6e6b5c] dark:text-[#b5b3a5] hover:text-[#d45a3a] dark:hover:text-[#d45a3a] transition-colors"
-    >
-      <Icon icon="activity" size={15} />
-      Starea sistemului
-    </a>
-  </div>
-
+<div className="not-prose clamly-note">
+  Nu găsești ce cauți? Scrie-mi la <a href="mailto:support@clamly.app">support@clamly.app</a>. Citesc fiecare mesaj și de obicei răspund în cel mult o zi lucrătoare.
 </div>

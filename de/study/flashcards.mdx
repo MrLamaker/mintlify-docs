@@ -1,0 +1,80 @@
+---
+title: "Karteikarten"
+description: "Stapel, die nach Plan zurückkommen. Clamly nutzt die verteilte Wiederholung FSRS, den Algorithmus, den das heutige Anki verwendet."
+keywords: ["karteikarten", "flashcards", "verteilte wiederholung", "fsrs", "anki", "stapel", "fällige karten", "import", "quizlet"]
+---
+
+Karteikarten kommen zurück, wenn du sie gerade vergessen würdest, nicht wenn sie dir zufällig einfallen. Eine Karte, die dir leichtfällt, lässt dich wochenlang in Ruhe. Eine, die du immer wieder falsch hast, kommt nach ein, zwei Tagen zurück.
+
+## So funktioniert die Wiederholung
+
+<Steps>
+  <Step title="Öffne, was fällig ist">
+    Die Seite Flashcards zeigt dir, wie viele Karten fällig sind und in welchen Stapeln. Öffne einen Stapel, um zu starten.
+  </Step>
+  <Step title="Erinnere dich, dann umdrehen">
+    Lies die Vorderseite, antworte im Kopf und dreh die Karte dann mit einem Klick, <kbd>Space</kbd> oder <kbd>Enter</kbd> um.
+  </Step>
+  <Step title="Bewerte dich ehrlich">
+    Wähl, wie gut du es wusstest. Clamly plant die nächste Wiederholung nach deiner Antwort.
+  </Step>
+</Steps>
+
+| Bewertung | Bedeutet | Was als Nächstes passiert |
+| --- | --- | --- |
+| **Again** | Vergessen | Die Karte fängt neu an und kommt bald wieder |
+| **Hard** | Gewusst, aber mit Mühe | Ein kurzer Abstand |
+| **Good** | Kurz gezögert | Ein normaler Abstand |
+| **Easy** | Sofort gewusst | Ein langer Abstand |
+
+<Tip>
+  Großzügig bewerten fühlt sich heute gut an und rächt sich nächste Woche. **Again** ist kein Versagen. So lernt der Algorithmus, welche Karten mehr Zeit brauchen.
+</Tip>
+
+### Warum FSRS
+
+Clamly plant Karten mit FSRS (Free Spaced Repetition Scheduler), dem Algorithmus, den Anki heute standardmäßig nutzt. Er schätzt anhand deines Wiederholungsverlaufs ab, wie stark jede Erinnerung ist, sodass die Abstände zu dir passen statt zu einer festen Formel.
+
+<Note>
+  FSRS hat am 21. September 2026 den älteren SM-2-Algorithmus ersetzt. SM-2 hat keinen Wiederholungsverlauf gespeichert, aus dem FSRS hätte lernen können, deshalb wurde jede damals vorhandene Karte als neu zurückgesetzt und fällig gemacht. Wenn in der Woche plötzlich ein großer Berg fälliger Karten auftauchte, lag es daran. Die Karten selbst wurden nicht verändert.
+</Note>
+
+## Einen Stapel erstellen
+
+<Tabs>
+  <Tab title="Von Hand">
+    Erstelle einen Stapel auf der Seite Flashcards und füg Karten mit Vorder- und Rückseite hinzu.
+  </Tab>
+  <Tab title="Aus Notizen">
+    - **Eine Karte:** Markier Text in einer Notiz und wähl **Make a flashcard**. Deine Auswahl wird zur Rückseite, du schreibst die Frage für die Vorderseite und wählst den Stapel. Die Karte ist sofort fällig. Dafür wird keine KI genutzt.
+    - **Ein ganzer Stapel:** Wähl in der Notiz **Make flashcards**, und Clamly AI schreibt daraus einen neuen Stapel. Das kostet 4 KI-Einheiten.
+  </Tab>
+  <Tab title="Aus einem Dokument">
+    Lade in den [Clamly-AI-Werkzeugen](/de/ai/overview) eine PDF, ein Word-Dokument oder eine Textdatei hoch und erzeuge daraus einen Stapel mit 4 bis 40 Karten. Das kostet 4 KI-Einheiten und erstellt immer einen neuen Stapel.
+  </Tab>
+  <Tab title="Aus einem Quiz">
+    Nach einem Quiz macht **Save as flashcards** aus den falschen Fragen Karten in einem Stapel deiner Wahl. Die Frage wird die Vorderseite, die richtige Antwort die Rückseite.
+  </Tab>
+  <Tab title="Import">
+    Wähl **Import** auf der Seite Flashcards und füg eine Karte pro Zeile ein, Vorder- und Rückseite getrennt durch Tab, Komma oder ` - `. Genau dieses Format liefert der Export aus Quizlet.
+
+    ```text
+    Photosynthese	wie Pflanzen Licht in chemische Energie umwandeln
+    Osmose	Wasser wandert durch eine Membran zur höheren Konzentration
+    ```
+  </Tab>
+</Tabs>
+
+## Deine Zahlen
+
+Oben auf der Seite Flashcards stehen vier Zahlen:
+
+- **Decks** und **Cards**: wie viel du hast.
+- **Due**: Karten, die gerade zur Wiederholung bereitstehen.
+- **Mastered**: Karten, die du so gut kannst, dass sie selten zurückkommen. Die Behaltensquote neben dem Hinweis zu fälligen Karten ist der Anteil deiner Karten, die du beherrschst.
+
+## Bearbeiten und löschen
+
+Benenne einen Stapel über sein Menü um oder lösche ihn. Ein gelöschter Stapel liegt 30 Tage im [Papierkorb](/de/account/trash).
+
+Eine einzelne Karte zu löschen passiert sofort, mit ein paar Sekunden, um es über die erscheinende Meldung rückgängig zu machen. Einzelne Karten kommen nicht in den Papierkorb.
