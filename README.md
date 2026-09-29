@@ -24,6 +24,7 @@ Publishing happens through the Mintlify GitHub app: every push to the deploy bra
 | `getting-started/`, `study/`, `ai/`, `together/`, `progress/`, `account/`, `privacy/`, `help/` | One folder per sidebar group (English) |
 | `ro/`, `de/`, `fr/` | Romanian, German and French, mirroring the English tree page for page |
 | `sources/` | Pages scraped from clamly.app, kept for reference |
+| `logo/` | The `clamly help` wordmark, drawn from Junicode glyph outlines so it needs no font |
 
 ## Languages
 
@@ -36,7 +37,6 @@ English is the default and lives at the root. Every English page has a translati
 - French uses non-breaking spaces before `? ! : ;` and inside « ». German quotes are „…“, Romanian „…”.
 
 Old URLs from the previous version of this site (`/introduction`, `/study-tools/*`, `/collaboration/*` and so on, in all four languages) redirect to their new pages through `redirects` in `docs.json`.
-| `logo/` | The `clamly help` wordmark, drawn from Junicode glyph outlines so it needs no font |
 
 ## Brand
 
