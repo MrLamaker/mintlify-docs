@@ -107,10 +107,6 @@
                   "href": "https://clamly.app/pricing"
                 },
                 {
-                  "label": "Download",
-                  "href": "https://clamly.app/download"
-                },
-                {
                   "label": "About",
                   "href": "https://clamly.app/about"
                 }
@@ -257,10 +253,6 @@
                 {
                   "label": "Prețuri",
                   "href": "https://clamly.app/pricing"
-                },
-                {
-                  "label": "Descărcare",
-                  "href": "https://clamly.app/download"
                 },
                 {
                   "label": "Despre",
@@ -411,10 +403,6 @@
                   "href": "https://clamly.app/pricing"
                 },
                 {
-                  "label": "Download",
-                  "href": "https://clamly.app/download"
-                },
-                {
                   "label": "Über Clamly",
                   "href": "https://clamly.app/about"
                 }
@@ -563,10 +551,6 @@
                   "href": "https://clamly.app/pricing"
                 },
                 {
-                  "label": "Télécharger",
-                  "href": "https://clamly.app/download"
-                },
-                {
                   "label": "À propos",
                   "href": "https://clamly.app/about"
                 }
@@ -696,10 +680,6 @@
           {
             "label": "Pricing",
             "href": "https://clamly.app/pricing"
-          },
-          {
-            "label": "Download",
-            "href": "https://clamly.app/download"
           },
           {
             "label": "About",
